@@ -56,8 +56,72 @@
   justify-content: center;
 }
 
+ .ppl_circle {
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ECE0ED;
+  width:  10em;
+  height:  10em;
+  display: flex; /* or inline-flex */
+  align-items: center; 
+  justify-content: center;
+  overflow: hidden;
+}
+
 .bolded { font-weight: 900; }
 
+
+
+/* Popup container - can be anything you want */
+.popup {
+  align-content: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  float: bottom;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  background-color: orange;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
 
 
 
@@ -93,13 +157,12 @@
       		living in the desert?
       	</h1>
       	
-      	 <button class="btn success" 
+      	<button class="btn"
       	 style="background-color: #ECE0ED;
       	 height: 20vw; width:  20vw; 
       	 position: absolute;
 		left: 15%;
 		bottom: 15%;">
-
       	Apply</button>
 
       </div>
@@ -110,8 +173,15 @@
 
   </div>
 
-	<div id="join_us" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px;">
-		<div class="btn success" style="background-color: #ECE0ED; margin: 2%; margin-bottom: 10%;"> 
+	<div id="about" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px;">
+
+		<div style="display: inline;"> 
+			<p style="font-weight: 800; font-size: 8vh; 
+			padding-right: 10%; float: right; "> 
+			<i>  about OA27 </i> </p>
+		</div>
+
+		<div class="btn" style="background-color: #ECE0ED; margin: 2%; margin-bottom: 10%; margin-top: 10%"> 
 
 			<span class="bolded"> OASIS 2027 (OA27) </span> is a platform designed to facilitate interdisciplinary
 			collaboration and knowledge exchange.
@@ -136,7 +206,7 @@
 		</div>
 	</div>
 
-	<div id="join_us" style="overflow: hidden; background-image: 
+	<div id="timeline" style="overflow: hidden; background-image: 
 		linear-gradient(180deg, #47AFFF, 85%, #ECE0ED); 
 		padding: 0px; height: 500px;
 		white-space: nowrap;
@@ -144,8 +214,8 @@
 	  	overflow-x:scroll;
 	  	overflow-y:hidden;">
 
-		<p style="font-weight: 800; font-size: 10vh; 
-		padding-left: 3%;"> <i>  timeline + locations </i> </p>
+		<p style="font-weight: 800; font-size: 8vh; 
+		padding-left: 3%; padding-bottom: 5%;"> <i>  timeline + locations </i> </p>
 		
 
 		<div class="circle" style="background-color: #ECE0ED; 
@@ -217,12 +287,9 @@
 				</p> 
 		</div>
 
-
-
-
 	</div>
 
-	<div id="join_us" style="overflow: hidden; background-image: 
+	<div style="overflow: hidden; background-image: 
 		linear-gradient(180deg, #ECE0ED, 85%, #D0A896); 
 		padding: 0px; height: 1500;
 		white-space: nowrap;
@@ -232,9 +299,214 @@
 
 	  	<img src="imgs/map.png">
 
+	</div>
+
+
+	<div id="dessertification" style="overflow: hidden; background-image: linear-gradient(180deg, 
+		#D0A896, 85%, #C6FF23); padding: 0px; margin: 0px;">
+
+
+		<p style="font-weight: 800; font-size: 8vh; 
+		padding-left: 3%; padding-top: 5%; padding-bottom: 3%;"> <i>  about desertification </i> </p>
+
+		<div style="grid-template-columns: 1fr 1fr; display: inline-grid; padding-left: 5%; padding-right: 5%;">
+		
+		<div class="btn" style="background-color: #ECE0ED; margin: 2%; margin-bottom: 10%;"> 
+			<span class="bolded"> It is a process, by which fertile land becomes a
+			desert - a dryland unable to sustain plants
+			growth. </span>
+
+			<br>
+			<br>
+			Desertification happens as a result of natural
+			phenomena (i.e. drought), or human activities
+			such as deforestation,
+			or overexploitation of the soil.
+			<br>
+			<span class="bolded"> 41% </span> of Earth’s land area are <span class="bolded"> desserts </span>
+			<br>
+			<span class="bolded"> 30% </span> of the world's population lives
+			in the drylands
+			<br>
+			<span class="bolded"> 13 EU countries </span> are now prone to <span class="bolded"> dessertification </span>
+			<br>
+			<span class="bolded"> 8% </span> of EU area is going to be <span class="bolded"> affected </span>
+		</div>
+		<div> 
+			<img src="imgs/img2.png">
+		</div>
+		</div>
+	</div>
+
+	<div id="programme" style="overflow: hidden; background: linear-gradient(to bottom, #C6FF23,
+		#ECE0ED 50%, #47AFFF); padding: 0px; margin: 0px;">
+
+
+		<p style="font-weight: 800; font-size: 8vh; 
+		padding-right: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: right;"> <i>  programme </i> </p>
+
+		<div class="btn" style="background-color: #ECE0ED; margin: 4%; margin-bottom: 5%;"> 
+			<span class="bolded"> OASIS 2027 </span> programme explores alternative approaches for organising the future,
+			through seeking deep adaptation strategies for coping with the climate collapse. The
+			focus of the project lies on the processes of desertification, offering a translocal
+			perspective on the issues of environmental and societal degradation through the prism
+			of sciences and arts.
+			<br>
+			<br>
+			The Island
+			<br>
+			<br>
+			Residency part I: Mallorca, Spain: 07- 20th May 2022
+			<br>
+			<br>
+			Here the residents will research the local needs and problems, collaborating with
+			people who are experiencing first hand changes to the land and the climate and
+			developing solutions.
+			<br>
+			<br>
+			Location: We need a bit more on this. The project begins in Sóller, Mallorca, in the
+			Tramuntana Mountain range. In this landscape, human agricultural and pastoral
+			activity has deprived soil of biomass, causing it’s degradation, with current 1% of
+			biomass in the soil. linked to the frequent intentional burning by farmers to
+			advantage grazing land for the herds has lead to a degradation of the ecosystem, Most
+			of the land in the Mediterranean sea basin which is is already in process of
+			desertification.
+			<br>
+			<br>
+			The Desert
+			<br>
+			Residency II : Błędów Desert Klucze, Poland: 03-17 July 2022.
+			<br>
+			<br>
+			Followed by a two week acceleration phase in The Bledowska Desert, Poland. The two
+			week period in the desert will be an opportunity to experience a live musing on what
+			it would be like to live in the future.
+			<br>
+			<br>
+			Location: A unique sandy ecosystem, Pustynia Bledowska is an anthropogenic formation,
+			created as a result of human activity. Desertification began as early as the XIII
+			century, when the vast area of pine forests were cut down in order to expand the mine
+			shafts of silver and lead in the region. Mass clearance of trees resulted in rapid
+			revealing of underground glacier sand deposits.
+			<br>
+			<br>
+			The residency in the desert will simultaneously align with the LIOS labs programme,
+			where cross collaboration is encouraged.
+			<br>
+			<br>
+			The City
+			<br>
+			OA27 Cultural Festival: Magdeburg, Germany: 17 - 31 October 2022
+			<br>
+			<br>
+			The third segment will unfold in the co-curation and development of an
+			interdisciplinary festival taking place in Magdeburg, Germany.
+			<br>
+			<br>
+			The residents are expected to curate the festival over two weeks, with two venues to
+			utilise their network, present the works, findings, projects, performances and
+			workshops developed during the two research and development stages to the public.
+		</div>
+
+	
+	</div>
+
+	<div style="overflow: hidden; background-image: 
+		linear-gradient(180deg, #47AFFF, 65%, #ECE0ED); 
+		padding: 0px; height: 1500;
+		white-space: nowrap;
+	  	position: relative;
+	  	overflow-x:scroll;
+	  	overflow-y:hidden;">
+
+	  	<p style="font-weight: 800; font-size: 8vh; 
+		padding-left: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: left;"> <i>  advisory commitee </i> </p>
+
+		<div style="height: 200px;"> </div>
 
 	</div>
 
+
+
+	<div id="team" style="overflow: hidden; background-image: 
+		linear-gradient(180deg, #ECE0ED, 85%, #47AFFF); 
+		padding: 0px; height: 500px;
+		white-space: nowrap;
+	  	position: relative;
+	  	overflow-x:scroll;
+	  	overflow-y:hidden;">
+
+		 	<p style="font-weight: 800; font-size: 8vh; 
+		padding-left: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 10%;"> <i>  team </i> </p>
+		
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/jo.jpg">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/jo.jpg">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/jo.jpg">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/jo.jpg">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/jo.jpg">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/jo.jpg">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/jo.jpg">
+		</div>
+
+		
+	</div>
+
+
+	<div id="team" style="overflow: hidden; background-image: 
+		linear-gradient(180deg, #ECE0ED, 85%, #47AFFF); 
+		padding: 0px; height: 500px;
+		white-space: nowrap;
+	  	position: relative;
+	  	overflow-x:scroll;
+	  	overflow-y:hidden;">
+
+
+	<div class="popup" style="align-content:  center;" 
+
+	onclick="myFunction()">Click me to toggle the popup!
+			<span class="popuptext" id="myPopup">A Simple Popup!</span>
+	</div>
+
+		
+	</div>
+
+
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 	
 
 </body>
