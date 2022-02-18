@@ -37,11 +37,16 @@
   .btn {
   border: 1px solid black;
   color: black;
-  padding: 14px 28px;
-  font-size: 16px;
+  font-size: 1.2em;
   cursor: pointer;
   border-radius: 15px;
 }
+
+.btn:hover {
+	background: rgb(71, 175, 255, .5) !important;
+  /*#opacity: 0.5 !important;
+  background-color: #47AFFF !important
+*/}
 
  .circle {
   border: 1px solid black;
@@ -62,8 +67,8 @@
   cursor: pointer;
   border-radius: 50%;
   background-color: #ECE0ED;
-  width:  10em;
-  height:  10em;
+  width:  13em;
+  height:  13em;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -123,99 +128,150 @@
   animation: fadeIn 1s;
 }
 
-
+.yellow_hover: hover{
+	color: yellow;
+}
 
 </style>
 </head>
 <body style="margin:0px;">
 
-	<div style="background-color: #ECE0ED;"> 
-		<h1 style="padding: 1%; max-height: auto;"> 
-			 <a href="#home"> home |</a> 
-			 <a href="#join_us"> join us | </a> 
+	<div style="background-color: #ECE0ED; text-align: justify;"> 
+		<h1 class="yellow_hover" style="padding: 1%; padding-bottom: 5%; max-height: auto; font-size: 1.2em;"> 
+			 <a  class="yellow_hover"  href="#home"> home |</a> 
+			 <a href="#join_us"> apply | </a> 
 			 <a href="#about"> about OA27 |</a> 
 			 <a href="#timeline"> timeline + locations |</a> 
-			 <a href="#more_about"> more about |</a> 
-			 <a href="#desertification"> desertification |</a> 
-			 <a href="#advisory"> advisory commitee / team |</a> 
+			 <a href="#more_about"> about desertification |</a> 
+			 <a href="#desertification"> advisory commitee |</a> 
+			 <a href="#advisory"> team |</a> 
 			 <a href="#partners"> partners </a> 
+			 <a href="#partners"> partners </a> 
+
+
 		</h1>
+		<span style="display: inline-block; width: 100%; visibility: hidden;"> </span>
 	</div>
-  <div id="home" style="overflow: hidden; background-image: linear-gradient(180deg, #ECE0ED, 95%, #C6FF23);
-          padding: 0px; margin: 0px; display: inline-grid;
-          grid-template-columns: 1fr 2fr;">
-
-      
+  	
+  	<div id="home" style="background-image: linear-gradient(180deg, #ECE0ED, 85%, #C6FF23); padding: 0px; margin: 0px; display: inline-grid; grid-template-columns: 1fr 2fr;">
           
-      <div style="position:relative;">
-      	<h1 style="text-align: center; margin-top:20%; margin-left:  20%;
-      	marign-right: 20%; font-size: 2vw;">
-      		<i> OASIS 2027 </i>
-      		<br>
-      		<br>
-      		Have you ever imagined <br>
-      		living in the desert?
-      	</h1>
+      	<div style="position:relative;">
+	      	<h1 style="text-align: center; margin-top:20%; margin-left:  20%;
+	      	marign-right: 20%; padding-bottom: 20%; font-size: 2.5em;">
+	      		<i> OASIS 2027 </i>
+	      		<br>
+	      		<br>
+	      		Have you ever imagined <br>
+	      		how it is to live in the desert?
+	      	</h1>
       	
-      	<button class="btn"
-      	 style="background-color: #ECE0ED;
-      	 height: 20vw; width:  20vw; 
-      	 position: absolute;
-		left: 15%;
-		bottom: 15%;">
-      	Apply</button>
-
-      </div>
+	      	<button class="btn"
+	      	 style="background-color: #ECE0ED;
+	      	 height: 30vw; width:  30vw; 
+	      	 position: absolute;
+			left: 15%; margin-bottom: 10%;">
+	      	<span style="font-weight: 900;"> Open Call </span> for <br><br> residency programme <br><br> exploring desertification 
+	      </button>
+      	</div>
       
-    <div > 
-      <img src="imgs/elem1.png" style="margin-top: -10%;">
-    </div>
+	    <div > 
+	      <img src="imgs/elem1.png" style="margin-top: -10%;">
+	    </div>
 
-  </div>
+  	</div>
 
-	<div id="about" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px;">
+	<div id="about" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px; padding-top: 25%;">
 
 		<div style="display: inline;"> 
-			<p style="font-weight: 800; font-size: 8vh; 
-			padding-right: 10%; float: right; "> 
-			<i>  about OA27 </i> </p>
+			<p style="font-weight: 800; font-size: 2.5em; 
+			padding-right: 6%; float: right; "> 
+			 <i style="font-weight: 900;"> about OA27  </i>  </p>
 		</div>
 
-		<div class="btn" style="background-color: #ECE0ED; margin: 2%; margin-bottom: 10%; margin-top: 10%"> 
+		<div class="btn" style="background-color: #ECE0ED; padding-left: 5%;
+		padding-right: 5%; margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em;"> 
 
-			<span class="bolded"> OASIS 2027 (OA27) </span> is a platform designed to facilitate interdisciplinary
-			collaboration and knowledge exchange.
 			<br>
 			<br>
-			We focus on the problem of <span class="bolded"> lands becoming deserts and water a scarce resource. </span>
+			OASIS 2027 (OA27) is  a research-based residency programme leading to creation of a festival of sciences and arts exploring strategies for climate emergency. 
+			</span> 
 			<br>
 			<br>
-			Why 2027?
-			<br>
-			According to scientific reports, the tangible effects of desertification will
-			affect us as soon as in 2027...
+			<span class="bolded"> The seed topic of the OA27 programme is desertification: </span> the processes of fertile lands becoming increasingly arid, mostly due to human activities. 
+			According to scientific reports, more tangible effects of desertification will affect Europe as soon as 2027. 
 			<br>
 			<br>
-			OA27 aims to <span class="bolded"> awaken environmental awareness </span> and seek <span class="bolded"> alternative strategies </span> for
-			coping with climate collapse, imagining a viable, sustainable future.
+
+			OA27 is currently seeking ten individuals working within various fields of the sciences and arts to apply to participate: to join a cross-disciplinary cohort and become agents of change, who examine the topics of desertification, water retention and soil regeneration through the prism of various disciplines engaged in environmental issues. 
 			<br>
 			<br>
-			Focusing on processes of desertification, we aim to offer a <span class="bolded"> translocal perspective </span>
-			on the issues of environmental and societal degradation through the prism of
-			<span class="bolded"> science, art and ecology. </span>
+			The selected participants will become co-curators of the OA27 festival of strategies for climate emergency launching in Magdeburg in October 2022. 
+			<br>
+			<br>
+			The goal of the OA27 programme is to bring forth the understanding of the severity of the climate crisis. Researching the processes of desertification and our relation to water and soil, the programme aims to inspire the change of how we use the planet's resources and position ourselves and agriculture as a part of the ecosystem. 
+			<br>
+			<br>
+			Exploring interconnectedness, OA27 aspires to unite diverse practises embedded in the ecological paradigm, and create a platform for knowledge and resource exchange. To hold a spacetime to collectively envision and experiment alternative approaches for organising the future. To seek deep adaptation strategies, and to foster trans-local alliances that lead to an environmental and societal flourishing.
+			<br>
+			<br>
+
 		</div>
 	</div>
 
+	<div id="home" style="background-image: linear-gradient(180deg, #47AFFF, 85%, #47AFFF); padding: 0px; margin: 0px; display: inline-grid; grid-template-columns: 1fr 2fr;">
+          
+      
+	    <div > 
+	      <img src="imgs/elem1.png" style="margin-top: -10%; visibility: hidden;">
+	    </div>
+
+	    <div> 
+				<p style="font-weight: 1000; font-size: 1.2em; 
+					padding-right: 8.5%; text-align: right; padding-bottom: 2.5%;"> 
+			 		<i style="font-weight: 900;"> objectives of the programme: </i>  
+			 	</p>
+		    
+		    <div class="btn" style="background-color: #ECE0ED; padding-left: 10%; padding-right: 10%; 
+		    margin-left: 10%; margin-right: 7.5%; margin-bottom: 15%; padding-bottom: 5%; padding-top: 5%;"> 
+				
+				
+				<ul>
+					<li> To research topics of desertification, water retention and soil regeneration through the prism of sciences and arts 
+					</li>
+					<br>
+					<li> To explore site specific issues related to climate crisis in Mallorca, Spain, Bledowska Desert, Poland and Magdeburg, Germany</li>
+					<br>
+					<li> To bridge the arts and sciences, and embracing collaborative approaches
+					</li>
+					<br>
+					<li> To create a public awareness campaign 
+					</li>
+					<br>
+					<li>To organise ganising a multimedia festival for strategies for climate emergency in Magdeburg 
+					</li>
+					<br>
+					<li> To establish a translocal network or agents and organisations ready to work together on environmental and societal issues 
+					</li>
+					<br>
+					<li> To navigate a transformation into a more sustainable, action and knowledge-based planetary community
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+  	</div>
+
 	<div id="timeline" style="overflow: hidden; background-image: 
-		linear-gradient(180deg, #47AFFF, 85%, #ECE0ED); 
+		linear-gradient(180deg, #47AFFF, 75%, #ECE0ED); 
 		padding: 0px; height: 500px;
 		white-space: nowrap;
 	  	position: relative;
 	  	overflow-x:scroll;
-	  	overflow-y:hidden;">
+	  	overflow-y:hidden; padding-bottom:10%;">
 
-		<p style="font-weight: 800; font-size: 8vh; 
-		padding-left: 3%; padding-bottom: 5%;"> <i>  timeline + locations </i> </p>
+		<p style="font-weight: 800; font-size: 2.5em; 
+		padding-left: 5%; padding-bottom: 5%;"> <i>  timeline + locations </i> </p>
 		
 
 		<div class="circle" style="background-color: #ECE0ED; 
@@ -280,13 +336,14 @@
 				padding: 10%; font-size: 1.5em; vertical-align: middle;">
 
 				17-31.10.2022<br>
-				Exhibition and <br>
-				public program <br>
-				in Magdeburg, <br>
-				Germany
+				0A27 festival  <br> 
+				magdeburg germany
+				<br>
+				climate emergency
 				</p> 
 		</div>
 
+		<p style="text-align: center;"> TODO pop up text from circles here </p>
 	</div>
 
 	<div style="overflow: hidden; background-image: 
@@ -294,8 +351,7 @@
 		padding: 0px; height: 1500;
 		white-space: nowrap;
 	  	position: relative;
-	  	overflow-x:scroll;
-	  	overflow-y:hidden;">
+	  	overflow-x:scroll;">
 
 	  	<img src="imgs/map.png">
 
@@ -306,113 +362,43 @@
 		#D0A896, 85%, #C6FF23); padding: 0px; margin: 0px;">
 
 
-		<p style="font-weight: 800; font-size: 8vh; 
-		padding-left: 3%; padding-top: 5%; padding-bottom: 3%;"> <i>  about desertification </i> </p>
+		<p style="font-weight: 800; font-size: 2.5em; 
+		padding-left: 5%; padding-top: 5%; padding-bottom: 3%;"> <i>  about desertification </i> </p>
 
-		<div style="grid-template-columns: 1fr 1fr; display: inline-grid; padding-left: 5%; padding-right: 5%;">
+		<div style="grid-template-columns: 3fr 1fr; display: inline-grid; padding-left: 5%; padding-right: 5%;">
 		
-		<div class="btn" style="background-color: #ECE0ED; margin: 2%; margin-bottom: 10%;"> 
-			<span class="bolded"> It is a process, by which fertile land becomes a
-			desert - a dryland unable to sustain plants
-			growth. </span>
+			<div class="btn" style="background-color: #ECE0ED; padding: 5%; font-size: 1.2em;">
+				
+				Etymology 
+				desert (n.1) c. 1200, "wasteland, wilderness, barren area," wooded or not, from Old French desert (12c.) "desert, wilderness, wasteland; destruction, ruin" and directly from Late Latin desertum (source of Italian diserto, Old Provençal dezert, Spanish desierto), literally "thing abandoned" (used in Vulgate to translate "wilderness"), noun use of neuter past participle of Latin deserere "forsake" (see desert (v.)).
+				What is desertification?
+				 
+				European Court of Auditors in their paper “Desertification in the EU” published in June 2018 describes desertification:
+	 
+				“Desertification is a form of land degradation in drylands. It results from unsustainable land management practices and climatic factors. Thirteen EU Member States, not only in the Mediterranean region, but also in Central and Eastern Europe, have declared that they are affected by desertification. Desertification is a consequence, but also a cause of climate change: it is aggravated by more droughts, rising temperatures, less precipitation, and it also magnifies climate change by reducing the capacity of soil to retain carbon.
+				Desertification does not imply the presence of deserts. It can occur far from any climatic desert, and the presence or absence of a nearby desert has no direct relation to the desertification process.
+				There are fine lines between drylands, desertified lands and deserts, but, once they are crossed, it is hard to return, as restoring soil is a slow process. It can take 500 years for 2.5 cm of soil to form but only a few years to destroy it1. It is much more cost-effective to protect drylands from degradation than to reverse the process.”
+	 
+				Cultural desertification
+				Desertification serves as an analogy describing processes of societal degradation, the loss of diversity, complexity and vibrancy of places or communities. Cultural deserts are spaces lacking agency, connectivity, or interests in intellectual and artistic activity. Philosopher Franco “Bifo” Berardi in his book “Breathing: Chaos and Poetry” writes:
+				“Existence alone has no meaning: this is the truth that we learn from traversing the desert of meaninglessness. But this truth is not frightening so long as we can find oases in the desert: oases of friendship, love, intel- lectual and erotic sharing, conspiration and the projection of a common landscape. Such oases are the precondition for sensuous consciousness and for shared imagination.”
 
-			<br>
-			<br>
-			Desertification happens as a result of natural
-			phenomena (i.e. drought), or human activities
-			such as deforestation,
-			or overexploitation of the soil.
-			<br>
-			<span class="bolded"> 41% </span> of Earth’s land area are <span class="bolded"> desserts </span>
-			<br>
-			<span class="bolded"> 30% </span> of the world's population lives
-			in the drylands
-			<br>
-			<span class="bolded"> 13 EU countries </span> are now prone to <span class="bolded"> dessertification </span>
-			<br>
-			<span class="bolded"> 8% </span> of EU area is going to be <span class="bolded"> affected </span>
+			</div>
+
+			<div> 
+				<img src="imgs/img2.png" style="padding-top: 150%;">
+				<!-- <div style="background-image: url(imgs/img2.png);
+				  background-repeat: no-repeat;
+				  background-size: contain;
+				  background-position: center;">
+				</div> -->
+			</div>
+
 		</div>
-		<div> 
-			<img src="imgs/img2.png">
-		</div>
-		</div>
-	</div>
-
-	<div id="programme" style="overflow: hidden; background: linear-gradient(to bottom, #C6FF23,
-		#ECE0ED 50%, #47AFFF); padding: 0px; margin: 0px;">
-
-
-		<p style="font-weight: 800; font-size: 8vh; 
-		padding-right: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: right;"> <i>  programme </i> </p>
-
-		<div class="btn" style="background-color: #ECE0ED; margin: 4%; margin-bottom: 5%;"> 
-			<span class="bolded"> OASIS 2027 </span> programme explores alternative approaches for organising the future,
-			through seeking deep adaptation strategies for coping with the climate collapse. The
-			focus of the project lies on the processes of desertification, offering a translocal
-			perspective on the issues of environmental and societal degradation through the prism
-			of sciences and arts.
-			<br>
-			<br>
-			The Island
-			<br>
-			<br>
-			Residency part I: Mallorca, Spain: 07- 20th May 2022
-			<br>
-			<br>
-			Here the residents will research the local needs and problems, collaborating with
-			people who are experiencing first hand changes to the land and the climate and
-			developing solutions.
-			<br>
-			<br>
-			Location: We need a bit more on this. The project begins in Sóller, Mallorca, in the
-			Tramuntana Mountain range. In this landscape, human agricultural and pastoral
-			activity has deprived soil of biomass, causing it’s degradation, with current 1% of
-			biomass in the soil. linked to the frequent intentional burning by farmers to
-			advantage grazing land for the herds has lead to a degradation of the ecosystem, Most
-			of the land in the Mediterranean sea basin which is is already in process of
-			desertification.
-			<br>
-			<br>
-			The Desert
-			<br>
-			Residency II : Błędów Desert Klucze, Poland: 03-17 July 2022.
-			<br>
-			<br>
-			Followed by a two week acceleration phase in The Bledowska Desert, Poland. The two
-			week period in the desert will be an opportunity to experience a live musing on what
-			it would be like to live in the future.
-			<br>
-			<br>
-			Location: A unique sandy ecosystem, Pustynia Bledowska is an anthropogenic formation,
-			created as a result of human activity. Desertification began as early as the XIII
-			century, when the vast area of pine forests were cut down in order to expand the mine
-			shafts of silver and lead in the region. Mass clearance of trees resulted in rapid
-			revealing of underground glacier sand deposits.
-			<br>
-			<br>
-			The residency in the desert will simultaneously align with the LIOS labs programme,
-			where cross collaboration is encouraged.
-			<br>
-			<br>
-			The City
-			<br>
-			OA27 Cultural Festival: Magdeburg, Germany: 17 - 31 October 2022
-			<br>
-			<br>
-			The third segment will unfold in the co-curation and development of an
-			interdisciplinary festival taking place in Magdeburg, Germany.
-			<br>
-			<br>
-			The residents are expected to curate the festival over two weeks, with two venues to
-			utilise their network, present the works, findings, projects, performances and
-			workshops developed during the two research and development stages to the public.
-		</div>
-
-	
 	</div>
 
 	<div style="overflow: hidden; background-image: 
-		linear-gradient(180deg, #47AFFF, 65%, #ECE0ED); 
+		linear-gradient(180deg, #C6FF23, 85%, #47AFFF); 
 		padding: 0px;">
 
 	  	<p style="font-weight: 800; font-size: 8vh; 
@@ -425,7 +411,6 @@
 
 		</div>
 	</div>
-
 
 
 	<div id="team" style="overflow: hidden; background-image: 
