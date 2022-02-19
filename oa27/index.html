@@ -44,7 +44,7 @@
 
 .btn:hover {
 	background: rgb(71, 175, 255, .5) !important;
-	animation: shake 0.5s;
+	animation: shake 4.0s;
   	animation-iteration-count: infinite;
   }
 
@@ -62,17 +62,25 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+
+
  .circle {
   border: 1px solid black;
   color: black;
   cursor: pointer;
   border-radius: 50%;
   background-color: #ECE0ED;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
   width:  20em;
   height:  20em;
-  display: flex; /* or inline-flex */
-  align-items: center; 
-  justify-content: center;
+  margin-left:  2.5%;
+  margin-right:  2.5%;
+}
+
+.circle:hover {
+	background-color: orange !important;
 }
 
  .ppl_circle {
@@ -278,87 +286,113 @@
 
   	</div>
 
-	<div id="timeline" style="overflow: hidden; background-image: 
-		linear-gradient(180deg, #47AFFF, 75%, #ECE0ED); 
-		padding: 0px; height: 500px;
+  	<div id="timeline" style="background-image: 
+  	linear-gradient(180deg, #47AFFF, 75%, #ECE0ED); 
+		padding: 0px;
 		white-space: nowrap;
-	  	position: relative;
 	  	overflow-x:scroll;
-	  	overflow-y:hidden; padding-bottom:10%;">
+	  	padding-bottom:10%;">
 
 		<p style="font-weight: 800; font-size: 2.5em; 
 		padding-left: 5%; padding-bottom: 5%;"> <i>  timeline + locations </i> </p>
 		
+		<div style="vertical-align:middle; width: 100%; max-width: 100%;
+		display:inline-block;"> 
 
-		<div class="circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<p class="bolded" style="text-align: center; 
-				padding: 10%; font-size: 1.5em; vertical-align: middle;">
+		 	<div class="circle">
+		 		<div style="display: flex;
+					justify-content: center;
+					align-items: center; width: 100%; height: 100%;">
 
-				 21.02.2022 <br> 
-				Open call for <br> 
-				participants of <br>
-				2022 programme 
-				</p> 
+			 		<p>
+			 			21.02.2022 
+						Open call for <br> 
+						participants of <br>
+						2022 programme 
+			 		</p>
+		 		</div>
+		 	</div>
+
+		 	<div class="circle">
+		 		<div style="display: flex;
+					justify-content: center;
+					align-items: center; width: 100%; height: 100%;">
+			 		<p>
+				 		21.02.2022 <br> 
+						Open call for <br> 
+						participants of <br>
+						2022 programme 
+			 		</p>
+		 		</div>
+		 	</div>
+
+		 	<div class="circle">
+		 		<div style="display: flex;
+					justify-content: center;
+					align-items: center; width: 100%; height: 100%;">
+
+			 		<p>
+			 		28.03.2022
+					<br>
+					Announcement
+					<br>
+					of the results
+					<br>
+					of the Open
+					<br>
+					Call
+			 		</p>
+		 		</div>
+		 	</div>
+
+		 	<div class="circle">
+		 		<div style="display: flex;
+					justify-content: center;
+					align-items: center; width: 100%; height: 100%;">
+
+			 		<p>
+			 			7-20.05.2002 <br> 
+					R&D <br> 
+					‘Incubation’<br>
+					phase in <br>
+					Mallorca, Spain
+			 		</p>
+		 		</div>
+		 	</div>
+
+		 	<div class="circle">
+		 		<div style="display: flex;
+					justify-content: center;
+					align-items: center; width: 100%; height: 100%;">
+			 		<p>
+						3-17.07.2022 <br>
+						R&D <br>
+						‘Acceleration’ <br>
+						phase in <br>
+						Bledowska Desert, <br>
+						Poland			 		
+					</p>
+		 		</div>
+		 	</div>
+
+		 	<div class="circle">
+		 		<div style="display: flex;
+					justify-content: center;
+					align-items: center; width: 100%; height: 100%;">
+
+			 		<p>
+					17-31.10.2022<br>
+					0A27 festival  <br> 
+					magdeburg germany
+					<br>
+					climate emergency
+			 		</p>
+		 		</div>
+		 	</div>
+				
 		</div>
 
-		<div class="circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 2.5%; margin-right: 2.5%;">
-			<p class="bolded" style="text-align: center; 
-				padding: 10%; font-size: 1.5em; vertical-align: middle;">
-
-				28.03.2022
-				<br>
-				Announcement
-				<br>
-				of the results
-				<br>
-				of the Open
-				<br>
-				Call
-				</p> 
-		</div>
-
-		<div class="circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 2.5%; margin-right: 2.5%;">
-			<p class="bolded" style="text-align: center; 
-				padding: 10%; font-size: 1.5em; vertical-align: middle;">
-
-				7-20.05.2002 <br> 
-				R&D <br> 
-				‘Incubation’<br>
-				phase in <br>
-				Mallorca, Spain
-				</p> 
-		</div>
-
-			<div class="circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 2.5%; margin-right: 2.5%;">
-			<p class="bolded" style="text-align: center; 
-				padding: 10%; font-size: 1.5em; vertical-align: middle;">
-
-				3-17.07.2022 <br>
-				R&D <br>
-				‘Acceleration’ <br>
-				phase in <br>
-				Bledowska Desert, <br>
-				Poland
-				</p> 
-		</div>
-
-		<div class="circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 2.5%; margin-right: 5%;">
-			<p class="bolded" style="text-align: center; 
-				padding: 10%; font-size: 1.5em; vertical-align: middle;">
-
-				17-31.10.2022<br>
-				0A27 festival  <br> 
-				magdeburg germany
-				<br>
-				climate emergency
-				</p> 
-		</div>
-
+		
 		<p style="text-align: center;"> TODO pop up text from circles here </p>
 	</div>
 
@@ -678,6 +712,37 @@
 		
 	</div>
 
+
+
+<script>
+	 // Progamme pop ups  
+const targetDiv = document.getElementById("team_1_bio");
+const btn = document.getElementById("team1");
+
+const targetDiv2 = document.getElementById("advisor_2_bio");
+const btn2 = document.getElementById("advisor_2_toggle");
+
+btn.onclick = function () {
+
+	if (targetDiv.style.display !== "none") {
+		targetDiv.style.display = "none";
+	} else {
+		targetDiv.style.display = "block";
+	}
+};
+
+btn2.onclick = function () {
+
+	targetDiv.style.display = "none"
+
+	if (targetDiv2.style.display !== "none") {
+		targetDiv2.style.display = "none";
+	} else {
+		targetDiv2.style.display = "block";
+	}
+};
+
+</script>
 
 <script>
 const targetDiv = document.getElementById("team_1_bio");
