@@ -387,36 +387,56 @@
 
 			<div> 
 				<img src="imgs/img2.png" style="padding-top: 150%;">
-				<!-- <div style="background-image: url(imgs/img2.png);
-				  background-repeat: no-repeat;
-				  background-size: contain;
-				  background-position: center;">
-				</div> -->
 			</div>
 
 		</div>
 	</div>
 
 	<div id="team" style="overflow: hidden; background-image: 
-		linear-gradient(180deg, #C6FF23, 85%, #47AFFF); 
-		padding: 0px; height: 500px;
-		white-space: nowrap;
-	  	position: relative;
-	  	overflow-x:scroll;
-	  	overflow-y:hidden;">
+	linear-gradient(180deg, #C6FF23, 85%, #47AFFF); 
+	padding: 0px;">
 
-		 	<p style="font-weight: 800; font-size: 8vh; 
-		padding-left: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 10%;"> <i>  advisory commitee </i> </p>
-		
+		<p style="font-weight: 800; font-size: 8vh; 
+			padding-left: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 5%;"> 
+			<i>  advisory commitee </i> 
+		</p>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/advisors/advisor1.png">
+
+		<div class="ppl_circle" style="display: inline-flex; margin-left: 5%; margin-right: 2.5%; margin-bottom: 5%;">
+			<img id="toggle1" src="imgs/advisors/advisor1.png">
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/advisors/advisor2.png">
+		<div class="ppl_circle" style=" display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img id="toggle2" src="imgs/advisors/advisor2.png">
+		</div>
+
+
+		<div id="advisor_1_bio" class="btn" style="padding: 5%;
+		 margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+		background-color: #ECE0ED; display: none;"> 
+
+			<h1> Cassie Thornton </h1>
+			<br>
+			<br>
+
+
+			Cassie is an artist and activist who makes a “safe space” for the unknown, for disobedience, and for unanticipated collectivity. She uses social practices including institutional critique, insurgent architecture, and “healing modalities” like hypnosis and yoga to find soft spots in the hard surfaces of capitalist life. Cassie has invented a grassroots alternative credit reporting service for the survivors of gentrification, has hypnotized hedge fund managers, has finger-painted with the grime found inside banks, has donated cursed paintings to profiteering bankers, and has taught feminist economics to yogis (and vice versa). Her new book, The Hologram: Feminist, Peer-to-Peer Health for a Post-Pandemic Future, is available from Pluto Press.
+
+
+		</div>
+
+
+		<div id="advisor_2_bio" class="btn" style="padding: 5%;
+		margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+		background-color: #ECE0ED; display: none;"> 
+
+			<h1> Wojciech Burkot </h1>
+			<br>
+			<br>
+
+			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+
+
 		</div>
 
 		
@@ -560,11 +580,34 @@
 
 
 <script>
-// When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
+const targetDiv = document.getElementById("advisor_1_bio");
+const btn = document.getElementById("toggle1");
+
+const targetDiv2 = document.getElementById("advisor_2_bio");
+const btn2 = document.getElementById("toggle2");
+
+btn.onclick = function () {
+
+	targetDiv2.style.display = "none"
+
+	if (targetDiv.style.display !== "none") {
+		targetDiv.style.display = "none";
+	} else {
+		targetDiv.style.display = "block";
+	}
+};
+
+btn2.onclick = function () {
+
+	targetDiv.style.display = "none"
+
+	if (targetDiv2.style.display !== "none") {
+		targetDiv2.style.display = "none";
+	} else {
+		targetDiv2.style.display = "block";
+	}
+};
+
 </script>
 	
 
