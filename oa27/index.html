@@ -34,7 +34,7 @@
     font-weight:  100;
   }
 
-  .btn {
+ .btn {
   border: 1px solid black;
   color: black;
   font-size: 1.2em;
@@ -42,7 +42,15 @@
   border-radius: 15px;
 }
 
-.btn:hover {
+.clickable_btn {
+	border: 1px solid black;
+	color: black;
+	font-size: 1.2em;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.clickable_btn:hover {
 	background: rgb(71, 175, 255, .5) !important;
 	animation: shake 4.0s;
   	animation-iteration-count: infinite;
@@ -81,6 +89,10 @@
 
 .circle:hover {
 	background-color: orange !important;
+	animation: shake 4.0s;
+  	animation-iteration-count: infinite;
+  	width: 20em;
+  	height:  20em;
 }
 
 .inner_circle{
@@ -196,7 +208,7 @@
 	      		how it is to live in the desert?
 	      	</h1>
       		<div class="shake>">
-		      	<button class="btn"
+		      	<button class="clickable_btn"
 		      	 style="background-color: #ECE0ED;
 		      	 height: 30vw; width:  30vw; 
 		      	 position: absolute;
@@ -298,16 +310,16 @@
   	linear-gradient(180deg, #47AFFF, 75%, #ECE0ED); 
 		padding: 0px;
 		white-space: nowrap;
-	  	overflow-x:scroll;
-	  	padding-bottom:10%;">
+	  	padding-bottom:10%;
+	  	overflow: hidden;">
 
 		<p style="font-weight: 800; font-size: 2.5em; 
 		padding-left: 5%; padding-bottom: 5%;"> <i>  timeline + locations </i> </p>
 		
 		<div style="vertical-align:middle; width: 100%; max-width: 100%;
-		display:inline-block;"> 
+		display:inline-block; overflow-x:scroll; padding-left: 2.5%;"> 
 
-		 	<div class="circle">
+		 	<div class="circle" id="circle_1">
 		 		<div class="inner_circle">
 			 		<p>
 			 			21.02.2022 
@@ -318,7 +330,7 @@
 		 		</div>
 		 	</div>
 
-		 	<div class="circle">
+		 	<div class="circle" id="circle_2">
 		 		<div class="inner_circle">
 			 		<p>
 				 		21.02.2022 <br> 
@@ -384,8 +396,13 @@
 				
 		</div>
 
-		
-		<p style="text-align: center;"> TODO pop up text from circles here </p>
+
+		<div id="programme" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; white-space: normal;"> 
+
+			<p id="programme_text"></p>
+		</div>	
 	</div>
 
 	<div style="overflow: hidden; background-image: 
@@ -545,7 +562,6 @@
 			<br>
 			Jo is an artist, designer and community weaver who loves to explore poetic scenarios of living in enchanted post-capitalist ruins. In her work she plays at the intersection of arts and social science, engaging in practises of collaborative survival, deep adaptation and community building. Jo finds joy being in service to the present, activating and hosting collective transformative processes. She feels most alive looking at the night desert sky, or swimming in the deep blue waters, listening to the algae’s songs of pre-anthropocentric cosmologies. Jo is currently a resident and co-creator of <a href="https://moosgarden.notion.site/"> moos.garden </a> cultural centre in Berlin, Germany.
 			</p>
-
 		</div>
 
 		<div id="team_2_bio" class="btn" style="padding: 5%;
@@ -708,31 +724,21 @@
 
 <script>
 	 // Progamme pop ups  
-const targetDiv = document.getElementById("team_1_bio");
-const btn = document.getElementById("team1");
+const programme_div = document.getElementById("programme");
+const circle_1 = document.getElementById("circle_1");
+const circle_2 = document.getElementById("circle_2");
 
-const targetDiv2 = document.getElementById("advisor_2_bio");
-const btn2 = document.getElementById("advisor_2_toggle");
 
-btn.onclick = function () {
+circle_1.onclick = function(){
+	document.getElementById("programme_text").innerHTML = "Hi Chloe!";
+	programme_div.style.display = "block";
+}
 
-	if (targetDiv.style.display !== "none") {
-		targetDiv.style.display = "none";
-	} else {
-		targetDiv.style.display = "block";
-	}
-};
+circle_2.onclick = function(){
+	document.getElementById("programme_text").innerHTML = "Bye Chloe!";
+	programme_div.style.display = "block";
+}
 
-btn2.onclick = function () {
-
-	targetDiv.style.display = "none"
-
-	if (targetDiv2.style.display !== "none") {
-		targetDiv2.style.display = "none";
-	} else {
-		targetDiv2.style.display = "block";
-	}
-};
 
 </script>
 
@@ -768,31 +774,31 @@ btn2.onclick = function () {
 
 
 <script>
-const targetDiv = document.getElementById("advisor_1_bio");
-const btn = document.getElementById("advisor_1_toggle");
+const adv1_div = document.getElementById("advisor_1_bio");
+const adv1_btn = document.getElementById("advisor_1_toggle");
 
-const targetDiv2 = document.getElementById("advisor_2_bio");
-const btn2 = document.getElementById("advisor_2_toggle");
+const adv2_div = document.getElementById("advisor_2_bio");
+const adv2_btn = document.getElementById("advisor_2_toggle");
 
-btn.onclick = function () {
+adv1_btn.onclick = function () {
 
-	targetDiv2.style.display = "none"
+	adv2_div.style.display = "none"
 
-	if (targetDiv.style.display !== "none") {
-		targetDiv.style.display = "none";
+	if (adv1_div.style.display !== "none") {
+		adv1_div.style.display = "none";
 	} else {
-		targetDiv.style.display = "block";
+		adv1_div.style.display = "block";
 	}
 };
 
-btn2.onclick = function () {
+adv2_btn.onclick = function () {
 
-	targetDiv.style.display = "none"
+	adv1_div.style.display = "none"
 
-	if (targetDiv2.style.display !== "none") {
-		targetDiv2.style.display = "none";
+	if (adv2_div.style.display !== "none") {
+		adv2_div.style.display = "none";
 	} else {
-		targetDiv2.style.display = "block";
+		adv2_div.style.display = "block";
 	}
 };
 
