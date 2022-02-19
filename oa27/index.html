@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Fira+Mono&display=swap" rel="stylesheet"> 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OASIS27</title>
+
+<style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        text-align: center;
+        color: inherit;
+        text-decoration: none; /* no underline */
+    }
+	
+	h1 {text-align: center;}
+
+
+  * {
+      margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        font-family: 'Fira Mono', monospace;
+    font-weight:  100;
+  }
+
+  .btn {
+  border: 1px solid black;
+  color: black;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.btn:hover {
+	background: rgb(71, 175, 255, .5) !important;
+  /*#opacity: 0.5 !important;
+  background-color: #47AFFF !important
+*/}
+
+ .circle {
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ECE0ED;
+  width:  20em;
+  height:  20em;
+  display: flex; /* or inline-flex */
+  align-items: center; 
+  justify-content: center;
+}
+
+ .ppl_circle {
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ECE0ED;
+  width:  13em;
+  height:  13em;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bolded { font-weight: 900; }
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  align-content: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  float: bottom;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  background-color: orange;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.yellow_hover: hover{
+	color: yellow;
+}
+
+</style>
+</head>
+<body style="margin:0px;">
+
+	<div style="background-color: #ECE0ED; text-align: justify;"> 
+		<h1 class="yellow_hover" style="padding: 1%; padding-bottom: 5%; max-height: auto; font-size: 1.2em;"> 
+			 <a  class="yellow_hover"  href="#home"> home |</a> 
+			 <a href="#join_us"> apply | </a> 
+			 <a href="#about"> about OA27 |</a> 
+			 <a href="#timeline"> timeline + locations |</a> 
+			 <a href="#more_about"> about desertification |</a> 
+			 <a href="#desertification"> advisory commitee |</a> 
+			 <a href="#advisory"> team |</a> 
+			 <a href="#partners"> partners </a> 
+			 <a href="#partners"> partners </a> 
+
+
+		</h1>
+		<span style="display: inline-block; width: 100%; visibility: hidden;"> </span>
+	</div>
+  	
+  	<div id="home" style="background-image: linear-gradient(180deg, #ECE0ED, 85%, #C6FF23); padding: 0px; margin: 0px; display: inline-grid; grid-template-columns: 1fr 2fr;">
+          
+      	<div style="position:relative;">
+	      	<h1 style="text-align: center; margin-top:20%; margin-left:  20%;
+	      	marign-right: 20%; padding-bottom: 20%; font-size: 2.5em;">
+	      		<i> OASIS 2027 </i>
+	      		<br>
+	      		<br>
+	      		Have you ever imagined <br>
+	      		how it is to live in the desert?
+	      	</h1>
+      	
+	      	<button class="btn"
+	      	 style="background-color: #ECE0ED;
+	      	 height: 30vw; width:  30vw; 
+	      	 position: absolute;
+			left: 15%; margin-bottom: 10%;">
+	      	<span style="font-weight: 900;"> Open Call </span> for <br><br> residency programme <br><br> exploring desertification 
+	      </button>
+      	</div>
+      
+	    <div > 
+	      <img src="imgs/elem1.png" style="margin-top: -10%;">
+	    </div>
+
+  	</div>
+
+	<div id="about" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px; padding-top: 25%;">
+
+		<div style="display: inline;"> 
+			<p style="font-weight: 800; font-size: 2.5em; 
+			padding-right: 6%; float: right; "> 
+			 <i style="font-weight: 900;"> about OA27  </i>  </p>
+		</div>
+
+		<div class="btn" style="background-color: #ECE0ED; padding-left: 5%;
+		padding-right: 5%; margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em;"> 
+
+			<br>
+			<br>
+			OASIS 2027 (OA27) is  a research-based residency programme leading to creation of a festival of sciences and arts exploring strategies for climate emergency. 
+			</span> 
+			<br>
+			<br>
+			<span class="bolded"> The seed topic of the OA27 programme is desertification: </span> the processes of fertile lands becoming increasingly arid, mostly due to human activities. 
+			According to scientific reports, more tangible effects of desertification will affect Europe as soon as 2027. 
+			<br>
+			<br>
+
+			OA27 is currently seeking ten individuals working within various fields of the sciences and arts to apply to participate: to join a cross-disciplinary cohort and become agents of change, who examine the topics of desertification, water retention and soil regeneration through the prism of various disciplines engaged in environmental issues. 
+			<br>
+			<br>
+			The selected participants will become co-curators of the OA27 festival of strategies for climate emergency launching in Magdeburg in October 2022. 
+			<br>
+			<br>
+			The goal of the OA27 programme is to bring forth the understanding of the severity of the climate crisis. Researching the processes of desertification and our relation to water and soil, the programme aims to inspire the change of how we use the planet's resources and position ourselves and agriculture as a part of the ecosystem. 
+			<br>
+			<br>
+			Exploring interconnectedness, OA27 aspires to unite diverse practises embedded in the ecological paradigm, and create a platform for knowledge and resource exchange. To hold a spacetime to collectively envision and experiment alternative approaches for organising the future. To seek deep adaptation strategies, and to foster trans-local alliances that lead to an environmental and societal flourishing.
+			<br>
+			<br>
+
+		</div>
+	</div>
+
+	<div id="home" style="background-image: linear-gradient(180deg, #47AFFF, 85%, #47AFFF); padding: 0px; margin: 0px; display: inline-grid; grid-template-columns: 1fr 2fr;">
+          
+      
+	    <div > 
+	      <img src="imgs/elem1.png" style="margin-top: -10%; visibility: hidden;">
+	    </div>
+
+	    <div> 
+				<p style="font-weight: 1000; font-size: 1.2em; 
+					padding-right: 8.5%; text-align: right; padding-bottom: 2.5%;"> 
+			 		<i style="font-weight: 900;"> objectives of the programme: </i>  
+			 	</p>
+		    
+		    <div class="btn" style="background-color: #ECE0ED; padding-left: 10%; padding-right: 10%; 
+		    margin-left: 10%; margin-right: 7.5%; margin-bottom: 15%; padding-bottom: 5%; padding-top: 5%;"> 
+				
+				
+				<ul>
+					<li> To research topics of desertification, water retention and soil regeneration through the prism of sciences and arts 
+					</li>
+					<br>
+					<li> To explore site specific issues related to climate crisis in Mallorca, Spain, Bledowska Desert, Poland and Magdeburg, Germany</li>
+					<br>
+					<li> To bridge the arts and sciences, and embracing collaborative approaches
+					</li>
+					<br>
+					<li> To create a public awareness campaign 
+					</li>
+					<br>
+					<li>To organise ganising a multimedia festival for strategies for climate emergency in Magdeburg 
+					</li>
+					<br>
+					<li> To establish a translocal network or agents and organisations ready to work together on environmental and societal issues 
+					</li>
+					<br>
+					<li> To navigate a transformation into a more sustainable, action and knowledge-based planetary community
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+  	</div>
+
+	<div id="timeline" style="overflow: hidden; background-image: 
+		linear-gradient(180deg, #47AFFF, 75%, #ECE0ED); 
+		padding: 0px; height: 500px;
+		white-space: nowrap;
+	  	position: relative;
+	  	overflow-x:scroll;
+	  	overflow-y:hidden; padding-bottom:10%;">
+
+		<p style="font-weight: 800; font-size: 2.5em; 
+		padding-left: 5%; padding-bottom: 5%;"> <i>  timeline + locations </i> </p>
+		
+
+		<div class="circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<p class="bolded" style="text-align: center; 
+				padding: 10%; font-size: 1.5em; vertical-align: middle;">
+
+				 21.02.2022 <br> 
+				Open call for <br> 
+				participants of <br>
+				2022 programme 
+				</p> 
+		</div>
+
+		<div class="circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 2.5%; margin-right: 2.5%;">
+			<p class="bolded" style="text-align: center; 
+				padding: 10%; font-size: 1.5em; vertical-align: middle;">
+
+				28.03.2022
+				<br>
+				Announcement
+				<br>
+				of the results
+				<br>
+				of the Open
+				<br>
+				Call
+				</p> 
+		</div>
+
+		<div class="circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 2.5%; margin-right: 2.5%;">
+			<p class="bolded" style="text-align: center; 
+				padding: 10%; font-size: 1.5em; vertical-align: middle;">
+
+				7-20.05.2002 <br> 
+				R&D <br> 
+				‘Incubation’<br>
+				phase in <br>
+				Mallorca, Spain
+				</p> 
+		</div>
+
+			<div class="circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 2.5%; margin-right: 2.5%;">
+			<p class="bolded" style="text-align: center; 
+				padding: 10%; font-size: 1.5em; vertical-align: middle;">
+
+				3-17.07.2022 <br>
+				R&D <br>
+				‘Acceleration’ <br>
+				phase in <br>
+				Bledowska Desert, <br>
+				Poland
+				</p> 
+		</div>
+
+		<div class="circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 2.5%; margin-right: 5%;">
+			<p class="bolded" style="text-align: center; 
+				padding: 10%; font-size: 1.5em; vertical-align: middle;">
+
+				17-31.10.2022<br>
+				0A27 festival  <br> 
+				magdeburg germany
+				<br>
+				climate emergency
+				</p> 
+		</div>
+
+		<p style="text-align: center;"> TODO pop up text from circles here </p>
+	</div>
+
+	<div style="overflow: hidden; background-image: 
+		linear-gradient(180deg, #ECE0ED, 85%, #D0A896); 
+		padding: 0px; height: 1500;
+		white-space: nowrap;
+	  	position: relative;
+	  	overflow-x:scroll;">
+
+	  	<img src="imgs/map.png">
+
+	</div>
+
+
+	<div id="dessertification" style="overflow: hidden; background-image: linear-gradient(180deg, 
+		#D0A896, 85%, #C6FF23); padding: 0px; margin: 0px;">
+
+
+		<p style="font-weight: 800; font-size: 2.5em; 
+		padding-left: 5%; padding-top: 5%; padding-bottom: 3%;"> <i>  about desertification </i> </p>
+
+		<div style="grid-template-columns: 3fr 1fr; display: inline-grid; padding-left: 5%; padding-right: 5%;">
+		
+			<div class="btn" style="background-color: #ECE0ED; padding: 5%; font-size: 1.2em;">
+				
+				Etymology 
+				desert (n.1) c. 1200, "wasteland, wilderness, barren area," wooded or not, from Old French desert (12c.) "desert, wilderness, wasteland; destruction, ruin" and directly from Late Latin desertum (source of Italian diserto, Old Provençal dezert, Spanish desierto), literally "thing abandoned" (used in Vulgate to translate "wilderness"), noun use of neuter past participle of Latin deserere "forsake" (see desert (v.)).
+				What is desertification?
+				 
+				European Court of Auditors in their paper “Desertification in the EU” published in June 2018 describes desertification:
+	 
+				“Desertification is a form of land degradation in drylands. It results from unsustainable land management practices and climatic factors. Thirteen EU Member States, not only in the Mediterranean region, but also in Central and Eastern Europe, have declared that they are affected by desertification. Desertification is a consequence, but also a cause of climate change: it is aggravated by more droughts, rising temperatures, less precipitation, and it also magnifies climate change by reducing the capacity of soil to retain carbon.
+				Desertification does not imply the presence of deserts. It can occur far from any climatic desert, and the presence or absence of a nearby desert has no direct relation to the desertification process.
+				There are fine lines between drylands, desertified lands and deserts, but, once they are crossed, it is hard to return, as restoring soil is a slow process. It can take 500 years for 2.5 cm of soil to form but only a few years to destroy it1. It is much more cost-effective to protect drylands from degradation than to reverse the process.”
+	 
+				Cultural desertification
+				Desertification serves as an analogy describing processes of societal degradation, the loss of diversity, complexity and vibrancy of places or communities. Cultural deserts are spaces lacking agency, connectivity, or interests in intellectual and artistic activity. Philosopher Franco “Bifo” Berardi in his book “Breathing: Chaos and Poetry” writes:
+				“Existence alone has no meaning: this is the truth that we learn from traversing the desert of meaninglessness. But this truth is not frightening so long as we can find oases in the desert: oases of friendship, love, intel- lectual and erotic sharing, conspiration and the projection of a common landscape. Such oases are the precondition for sensuous consciousness and for shared imagination.”
+
+			</div>
+
+			<div> 
+				<img src="imgs/img2.png" style="padding-top: 150%;">
+				<!-- <div style="background-image: url(imgs/img2.png);
+				  background-repeat: no-repeat;
+				  background-size: contain;
+				  background-position: center;">
+				</div> -->
+			</div>
+
+		</div>
+	</div>
+
+	<div style="overflow: hidden; background-image: 
+		linear-gradient(180deg, #C6FF23, 85%, #47AFFF); 
+		padding: 0px;">
+
+	  	<p style="font-weight: 800; font-size: 8vh; 
+		padding-left: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: left;"> <i>  advisory commitee </i> </p>
+
+		<div style="display: flex; margin: 5%; justify-content: left;"> 
+			<img style="height: 33%; width: 33%; padding-right: 5%;" src="imgs/advisors/advisor1.png">
+			<img style="height: 33%; width: 33%; padding-left: 5%; padding-right: 5%" src="imgs/advisors/advisor2.png">
+			<img style="height: 33%; width: 33%; padding-left: 5%; visibility: hidden;" src="imgs/advisors/advisor2.png">
+
+		</div>
+	</div>
+
+
+	<div id="team" style="overflow: hidden; background-image: 
+		linear-gradient(180deg, #ECE0ED, 85%, #47AFFF); 
+		padding: 0px; height: 500px;
+		white-space: nowrap;
+	  	position: relative;
+	  	overflow-x:scroll;
+	  	overflow-y:hidden;">
+
+		 	<p style="font-weight: 800; font-size: 8vh; 
+		padding-left: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 10%;"> <i>  team </i> </p>
+		
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team1.png">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team2.png">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team3.png">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team4.png">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team5.png">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team6.png">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team7.png">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team8.png">
+		</div>
+
+		<div class="ppl_circle" style="background-color: #ECE0ED; 
+		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+			<img src="imgs/team/team9.png">
+		</div>
+		
+	</div>
+
+	<div id="team" style="overflow: hidden; background-image: 
+		linear-gradient(180deg, #47AFFF, 70%, #ECE0ED); 
+		padding: 0px;">
+
+  		<p style="font-weight: 800; font-size: 8vh; 
+			padding-left: 5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 2%;"> <i>  partners </i> </p>
+
+		<div style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr; display: 
+		inline-grid; padding-left: 5%; padding-right: 5%;">
+
+			<div style="background-image: url(imgs/elements/partner1.png);
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			  background-position: center; height: auto; width: auto;">
+			<img src="imgs/elements/partner4.png" style="visibility: hidden;">
+			</div>			
+			<div style="background-image: url(imgs/elements/partner2.png);
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			  background-position: center;">
+			</div>
+
+			<div style="background-image: url(imgs/elements/partner3.png);
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			  background-position: center;">
+			  <p> </p>
+			</div>
+
+			<div style="background-image: url(imgs/elements/partner4.png);
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			  background-position: center;">
+			   <p> </p>
+
+			</div>
+
+			<div style="background-image: url(imgs/elements/partner5.png);
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			  background-position: center;">
+			  	<p> </p>
+			</div>
+		</div>
+
+		<p style="font-weight: 800; font-size: 6vh; 
+			padding-left: 5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 3%;"> <i>  under the pratonate of:  </i> </p>
+
+		<div style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr; display: 
+		inline-grid; padding-left: 5%; padding-right: 5%;">
+			<img src="imgs/elements/partner6.png">		
+		</div>
+
+		<p style="font-weight: 800; font-size: 6vh; 
+			padding-left: 5%; padding-top: 3%; padding-bottom: 3%; text-align: left;"> <i>  media:  </i> 
+		</p>
+
+		<div style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr; display: 
+			inline-grid; padding-left: 3%; padding-right: 5%;">
+			<img src="imgs/elements/partner7.png">		
+		</div>		
+
+	</div>
+
+
+	<!-- <div class="popup" style="align-content:  center;" 
+
+	onclick="myFunction()">Click me to toggle the popup!
+			<span class="popuptext" id="myPopup">A Simple Popup!</span>
+	</div> -->
+
+		
+	</div>
+
+
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+	
+
+</body>
+</html>
