@@ -44,9 +44,23 @@
 
 .btn:hover {
 	background: rgb(71, 175, 255, .5) !important;
-  /*#opacity: 0.5 !important;
-  background-color: #47AFFF !important
-*/}
+	animation: shake 0.5s;
+  	animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
  .circle {
   border: 1px solid black;
@@ -132,6 +146,7 @@
 	color: yellow;
 }
 
+
 </style>
 </head>
 <body style="margin:0px;">
@@ -164,14 +179,15 @@
 	      		Have you ever imagined <br>
 	      		how it is to live in the desert?
 	      	</h1>
-      	
-	      	<button class="btn"
-	      	 style="background-color: #ECE0ED;
-	      	 height: 30vw; width:  30vw; 
-	      	 position: absolute;
-			left: 15%; margin-bottom: 10%;">
-	      	<span style="font-weight: 900;"> Open Call </span> for <br><br> residency programme <br><br> exploring desertification 
-	      </button>
+      		<div class="shake>">
+		      	<button class="btn"
+		      	 style="background-color: #ECE0ED;
+		      	 height: 30vw; width:  30vw; 
+		      	 position: absolute;
+				left: 15%; margin-bottom: 10%;">
+		      	<span style="font-weight: 900;"> Open Call </span> for <br><br> residency programme <br><br> exploring desertification 
+		      	</button>
+	  		</div>
       	</div>
       
 	    <div > 
@@ -393,114 +409,200 @@
 	</div>
 
 	<div id="team" style="overflow: hidden; background-image: 
-	linear-gradient(180deg, #C6FF23, 85%, #47AFFF); 
+	linear-gradient(180deg, #C6FF23, 85%, #ECE0ED); 
 	padding: 0px;">
 
 		<p style="font-weight: 800; font-size: 8vh; 
-			padding-left: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 5%;"> 
+			padding-left: 5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 5%;"> 
 			<i>  advisory commitee </i> 
 		</p>
 
 
 		<div class="ppl_circle" style="display: inline-flex; margin-left: 5%; margin-right: 2.5%; margin-bottom: 5%;">
-			<img id="toggle1" src="imgs/advisors/advisor1.png">
+			<img id="advisor_1_toggle" src="imgs/advisors/advisor1.png">
 		</div>
 
 		<div class="ppl_circle" style=" display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img id="toggle2" src="imgs/advisors/advisor2.png">
+			<img id="advisor_2_toggle" src="imgs/advisors/advisor2.png">
 		</div>
 
 
 		<div id="advisor_1_bio" class="btn" style="padding: 5%;
 		 margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
 		background-color: #ECE0ED; display: none;"> 
-
 			<h1> Cassie Thornton </h1>
 			<br>
 			<br>
-
-
 			Cassie is an artist and activist who makes a “safe space” for the unknown, for disobedience, and for unanticipated collectivity. She uses social practices including institutional critique, insurgent architecture, and “healing modalities” like hypnosis and yoga to find soft spots in the hard surfaces of capitalist life. Cassie has invented a grassroots alternative credit reporting service for the survivors of gentrification, has hypnotized hedge fund managers, has finger-painted with the grime found inside banks, has donated cursed paintings to profiteering bankers, and has taught feminist economics to yogis (and vice versa). Her new book, The Hologram: Feminist, Peer-to-Peer Health for a Post-Pandemic Future, is available from Pluto Press.
-
-
 		</div>
 
 
 		<div id="advisor_2_bio" class="btn" style="padding: 5%;
 		margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
 		background-color: #ECE0ED; display: none;"> 
-
 			<h1> Wojciech Burkot </h1>
 			<br>
 			<br>
-
 			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
-
-
 		</div>
 
 		
 	</div>
+
 
 
 	<div id="team" style="overflow: hidden; background-image: 
 		linear-gradient(180deg, #ECE0ED, 85%, #47AFFF); 
-		padding: 0px; height: 500px;
-		white-space: nowrap;
-	  	position: relative;
-	  	overflow-x:scroll;
-	  	overflow-y:hidden;">
+		padding: 0px; padding-bottom: 10%;">
+
+		<div style="white-space: nowrap;position: relative; overflow-x:scroll;">
 
 		 	<p style="font-weight: 800; font-size: 8vh; 
-		padding-left: 7.5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 10%;"> <i>  team </i> </p>
+			padding-left: 5%; padding-top: 5%; text-align: left; margin-bottom: 10%;"> <i>  team </i> </p>
 		
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team1.png">
+			<div id="team1" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team1.png">
+			</div>
+
+			<div id="team2" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team2.png">
+			</div>
+
+			<div id="team3" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team3.png">
+			</div>
+
+			<div id="team4" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team4.png">
+			</div>
+
+			<div id="team5" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team5.png">
+			</div>
+
+			<div id="team6" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team6.png">
+			</div>
+
+			<div id="team7" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team7.png">
+			</div>
+
+			<div id="team8" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team8.png">
+			</div>
+
+			<div id="team9" class="ppl_circle" style="background-color: #ECE0ED; 
+			display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
+				<img src="imgs/team/team9.png">
+			</div>
+
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team2.png">
+		<div id="team_1_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Jo Vávra </h1>
+			<br>
+			<br>
+			<h3> Co-founder + curator, OA27, co-founder + board member, onEarth Foundation, initiator and community weaver, LIOS labs, designer CECI foundation, artist  </h3>
+			<br> 
+			<br>
+			Jo is an artist, designer and community weaver who loves to explore poetic scenarios of living in enchanted post-capitalist ruins. In her work she plays at the intersection of arts and social science, engaging in practises of collaborative survival, deep adaptation and community building. Jo finds joy being in service to the present, activating and hosting collective transformative processes. She feels most alive looking at the night desert sky, or swimming in the deep blue waters, listening to the algae’s songs of pre-anthropocentric cosmologies. Jo is currently a resident and co-creator of <a href="https://moosgarden.notion.site/"> moos.garden </a> cultural centre in Berlin, Germany.
+			</p>
+
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team3.png">
+		<div id="team_2_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Jo Vávra </h1>
+			<br>
+			<br>
+			<h3> Co-founder + curator, OA27, co-founder + board member, onEarth Foundation, initiator and community weaver, LIOS labs, designer CECI foundation, artist  </h3>
+			<br> 
+			<br>
+
+			Jo is an artist, designer and community weaver who loves to explore poetic scenarios of living in enchanted post-capitalist ruins. In her work she plays at the intersection of arts and social science, engaging in practises of collaborative survival, deep adaptation and community building. Jo finds joy being in service to the present, activating and hosting collective transformative processes. She feels most alive looking at the night desert sky, or swimming in the deep blue waters, listening to the algae’s songs of pre-anthropocentric cosmologies. Jo is currently a resident and co-creator of <a href="https://moosgarden.notion.site/"> moos.garden </a> cultural centre in Berlin, Germany.
+
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team4.png">
+		<div id="team_3_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Wojciech Burkot </h1>
+			<br>
+			<br>
+			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team5.png">
+		<div id="team_4_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Wojciech Burkot </h1>
+			<br>
+			<br>
+			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team6.png">
+		<div id="team_5_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Wojciech Burkot </h1>
+			<br>
+			<br>
+			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team7.png">
+		<div id="team_6_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Wojciech Burkot </h1>
+			<br>
+			<br>
+			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team8.png">
+		<div id="team_7_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Wojciech Burkot </h1>
+			<br>
+			<br>
+			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
 		</div>
 
-		<div class="ppl_circle" style="background-color: #ECE0ED; 
-		display: inline-flex; margin-left: 5%; margin-right: 2.5%;">
-			<img src="imgs/team/team9.png">
+		<div id="team_8_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Wojciech Burkot </h1>
+			<br>
+			<br>
+			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
 		</div>
-		
-	</div>
+
+		<div id="team_9_bio" class="btn" style="padding: 5%;
+			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
+			background-color: #ECE0ED; display: none;"> 
+			<h1> Wojciech Burkot </h1>
+			<br>
+			<br>
+			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+		</div>
+
+
+	</div> <!-- end of team section --> 
+
+
 
 	<div id="team" style="overflow: hidden; background-image: 
 		linear-gradient(180deg, #47AFFF, 70%, #ECE0ED); 
@@ -577,14 +679,43 @@
 	</div>
 
 
+<script>
+const targetDiv = document.getElementById("team_1_bio");
+const btn = document.getElementById("team1");
+
+const targetDiv2 = document.getElementById("advisor_2_bio");
+const btn2 = document.getElementById("advisor_2_toggle");
+
+btn.onclick = function () {
+
+	if (targetDiv.style.display !== "none") {
+		targetDiv.style.display = "none";
+	} else {
+		targetDiv.style.display = "block";
+	}
+};
+
+btn2.onclick = function () {
+
+	targetDiv.style.display = "none"
+
+	if (targetDiv2.style.display !== "none") {
+		targetDiv2.style.display = "none";
+	} else {
+		targetDiv2.style.display = "block";
+	}
+};
+
+</script>
+
 
 
 <script>
 const targetDiv = document.getElementById("advisor_1_bio");
-const btn = document.getElementById("toggle1");
+const btn = document.getElementById("advisor_1_toggle");
 
 const targetDiv2 = document.getElementById("advisor_2_bio");
-const btn2 = document.getElementById("toggle2");
+const btn2 = document.getElementById("advisor_2_toggle");
 
 btn.onclick = function () {
 
