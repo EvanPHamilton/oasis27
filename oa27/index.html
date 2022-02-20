@@ -476,7 +476,7 @@
 
 		<div id="programme" class="btn" style="padding: 5%;
 			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; white-space: normal;"> 
+			background-color: #ECE0ED; white-space: normal; display: none;"> 
 
 			<p id="programme_text"></p>
 		</div>	
@@ -861,13 +861,26 @@ const circle_2 = document.getElementById("circle_2");
 
 
 circle_1.onclick = function(){
+
 	document.getElementById("programme_text").innerHTML = "Programme 1";
-	programme_div.style.display = "block";
+	if (programme_div.style.display !== "none"){
+		programme_div.style.display = "none";
+	}
+	else{
+		programme_div.style.display = "block";
+
+	}
 }
 
 circle_2.onclick = function(){
+
 	document.getElementById("programme_text").innerHTML = "Programme 2";
-	programme_div.style.display = "block";
+	if (programme_div.style.display !== "none"){
+		programme_div.style.display = "none";
+	}
+	else{
+		programme_div.style.display = "block";
+	}
 }
 
 
