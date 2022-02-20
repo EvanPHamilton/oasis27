@@ -390,7 +390,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	  	overflow: visible;">
+	  	overflow: visible;
+	  	position: relative;">
 
 
 	  	<div class="popup" id="map_popup">
@@ -398,11 +399,28 @@
   			<a class="close" href="#map">X</a>
 		</div>
 
-	  	<img src="imgs/map1.png" style="margin-top: -15%;" usemap="#usethismap">
+	  	<img id="map_img" src="imgs/map1.png" style="margin-top: -15%; max-width: 100%;" >
+
+	  	<div style="
+	  		  position: absolute;
+			  top: 19%; left: 43%;
+			  transform: translate(-50%,-50%);
+			  width: 7%;
+			  height: 7%;">  
+
+	  		<a href="#map_popup" style="display: block; height: 100%; width: 100%; text-decoration none;"> 
+	  		</a>
+
+ 		</div>
 	  	
+
+
+	  	<!-- 
+	
+
 	  	<map name="usethismap">
-		  	<area shape="circle" coords="500, 500, 100" alt="Area Description" href="#map_popup">
-	  	</map>
+		  	<area id="mallorca_coords" shape="circle" coords="200,200,50" alt="Area Description" href="#map_popup">
+	  	</map>  -->
 
 	</div>
 
@@ -799,7 +817,53 @@ adv2_btn.onclick = function () {
 };
 
 </script>
-	
+
+
+<<!-- script>
+
+	let original_img_width = parseInt(document.getElementById('map_img').offsetWidth)
+	let original_img_height = parseInt(document.getElementById('map_img').offsetHeight)
+	let original_mallorca_coords = document.getElementById('mallorca_coords').coords;
+
+	function img_map_response(){
+
+		// get width and height in pixel
+		var current_img_width = parseInt(document.getElementById('map_img').offsetWidth);
+		var current_img_height = parseInt(document.getElementById('map_img').offsetHeight);
+
+		let mallorca_cords = document.getElementById('mallorca_coords').coords;
+		console.log("Current mallorca cords" + mallorca_cords)
+	     // convert string coords to array
+	    text_array = original_mallorca_coords.split(',');
+	    x1 = parseInt(text_array[0])
+	    y1 = parseInt(text_array[1])
+	    r =  parseInt(text_array[2])
+
+	    if (x1 == 0){
+	    	x1=1 
+	    }
+	    if (y1 == 0){
+	    	y1=1
+	    }
+	  
+	    let width_ratio = current_img_width/original_img_width
+	   	let height_ratio = parseInt(current_img_height)/parseInt(original_img_height)
+
+	    new_x1 = x1*width_ratio
+	    new_y1 = y1*height_ratio
+	    new_r = r*width_ratio
+
+		array_txt =[new_x1.toString(), new_y1.toString(), r.toString()]
+		coords = array_txt.join(',')        
+
+		console.log("New Mallorca coords: " + coords)
+		document.getElementById('mallorca_coords').coords=coords;
+	}
+	// add events load and resize for recalculate coords
+	window.addEventListener('load', img_map_response);
+	window.addEventListener('resize', img_map_response);
+</script> -->
+
 
 </body>
 </html>
