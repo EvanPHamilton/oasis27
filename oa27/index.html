@@ -35,11 +35,14 @@
   }
 
  .btn {
-  border: 1px solid black;
-  color: black;
-  font-size: 1.2em;
-  cursor: pointer;
-  border-radius: 15px;
+	border: 1px solid black;
+	color: black;
+	font-size: 1.2em;
+	cursor: pointer;
+	border-radius: 15px;
+}
+.btn:hover{
+	background: rgb(71, 175, 255, .5) !important;
 }
 
 .clickable_btn {
@@ -88,7 +91,7 @@
 }
 
 .circle:hover {
-	background-color: orange !important;
+	background: rgb(71, 175, 255, .5) !important;
 	animation: shake 4.0s;
   	animation-iteration-count: infinite;
   	width: 19.5em;
@@ -255,6 +258,45 @@
 }
 
 
+.team_bio{
+	border: 1px solid black;
+	color: black;
+	font-size: 1.2em;
+	cursor: pointer;
+	border-radius: 15px;
+
+	padding: 5%;
+	margin-left: 15%; 
+	margin-right: 15%; 
+	margin-top: 5%; 
+	font-size: 1.2em; 
+	background-color: #ECE0ED; 
+	display: none;
+
+	
+}
+
+ /* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 10%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+/*  background: orange;
+*/}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	margin-top: 5%;
+	padding-top: 5%;
+	border-radius: 15%;
+ 	background: #C6FF23;
+}
+
 
 
 </style>
@@ -384,7 +426,7 @@
   	</div>
 
   	<div id="timeline" style="background-image: 
-  	linear-gradient(180deg, #47AFFF, 75%, #ECE0ED); 
+  	linear-gradient(180deg, #47AFFF, 110%, #ECE0ED); 
 		padding: 0px;
 		white-space: nowrap;
 	  	padding-bottom:10%;
@@ -482,7 +524,7 @@
 		</div>	
 	</div>
 
-	<div id="map" style="background-image: linear-gradient(180deg, #ECE0ED, 85%, #D0A896); 
+	<div id="map" style="background-image: linear-gradient(-180deg, #47AFFF 0%, #D0A896 30%);
 		padding: 0px; height: 1500;
 		display: flex;
 		align-items: center;
@@ -506,6 +548,7 @@
 			  <div class="mySlides fade">
 			    <div class="numbertext">1 / 3</div>
 			    <img src="imgs/magdeburg/magdeburg1.png" style="width:100%">
+			    <!-- <div style="text-align: center; marign-top: -200%; color: orange;"> Name of place </div> -->
 			  </div>
 
 			  <div class="mySlides fade">
@@ -525,7 +568,7 @@
 
 		</div> <!-- end pop up -->
 
-	  	<img id="map_img" src="imgs/map1.png" style="margin-top: -15%; max-width: 100%;" >
+	  	<img id="map_img" src="imgs/map1.png" style="margin-top: -5%; max-width: 100%;" >
 
 	  	<div style="
 	  		  position: absolute;
@@ -595,9 +638,7 @@
 		</div>
 
 
-		<div id="advisor_1_bio" class="btn" style="padding: 5%;
-		 margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-		background-color: #ECE0ED; display: none;"> 
+		<div id="advisor_1_bio" class="team_bio" style="display: none"> 
 			<h1> Cassie Thornton </h1>
 			<br>
 			<br>
@@ -605,9 +646,7 @@
 		</div>
 
 
-		<div id="advisor_2_bio" class="btn" style="padding: 5%;
-		margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-		background-color: #ECE0ED; display: none;"> 
+		<div id="advisor_2_bio" class="team_bio" style="display: none"> 
 			<h1> Wojciech Burkot </h1>
 			<br>
 			<br>
@@ -676,9 +715,7 @@
 
 		</div>
 
-		<div id="team_1_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
+		<div id="team_1_bio" class="team_bio" style="display: none;"> 
 			<h1> Jo Vávra </h1>
 			<br>
 			<br>
@@ -689,81 +726,99 @@
 			</p>
 		</div>
 
-		<div id="team_2_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
-			<h1> Jo Vávra </h1>
+		<div id="team_2_bio" class="team_bio" style="display: none;"> 
+			<h1> Kamila Knap </h1>
 			<br>
 			<br>
-			<h3> Co-founder + curator, OA27, co-founder + board member, onEarth Foundation, initiator and community weaver, LIOS labs, designer CECI foundation, artist  </h3>
+			<h3>Co-founder, OA27, co-founder + board member, onEarth Foundation, initiator, LIOS labs, environmentalist and educator, lawyer advising at Legal Tech Advisory</h3>
 			<br> 
 			<br>
-
-			Jo is an artist, designer and community weaver who loves to explore poetic scenarios of living in enchanted post-capitalist ruins. In her work she plays at the intersection of arts and social science, engaging in practises of collaborative survival, deep adaptation and community building. Jo finds joy being in service to the present, activating and hosting collective transformative processes. She feels most alive looking at the night desert sky, or swimming in the deep blue waters, listening to the algae’s songs of pre-anthropocentric cosmologies. Jo is currently a resident and co-creator of <a href="https://moosgarden.notion.site/"> moos.garden </a> cultural centre in Berlin, Germany.
+			<p>
+			Passionate about the environment, removing air pollution from our lives, social justice and innovation. Kamila is an entrepreneurial spirit and creator of sustainable food brands (Kisz Masz & Shroom) and a legal advisor in Poland.  
+			</p>
 
 		</div>
 
-		<div id="team_3_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
-			<h1> Wojciech Burkot </h1>
+		<div id="team_3_bio" class="team_bio" style="display: none;"> 
+			<h1> Ilja Minaev </h1>
 			<br>
 			<br>
-			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+			<h3> Project Manager at OA27  </h3>
+			<br>
+			<br>
+			<p>
+			Cultural activist, social scientist and project manager at Club Commission e.v., Ilja is a multi-faceted professional working in fields on the intersection of art, culture, society and politics. He believes in the power of arts & culture to foster positive change and help tackle the environmental issues. Besides being a board member at Love Foundation e.V., he is also curator and DJ at the Orbiting Souls project and radio host at Refuge Worldwide and THF Radio.
+
+			</p>
 		</div>
 
-		<div id="team_4_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
-			<h1> Wojciech Burkot </h1>
+		<div id="team_4_bio" class="team_bio" style="display: none;"> 
+			<h1> Lorena Angenault </h1>
 			<br>
 			<br>
-			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+			<h3> Co-founder + production manager Mallorca, OA27  </h3>
+			<br>
+			<br>
+			<p>
+			Lorena is an art director and curator who encourages artistic creation through interdisciplinary collaboration. She is a founder of Villa Capri, a platform aimed at building a network of curators and artists, dedicated to making culture more accessible to the local community. 
+			</p>
 		</div>
 
-		<div id="team_5_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
-			<h1> Wojciech Burkot </h1>
+		<div id="team_5_bio" class="team_bio" style="display: none;"> 
+			<h1> Marcel Böge </h1>
 			<br>
 			<br>
-			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+			<h3> Production Manager Magdeburg, OA27 </h3>
+			<br>
+			<br>
+			<p>
+			Marcel is an industrial engineer, founder and hub-coordinator of Love Foundation Magdeburg, extended board of Love Foundation e.V. He is a founding member and board of Otto pflanzt e.V., and a talent scout at Hug Records and event Manager at Hundertwasser's Green Citadel in Magdeburg, Germany. He is an initiator and activist for arts, culture and a better tomorrow.</p>
 		</div>
 
-		<div id="team_6_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
-			<h1> Wojciech Burkot </h1>
+		<div id="team_6_bio" class="team_bio" style="display: none;"> 
+			<h1> Jessie Dymond </h1>
 			<br>
 			<br>
-			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+			<h3>Communications Manager, 0A27 </h3>
+			<br>
+			<br>
+			<p>
+			Interested in the intersection between music, dancing, nature, communication and design, Jess is an advocate for creatives and creative spaces. She is responsible for communications at <a href="https://www.instagram.com/vibelab_network/?hl=en"> VibeLab</a>, and writing at <a href="https://www.nighttime.org/"> Nighttime.org  </a> as well as independent event and video production. </p>
 		</div>
 
-		<div id="team_7_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
-			<h1> Wojciech Burkot </h1>
+		<div id="team_7_bio" class="team_bio" style="display: none;"> 
+			<h1> Aleksandra Sasińska</h1>
 			<br>
 			<br>
-			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+			<h3>Communications Manager, 0A27</h3>
+			<br>
+			<br>
+			<p>
+			Aleksandra is a Cracow based Creative Consultant with an extensive background in Gamification and Medical Herbalism. She worked with dozens of companies and foundations of all parts of the globe to find solutions on positive audience engagement. She prides herself on the ability to natter about the essence of biodiversity for hours.</p>
 		</div>
 
-		<div id="team_8_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
-			<h1> Wojciech Burkot </h1>
+		<div id="team_8_bio" class="team_bio" style="display: none;"> 
+			<h1> Ezequiel Melero  </h1>
 			<br>
 			<br>
-			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+			<h3> Graphic Designer, OA27 </h3>
+			<br>
+			<br>
+			<p> 
+			Ezequiel has a background in 2/3d design, music production and sciences. During the last years he has been responsible of an art project based in geometry (vibration) called ÊTRE333. Nowadays he decided to engage with other people's projects trying to follow a conscious resonation.Born in South America, living in Europe since 2019. </p>
 		</div>
 
-		<div id="team_9_bio" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; display: none;"> 
-			<h1> Wojciech Burkot </h1>
+		<div id="team_9_bio" class="team_bio" style="display: none;"> 
+			<h1> Chaeyun Byun </h1>
 			<br>
 			<br>
-			Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
+			<h3>
+			Intern, OA27, student of Comparative Literature and Culture at Yonsei University</h3>
+			<br>
+			<br>
+			<p>
+			Chaeyun is an undergraduate student of comparative literature at Yonsei University of Seoul. This year she is far away from home, spending the summer in dry patches of Europe. She cares about human surroundings, and aspires to be an architect in hope to harmonise the nature and culture of many worlds.
+			</p>
 		</div>
 
 
@@ -832,7 +887,7 @@
 			padding-left: 5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 3%;"> <i>  under the pratonate of:  </i> </p>
 
 		<div style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr; display: 
-		inline-grid; padding-left: 5%; padding-right: 5%;">
+		inline-grid; padding-left: 7%; padding-right: 5%;">
 			<img src="imgs/elements/partner6.png">		
 		</div>
 
@@ -841,17 +896,12 @@
 		</p>
 
 		<div style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr; display: 
-			inline-grid; padding-left: 3%; padding-right: 5%;">
+			inline-grid; padding-left: 5%; padding-right: 5%;">
 			<img src="imgs/elements/partner7.png">		
 		</div>		
 
 	</div>
-
-
-		
 	</div>
-
-
 
 <script>
 	 // Progamme pop ups  
@@ -887,44 +937,176 @@ circle_2.onclick = function(){
 </script>
 
 <script>
-const targetDiv = document.getElementById("team_1_bio");
-const btn = document.getElementById("team1");
+// Script for team toggling
+const team_bio_1 = document.getElementById("team_1_bio");
+const team1 = document.getElementById("team1");
 
-const targetDiv2 = document.getElementById("advisor_2_bio");
-const btn2 = document.getElementById("advisor_2_toggle");
+const team_bio_2 = document.getElementById("team_2_bio");
+const team2 = document.getElementById("team2");
 
-btn.onclick = function () {
+const team_bio_3 = document.getElementById("team_3_bio");
+const btn3 = document.getElementById("team3");
 
-	if (targetDiv.style.display !== "none") {
-		targetDiv.style.display = "none";
+const team_bio_4 = document.getElementById("team_4_bio");
+const btn4 = document.getElementById("team4");
+
+const team_bio_5 = document.getElementById("team_5_bio");
+const btn5 = document.getElementById("team5");
+
+const team_bio_6 = document.getElementById("team_6_bio");
+const btn6 = document.getElementById("team6");
+
+const team_bio_7 = document.getElementById("team_7_bio");
+const btn7 = document.getElementById("team7");
+
+const team_bio_8 = document.getElementById("team_8_bio");
+const btn8 = document.getElementById("team8");
+
+const team_bio_9 = document.getElementById("team_9_bio");
+const btn9 = document.getElementById("team9");
+
+team1.onclick = function () {
+	elems = [team_bio_2, team_bio_3, team_bio_4, team_bio_5, 
+		team_bio_6, team_bio_7, team_bio_8, team_bio_9]
+
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_1_bio.style.display !== "none") {
+		team_1_bio.style.display = "none";
 	} else {
-		targetDiv.style.display = "block";
+		team_1_bio.style.display = "block";
 	}
 };
 
-btn2.onclick = function () {
+team3.onclick = function () {
+	elems = [team_bio_2, team_bio_1, team_bio_4, team_bio_5, 
+		team_bio_6, team_bio_7, team_bio_8, team_bio_9]
 
-	targetDiv.style.display = "none"
-
-	if (targetDiv2.style.display !== "none") {
-		targetDiv2.style.display = "none";
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_3_bio.style.display !== "none") {
+		team_3_bio.style.display = "none";
 	} else {
-		targetDiv2.style.display = "block";
+		team_3_bio.style.display = "block";
 	}
 };
+
+team4.onclick = function () {
+	elems = [team_bio_2, team_bio_3, team_bio_1, team_bio_5, 
+		team_bio_6, team_bio_7, team_bio_8, team_bio_9]
+
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_4_bio.style.display !== "none") {
+		team_4_bio.style.display = "none";
+	} else {
+		team_4_bio.style.display = "block";
+	}
+};
+
+team5.onclick = function () {
+	elems = [team_bio_1, team_bio_3, team_bio_4, team_bio_2, 
+		team_bio_6, team_bio_7, team_bio_8, team_bio_9]
+
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_5_bio.style.display !== "none") {
+		team_5_bio.style.display = "none";
+	} else {
+		team_5_bio.style.display = "block";
+	}
+};
+
+team6.onclick = function () {
+	elems = [team_bio_1, team_bio_3, team_bio_4, team_bio_5, 
+		team_bio_2, team_bio_7, team_bio_8, team_bio_9]
+
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_6_bio.style.display !== "none") {
+		team_6_bio.style.display = "none";
+	} else {
+		team_6_bio.style.display = "block";
+	}
+};
+
+team7.onclick = function () {
+	elems = [team_bio_1, team_bio_3, team_bio_4, team_bio_5, 
+		team_bio_6, team_bio_2, team_bio_8, team_bio_9]
+
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_7_bio.style.display !== "none") {
+		team_7_bio.style.display = "none";
+	} else {
+		team_7_bio.style.display = "block";
+	}
+};
+
+team8.onclick = function () {
+	elems = [team_bio_1, team_bio_3, team_bio_4, team_bio_5, 
+		team_bio_6, team_bio_7, team_bio_2, team_bio_9]
+
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_8_bio.style.display !== "none") {
+		team_8_bio.style.display = "none";
+	} else {
+		team_8_bio.style.display = "block";
+	}
+};
+
+team9.onclick = function () {
+	elems = [team_bio_1, team_bio_3, team_bio_4, team_bio_5, 
+		team_bio_6, team_bio_7, team_bio_8, team_bio_2]
+
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_9_bio.style.display !== "none") {
+		team_9_bio.style.display = "none";
+	} else {
+		team_9_bio.style.display = "block";
+	}
+};
+
+team2.onclick = function () {
+	elems = [team_bio_1, team_bio_3, team_bio_4, team_bio_5, 
+		team_bio_6, team_bio_7, team_bio_8, team_bio_9]
+
+	for (const bio of elems){
+		bio.style.display = 'None'
+	}
+	if (team_2_bio.style.display !== "none") {
+		team_2_bio.style.display = "none";
+	} else {
+		team_2_bio.style.display = "block";
+	}
+};
+
+
 
 </script>
 
 
 
 <script>
+// Script for advisor toggling
 const adv1_div = document.getElementById("advisor_1_bio");
 const adv1_btn = document.getElementById("advisor_1_toggle");
-
 const adv2_div = document.getElementById("advisor_2_bio");
 const adv2_btn = document.getElementById("advisor_2_toggle");
 
 adv1_btn.onclick = function () {
+
+	console.log(adv1_div.style.display)
 
 	adv2_div.style.display = "none"
 
@@ -937,6 +1119,7 @@ adv1_btn.onclick = function () {
 
 adv2_btn.onclick = function () {
 
+	console.log(adv2_div.style.display)
 	adv1_div.style.display = "none"
 
 	if (adv2_div.style.display !== "none") {
