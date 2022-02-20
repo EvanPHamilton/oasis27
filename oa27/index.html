@@ -170,18 +170,21 @@
   animation: fadeIn 1s;
 }
 
-.yellow_hover: hover{
-	color: yellow;
-}
+.menu{
+	display: flex; 
+	padding:  1.5%; 
+	max-height: auto; 
+	font-size: 1.2em; 
+	justify-content: space-between;
 
+}
 
 </style>
 </head>
 <body style="margin:0px;">
-
-	<div style="background-color: #ECE0ED; text-align: justify;"> 
-		<h1 class="yellow_hover" style="padding: 1%; padding-bottom: 5%; max-height: auto; font-size: 1.2em;"> 
-			 <a  class="yellow_hover"  href="#home"> home |</a> 
+	<div style="background-color: #ECE0ED; text-align: left;"> 
+		<h1 class="menu"> 
+			 <a href="#home"> home |</a> 
 			 <a href="#join_us"> apply | </a> 
 			 <a href="#about"> about OA27 |</a> 
 			 <a href="#timeline"> timeline + locations |</a> 
@@ -193,7 +196,6 @@
 
 
 		</h1>
-		<span style="display: inline-block; width: 100%; visibility: hidden;"> </span>
 	</div>
   	
   	<div id="home" style="background-image: linear-gradient(180deg, #ECE0ED, 85%, #C6FF23); padding: 0px; margin: 0px; display: inline-grid; grid-template-columns: 1fr 2fr;">
