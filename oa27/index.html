@@ -121,54 +121,33 @@
 
 
 
-/* Popup container - can be anything you want */
 .popup {
-  align-content: center;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  float: bottom;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	padding: 20px;
+	background-color: rgba(100, 100, 100, 0.9);
+	color: white;
+	font-weight: 100;
+	font-size: 14px;
+	position: absolute;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 300ms, transform 300ms;
+
 }
 
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
+.popup > .close {
   position: absolute;
-  z-index: 1;
-  bottom: -125%;
-  left: 50%;
-  margin-left: -80px;
+  right: -10px;
+  top: -10px;
+  background-color: black;
+  padding: 4px 10px;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  background-color: orange;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.popup:target {
+  opacity: 1;
+  transform: scale(1);
 }
 
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
+
 
 .menu{
 	display: flex; 
@@ -408,12 +387,21 @@
 
 	<div style="background-image: linear-gradient(180deg, #ECE0ED, 85%, #D0A896); 
 		padding: 0px; height: 1500;
-		white-space: nowrap;
-	  	position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	  	overflow: visible;">
 
-	  	<img src="imgs/map.png" style="margin-top: -15%;">
+	  	<img src="imgs/map.png" style="margin-top: -15%;" usemap="#usethismap">
+	  	
+	  	<map name="usethismap">
+		  	<area shape="circle" coords="500, 500, 100" alt="Area Description" href="#map_popup">
+	  	</map>
 
+	  	<div class="popup" id="map_popup">
+  			Put images here
+  		<a class="close" href="#">X</a>
+</div>
 	</div>
 
 
