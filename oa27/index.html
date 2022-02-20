@@ -129,8 +129,8 @@
 	font-size: 14px;
 	position: absolute;
 	opacity: 0;
-	transform: scale(0);
-	transition: opacity 300ms, transform 300ms;
+	/*transform: scale(0);
+	transition: opacity 300ms, transform 300ms;*/
 
 }
 
@@ -385,23 +385,25 @@
 		</div>	
 	</div>
 
-	<div style="background-image: linear-gradient(180deg, #ECE0ED, 85%, #D0A896); 
+	<div id="map" style="background-image: linear-gradient(180deg, #ECE0ED, 85%, #D0A896); 
 		padding: 0px; height: 1500;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	  	overflow: visible;">
 
-	  	<img src="imgs/map.png" style="margin-top: -15%;" usemap="#usethismap">
+
+	  	<div class="popup" id="map_popup">
+  			Put images here
+  			<a class="close" href="#map">X</a>
+		</div>
+
+	  	<img src="imgs/map1.png" style="margin-top: -15%;" usemap="#usethismap">
 	  	
 	  	<map name="usethismap">
 		  	<area shape="circle" coords="500, 500, 100" alt="Area Description" href="#map_popup">
 	  	</map>
 
-	  	<div class="popup" id="map_popup">
-  			Put images here
-  		<a class="close" href="#">X</a>
-</div>
 	</div>
 
 
@@ -710,13 +712,6 @@
 
 	</div>
 
-
-
-	<!-- <div class="popup" style="align-content:  center;" 
-
-	onclick="myFunction()">Click me to toggle the popup!
-			<span class="popuptext" id="myPopup">A Simple Popup!</span>
-	</div> -->
 
 		
 	</div>
