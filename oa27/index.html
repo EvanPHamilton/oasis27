@@ -435,6 +435,10 @@
 .social_media_styling{
 	padding-right: 60%;
 }
+
+.partner_elems{
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 @media (max-width: 480px) {
   .home {
     grid-template-columns: 1fr;
@@ -492,7 +496,11 @@
 
 	.social_media_styling{
 	padding-right: 30%;
-}
+	}
+	.partner_elems{
+	grid-template-columns: 1fr 1fr;
+	font-size: .8em;
+	}
 }
 
 * {
@@ -542,7 +550,7 @@
       				Ends 21.03.2022
 					<br>
 					<br>
-					<a class="link" href="oa_programm_guidance.pdf.pdf">
+					<a class="link" href="oa_programm_guidance.pdf">
 					Application guidelines</a> 
 					<br>
 					<br>
@@ -578,7 +586,7 @@
 					      	 height: 30vw; width:  30vw; 
 					      	 position: absolute;
 							left: 15%; margin-bottom: 10%;">
-							<a class="link" href="oa_programm_guidance.pdf.pdf">
+							<a class="link" href="oa_programm_guidance.pdf">
 							Application guidelines</a> 
 							<br>
 							<br>
@@ -1297,20 +1305,19 @@
 
 
 
-		<div style="grid-template-columns: 1fr 1fr 1fr 1fr; display: 
+		<div class="partner_elems" style="display: 
 		inline-grid; padding-left: 5%; padding-right: 5%; padding-top: 4%; padding-bottom: 5%;">
 
 			<div>
-			<p style="font-weight: 800; font-size: 1.2em; 
+			<p class="partner_elems" style="font-weight: 800; font-size: 1.2em; 
 			padding-left: -5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 3%;"> <i>  under the pratonate of:  </i> </p>
 
 			<img src="imgs/elements/partner6.png">		
 			</div>
 
 			<div>
-				<p style="font-weight: 800; font-size: 1.2em; 
-			padding-left: -5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 3%;"> <i> media:  </i> </p>
-
+				<p class="partner_elems" style="font-weight: 800; font-size: 1.2em; 
+			padding-left: -5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 3%;"> <i> media:  </i> <br class="mobile_only"> <br class="mobile_only"> </p>
 				<img src="imgs/elements/partner7.png" style="height: 65%; width: 65%;">
 				</div>		
 		</div>	
