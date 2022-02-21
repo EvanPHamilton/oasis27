@@ -361,10 +361,127 @@
   transform: rotateY(180deg);
 } 
 
+.home{
+	background-image: linear-gradient(180deg, #ECE0ED, 85%, #C6FF23); 
+	padding: 0px; 
+	margin: 0px; 
+	display: inline-grid; 
+	grid-template-columns: 1fr 2fr;
+
+}
+
+.home_text{
+	text-align: center; 
+	margin-top:20%; 
+	margin-left:  20%;
+	marign-right: 20%; 
+	padding-bottom: 20%; 
+	font-size: 2.5em;
+}
+
+.objectives_of_program{
+	background-image: linear-gradient(180deg, #47AFFF, 85%, #47AFFF); 
+	padding: 0px; 
+	margin: 0px; 
+	display: inline-grid; 
+	grid-template-columns: 1fr 2fr;
+}
+
+.objectives_of_program_inner{
+	background-color: #ECE0ED; 
+	padding-left: 10%; 
+	padding-right: 10%; 
+	margin-left: 10%; 
+	margin-right: 7.5%; 
+	margin-bottom: 15%; 
+	padding-bottom: 5%; 
+	padding-top: 5%; 
+	border: 1px solid black;
+	color: black;
+	font-size: 1.2em;
+	cursor: pointer;
+	border-radius: 15px;
+}
+.objectives_of_program_inner:hover{
+	background: rgb(71, 175, 255, .5) !important;
+}
+.header_size{
+	font-size: 2.5em;
+	font-weight: 800; 
+	padding-left: 5%; 
+	padding-bottom: 5%;
+}
+
+.about_desertification{
+	grid-template-columns: 3fr 1fr; 
+	display: inline-grid; 
+	padding-left: 5%; 
+	padding-right: 5%;
+}
+.desert_img{
+	padding-top: 150%;
+}
+
+.contact{
+	margin-right: 5%; 
+	width: 50%;
+}
+
+@media (max-width: 480px) {
+  .home {
+    grid-template-columns: 1fr;
+    align-content:  center;
+    justify-content: center;
+  }
+  .home_text{
+  	margin: 5%;
+  	font-size: 1.5em;
+  }
+  .flip_card{
+  	justify-content: center;
+  }
+  .objectives_of_program{
+  	grid-template-columns: 1fr;
+  	padding-top: 5%
+  }
+  .objectives_of_program_inner{
+  	padding-top: 0%; 
+  	margin-top: 0%;
+  	margin-left:  5%;
+  	margin-right: 5%;
+  	padding-left: 10%;
+  	padding-right: 10%;
+  }
+  .none{
+  	display:  none;
+  }
+  .header_size{
+  	text-align: center;
+	font-size: 1.5em;
+	padding:  2.5%;
+	}
+	.about_desertification{
+		grid-template-columns: 1fr;
+	}
+	.desert_img{
+		padding-top: 5%;
+	}
+	.contact{
+
+	margin-right: 5%; 
+	margin-left:  5%;
+	width: 100%
+	}
+	.button_text{
+		font-size:  .5em;
+	}
+}
 
 * {
 	scrollbar-color: #C6FF23 #C6FF23;   /* Two valid colors.
 }
+
+
 
 
 
@@ -385,11 +502,9 @@
 		</h1>
 	</div>
   	
-  	<div id="home" style="background-image: linear-gradient(180deg, #ECE0ED, 85%, #C6FF23); padding: 0px; margin: 0px; display: inline-grid; grid-template-columns: 1fr 2fr;">
-
+  	<div id="home" class="home" >
   		<div>
-	  		<h1 style="text-align: center; margin-top:20%; margin-left:  20%;
-			    marign-right: 20%; padding-bottom: 20%; font-size: 2.5em;">
+	  		<h1 class="home_text">
 			    <img src="imgs/OA27_isotipo-29.png">
 	      		<br>
 	      		<br>
@@ -438,7 +553,7 @@
 
 	<div id="about" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px; padding-top: 35%;">
 
-		<p style="font-weight: 800; font-size: 2.5em; 
+		<p class="header_size" style="font-weight: 800; 
 		padding-right: 6%; padding-top: 5%; padding-bottom: 3%; text-align: right;"> <i>  about OA27 </i> </p>
 
 		<div class="btn" style="background-color: #ECE0ED; padding-left: 5%;
@@ -471,10 +586,10 @@
 		</div>
 	</div>
 
-	<div id="home" style="background-image: linear-gradient(180deg, #47AFFF, 85%, #47AFFF); padding: 0px; margin: 0px; display: inline-grid; grid-template-columns: 1fr 2fr;">
+	<div id="home" class="objectives_of_program">
           
       
-	    <div > 
+	    <div class="none"> 
 	      <img src="imgs/elem1.png" style="margin-top: -10%; visibility: hidden;">
 	    </div>
 
@@ -485,9 +600,7 @@
 		 		<i style="font-weight: 900;"> objectives of the programme: </i>  
 		 	</p>
 		    
-		    <div class="btn" style="background-color: #ECE0ED; padding-left: 10%; padding-right: 10%; 
-		    margin-left: 10%; margin-right: 7.5%; margin-bottom: 15%; padding-bottom: 5%; padding-top: 5%;"> 
-				
+		    <div class="objectives_of_program_inner"> 
 				
 				<ul>
 					<li> To research topics of desertification, water retention and soil regeneration through the prism of sciences and arts 
@@ -523,8 +636,7 @@
 	  	padding-bottom:10%;
 	  	overflow: hidden;">
 
-		<p style="font-weight: 800; font-size: 2.5em; 
-		padding-left: 5%; padding-bottom: 5%;"> <i>  timeline + locations </i> </p>
+		<p class="header_size" style=""> <i>  timeline + locations </i> </p>
 		
 		<div style="vertical-align:middle; width: 100%; max-width: 100%;
 		display:inline-block; overflow-x:scroll; padding-left: 2.5%; padding-bottom: 2%;"> 
@@ -789,10 +901,10 @@
 		#D0A896, 85%, #C6FF23); padding: 0px; margin: 0px;">
 
 
-		<p style="font-weight: 800; font-size: 2.5em; 
+		<p class="header_size" style="font-weight: 800; 
 		padding-left: 5%; padding-top: 5%; padding-bottom: 3%;"> <i>  about desertification </i> </p>
 
-		<div style="grid-template-columns: 3fr 1fr; display: inline-grid; padding-left: 5%; padding-right: 5%;">
+		<div class="about_desertification">
 		
 			<div class="btn" style="background-color: #ECE0ED; padding: 5%; font-size: 1.2em; margin-bottom: 5%;">
 				1. Etymology
@@ -829,7 +941,7 @@
 			</div>
 
 			<div> 
-				<img src="imgs/img2.png" style="padding-top: 150%;">
+				<img class="desert_img" src="imgs/img2.png">
 			</div>
 
 		</div>
@@ -839,8 +951,7 @@
 	linear-gradient(180deg, #C6FF23, 85%, #ECE0ED); 
 	padding: 0px;">
 
-		<p style="font-weight: 800; font-size: 2.5em; 
-			padding-left: 5%; padding-top: 5%; text-align: left; margin-bottom: 5%;"> 
+		<p class="header_size"> 
 			<i>  advisory commitee </i> 
 		</p>
 
@@ -883,8 +994,7 @@
 
 		<div style="white-space: nowrap;position: relative; overflow-x:scroll; padding-bottom: 2%;">
 
-		 	<p style="font-weight: 800; font-size: 2.5em; 
-			padding-left: 5%; padding-top: 5%; text-align: left; margin-bottom: 5%;"> <i>  team </i> </p>
+		 	<p class="header_size"> <i>  team </i> </p>
 		
 
 			<div id="team1" class="ppl_circle" style="background-color: #ECE0ED; 
@@ -1046,10 +1156,10 @@
 	<div id="contact" style="overflow: hidden; background-image: linear-gradient(180deg, #47AFFF, 85%, #C6FF23); padding: 0px; margin: 0px;
 	display: flex; justify-content: right;">
 
-		<div style="margin-right: 5%; width: 50%;">
+		<div class="contact">
 
 			<div style="display: inline;"> 
-				<p style=" font-size: 2.5em; text-align: right; margin-bottom: 5%; margin-right: 1%;"> <i>  
+				<p class="header_size"> <i>  
 				contact </i> </p>
 			</div>
 
@@ -1080,11 +1190,11 @@
 			</div>	
 			<br>
 				<div class="btn" style="background-color: #ECE0ED; padding:2.5%; width: 65%; float: right; margin-bottom: 5%;"> 
-						<a href="https://forms.zohopublic.eu/jessie1/form/OASIS2027/formperma/uU1n37LcKuF0hGH-LYXYVQme3gr9XVbqvLnQ0ICqwuo"> <h1 style="font-weight: 800">Subscribe to our newsletter</h1> </a>
+						<a class="button_text" href="https://forms.zohopublic.eu/jessie1/form/OASIS2027/formperma/uU1n37LcKuF0hGH-LYXYVQme3gr9XVbqvLnQ0ICqwuo"> <h1 style="font-weight: 800;">Subscribe to our newsletter</h1> </a>
 				</div>
 				
 				<div class="btn" style="background-color: #ECE0ED; padding:2.5%; width: 65%; float: right;"> 
-						<a href="privacy_policy.pdf"> <h1 style="font-weight: 800">Privacy Policy</h1> </a>
+						<a class="button_text" href="privacy_policy.pdf"> <h1 style="font-weight: 800;">Privacy Policy</h1> </a>
 				</div>	
 
 		</div>
@@ -1098,8 +1208,7 @@
 		linear-gradient(180deg, #C6FF23, 70%, #ECE0ED); 
 		padding: 0px;">
 
-  		<p style="font-weight: 800; font-size: 2.5em; 
-			padding-left: 5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 2%;"> <i>  partners </i> </p>
+  		<p class="header_size"> <i>  partners </i> </p>
 
 		<div style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr; display: 
 		inline-grid; padding-left: 5%; padding-right: 5%;">
