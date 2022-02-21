@@ -439,6 +439,8 @@
 .partner_elems{
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+
 @media (max-width: 480px) {
   .home {
     grid-template-columns: 1fr;
@@ -501,6 +503,10 @@
 	grid-template-columns: 1fr 1fr;
 	font-size: .8em;
 	}
+
+	.map{
+	padding-bottom: 10%; 
+}
 }
 
 * {
@@ -533,7 +539,7 @@
   	<div id="home" class="home" >
   		<div>
 	  		<h1 class="home_text">
-			    <img src="imgs/OA27_isotipo-29.png">
+			    <img class="none" src="imgs/OA27_isotipo-29.png">
 	      		<br>
 	      		<br>
 	      		Have you ever imagined <br>
@@ -837,7 +843,7 @@
 
 	</div>
 
-	<div id="map" style="background-image: linear-gradient(-180deg, #47AFFF 0%, #D0A896 30%);
+	<div id="map" class="map" style="background-image: linear-gradient(-180deg, #47AFFF 0%, #D0A896 30%);
 		padding: 0px; height: 1500;
 		display: flex;
 		align-items: center;
@@ -911,7 +917,7 @@
 
 		</div> <!-- end pop up -->
 
-	  	<img id="map_img" src="imgs/map1.png" style="height:150%;" >
+	  	<img class="map" id="map_img" src="imgs/map1.png" style="height:150%;" >
 
 	  	<!-- Magdeburg -->
 	  <!-- 	<div style="
