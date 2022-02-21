@@ -180,7 +180,7 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides, .blewoska {
   display: none;
 }
 
@@ -323,11 +323,8 @@
 
  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  background-color: transparent;
- /* width: 300px;
-  height: 200px;*/
-/*  perspective: 1000px;  Remove this if you don't want the 3D effect 
-*/}
+	background-color: transparent;
+}
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -368,9 +365,6 @@
 * {
 	scrollbar-color: #C6FF23 #C6FF23;   /* Two valid colors.
 }
-
-
-
 
 
 
@@ -440,18 +434,15 @@
 	      <img src="imgs/elem1.png" style="margin-top: 6%;">
 	    </div>
 
-  	</div>
+  	</div> <!-- end of home -->
 
 	<div id="about" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px; padding-top: 25%;">
 
-		<div style="display: inline;"> 
-			<p style="font-weight: 800; font-size: 2.5em; 
-			padding-right: 6%; float: right; "> 
-			 <i style="font-weight: 900;"> about OA27  </i>  </p>
-		</div>
+		<p style="font-weight: 800; font-size: 2.5em; 
+		padding-right: 6%; padding-top: 5%; padding-bottom: 3%; text-align: right;"> <i>  about OA27 </i> </p>
 
 		<div class="btn" style="background-color: #ECE0ED; padding-left: 5%;
-		padding-right: 5%; margin: 5%; margin-bottom: 7.5%; margin-top: 5% font-size: 2em;"> 
+		padding-right: 5%; margin-left: 5%; margin-right: 5%; margin-bottom: 7.5%; font-size: 1.2em;"> 
 
 			<br>
 			<br>
@@ -488,10 +479,11 @@
 	    </div>
 
 	    <div> 
-				<p style="font-weight: 1000; font-size: 1.2em; 
-					padding-right: 8.5%; text-align: right; padding-bottom: 2.5%;"> 
-			 		<i style="font-weight: 900;"> objectives of the programme: </i>  
-			 	</p>
+
+			<p style="font-weight: 1000; font-size: 1.2em; 
+				padding-right: 8.5%; text-align: right; padding-bottom: 3%;"> 
+		 		<i style="font-weight: 900;"> objectives of the programme: </i>  
+		 	</p>
 		    
 		    <div class="btn" style="background-color: #ECE0ED; padding-left: 10%; padding-right: 10%; 
 		    margin-left: 10%; margin-right: 7.5%; margin-bottom: 15%; padding-bottom: 5%; padding-top: 5%;"> 
@@ -690,7 +682,7 @@
 	  	<div class="popup" id="map_popup" 
 	  			style="
 					position: absolute;
-					top: 19%; left: 43%;
+					top: 19%; left: 20%;
 					transform: translate(-50%,-50%);
 					width: 30%;
 					height: 30%;">
@@ -698,11 +690,9 @@
   			<a class="close" href="#map">X</a>
   			<div class="slideshow-container">
 
-			  <!-- Full-width images with number and caption text -->
 			  <div class="mySlides fade">
 			    <div class="numbertext">1 / 3</div>
 			    <img src="imgs/magdeburg/magdeburg1.png" style="width:100%">
-			    <!-- <div style="text-align: center; marign-top: -200%; color: orange;"> Name of place </div> -->
 			  </div>
 
 			  <div class="mySlides fade">
@@ -720,21 +710,77 @@
 			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
 
+		</div> <!-- end Magdeburg pop up -->
+
+		<div class="popup" id="bledowska_img_popup" 
+	  			style="
+					position: absolute;
+					top: 25%; right: 25%;
+					transform: translate(-50%,-50%);
+					width: 30%;
+					height: 30%;">
+
+  			<a class="close" href="#map">X</a>
+  			<div class="slideshow-container">
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="blewoska fade">
+			    <img src="imgs/bledowska/1.jpg" style="width:100%">
+			     <div class="text">Caption text</div>
+			  </div>
+
+			  <div class="blewoska fade">
+			    <img src="imgs/magdeburg/2.png" style="width:100%">
+			  </div>
+
+			  <div class="blewoska fade">
+			    <img src="imgs/magdeburg/3.jpg" style="width:100%">
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+			</div>
+
 		</div> <!-- end pop up -->
 
 	  	<img id="map_img" src="imgs/map1.png" style="margin-top: -5%; max-width: 100%;" >
 
-	  	<div style="
+	  	<!-- Magdeburg -->
+	  <!-- 	<div style="
 	  		  position: absolute;
-			  top: 19%; left: 43%;
+			  top: 31%; left: 43%;
 			  transform: translate(-50%,-50%);
-			  width: 7%;
-			  height: 7%;">  
+			  width: 10%;
+			  height: 10%;">  
 
 	  		<a href="#map_popup" style="display: block; height: 100%; width: 100%; text-decoration none;"> 
 	  		</a>
+ 		</div> -->
 
- 		</div>
+ 		<!-- Bledowska -->
+ 		<!-- <div style="
+	  		  position: absolute;
+			  top: 35%; left: 58%;
+			  transform: translate(-50%,-50%);
+			  width: 10%;
+			  height: 10%;">  
+
+	  		<a href="#bledowska_img_popup" style="display: block; height: 100%; width: 100%; text-decoration none;"> 
+	  		</a>
+ 		</div> -->
+
+ 		<!-- Mallorca -->
+ 		<!-- <div style="
+	  		  position: absolute;
+			  bottom: 11%; left: 26%;
+			  transform: translate(-50%,-50%);
+			  width: 10%;
+			  height: 10%;">  
+
+	  		<a href="#mallorca_img_popup" style="display: block; height: 100%; width: 100%; text-decoration none;"> 
+	  		</a>
+ 		</div> -->
 
 	</div>
 
@@ -748,7 +794,7 @@
 
 		<div style="grid-template-columns: 3fr 1fr; display: inline-grid; padding-left: 5%; padding-right: 5%;">
 		
-			<div class="btn" style="background-color: #ECE0ED; padding: 5%; font-size: 1.2em;">
+			<div class="btn" style="background-color: #ECE0ED; padding: 5%; font-size: 1.2em; margin-bottom: 5%;">
 				1. Etymology
 				<br>
 				<a class="link" href="https://www.etymonline.com/word/desert#etymonline_v_5651">desert</a>(n.1) c. 1200, "wasteland, wilderness, barren area," wooded or not, from Old French desert (12c.) "desert, wilderness, wasteland; destruction, ruin" and directly from Late Latin desertum (source of Italian diserto, Old Provençal dezert, Spanish desierto), literally "thing abandoned" (used in Vulgate to translate "wilderness"), noun use of neuter past participle of Latin deserere "forsake" (see desert (v.)).
@@ -794,7 +840,7 @@
 	padding: 0px;">
 
 		<p style="font-weight: 800; font-size: 2.5em; 
-			padding-left: 5%; padding-top: 5%; padding-bottom: 3%; text-align: left; margin-bottom: 5%;"> 
+			padding-left: 5%; padding-top: 5%; text-align: left; margin-bottom: 5%;"> 
 			<i>  advisory commitee </i> 
 		</p>
 
@@ -830,12 +876,12 @@
 
 	<div style="overflow: hidden; background-image: 
 		linear-gradient(180deg, #ECE0ED, 85%, #47AFFF); 
-		padding: 0px; padding-bottom: 10%;">
+		padding: 0px; padding-bottom: 5%;">
 
 		<div style="white-space: nowrap;position: relative; overflow-x:scroll; padding-bottom: 2%;">
 
 		 	<p style="font-weight: 800; font-size: 2.5em; 
-			padding-left: 5%; padding-top: 5%; text-align: left; margin-bottom: 10%;"> <i>  team </i> </p>
+			padding-left: 5%; padding-top: 5%; text-align: left; margin-bottom: 5%;"> <i>  team </i> </p>
 		
 
 			<div id="team1" class="ppl_circle" style="background-color: #ECE0ED; 
@@ -994,7 +1040,7 @@
 
 	</div> <!-- end of team section --> 
 
-	<div id="contact" style="overflow: hidden; background-image: linear-gradient(180deg, #47AFFF, 85%, #C6FF23); padding: 0px; margin: 0px; padding-top: 5%;
+	<div id="contact" style="overflow: hidden; background-image: linear-gradient(180deg, #47AFFF, 85%, #C6FF23); padding: 0px; margin: 0px;
 	display: flex; justify-content: right;">
 
 		<div style="margin-right: 5%; width: 50%;">
@@ -1398,14 +1444,21 @@ adv2_btn.onclick = function () {
 </script>
 
 
+<!-- Script for image carousel --> 
 <script>
 
 var slideIndex = 1;
+var bledSlideIndex = 1
+
 showSlides(slideIndex);
+showBledowska(bledSlideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
 	showSlides(slideIndex += n);
+}
+function plusSlides1(n){
+	showBledowska(bledSlideIndex += n)
 }
 
 // Thumbnail image controls
@@ -1413,20 +1466,28 @@ function currentSlide(n) {
 	showSlides(slideIndex = n);
 }
 
+function showBledowska(n) {
+	var i;
+	var slides = document.getElementsByClassName("bledowska");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {bledSlideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+	  slides[i].style.display = "none";
+	}
+	slides[bledSlideIndex-1].style.display = "block";
+
+} 
+
+
 function showSlides(n) {
 	var i;
 	var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("dot");
 	if (n > slides.length) {slideIndex = 1}
 	if (n < 1) {slideIndex = slides.length}
 	for (i = 0; i < slides.length; i++) {
 	  slides[i].style.display = "none";
 	}
-	for (i = 0; i < dots.length; i++) {
-	  dots[i].className = dots[i].className.replace(" active", "");
-	}
 	slides[slideIndex-1].style.display = "block";
-	dots[slideIndex-1].className += " active";
 } 
 </script> 
 
