@@ -440,6 +440,15 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.map{
+	background-image: linear-gradient(-180deg, #47AFFF 0%, #D0A896 30%);
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  	position: relative;
+}
+
 
 @media (max-width: 480px) {
   .home {
@@ -505,8 +514,16 @@
 	}
 
 	.map{
-	padding-bottom: 10%; 
-}
+		background-image: linear-gradient(-180deg, #47AFFF 0%, #D0A896 30%);
+		padding: 0px;
+		width:  150%;
+		height:  auto;
+		align-items: center;
+		margin-left:  -5%;
+		justify-content: center;
+	  	overflow: hidden !important;
+		padding-bottom: 10%; 
+	}
 }
 
 * {
@@ -843,14 +860,9 @@
 
 	</div>
 
-	<div id="map" class="map" style="background-image: linear-gradient(-180deg, #47AFFF 0%, #D0A896 30%);
-		padding: 0px; height: 1500;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	  	overflow: visible;
-	  	position: relative;">
+	<div id="map" style="overflow: hidden;">
 
+	  	<img class="map" id="map_img" src="imgs/map1.png">
 
 	  	<div class="popup" id="map_popup" 
 	  			style="
@@ -917,7 +929,6 @@
 
 		</div> <!-- end pop up -->
 
-	  	<img class="map" id="map_img" src="imgs/map1.png" style="height:150%;" >
 
 	  	<!-- Magdeburg -->
 	  <!-- 	<div style="
