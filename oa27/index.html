@@ -536,17 +536,6 @@
 		<div style="vertical-align:middle; width: 100%; max-width: 100%;
 		display:inline-block; overflow-x:scroll; padding-left: 2.5%; padding-bottom: 2%;"> 
 
-		 	<!-- <div class="circle" id="circle_1">
-		 		<div class="inner_circle">
-			 		<p>
-			 			21.02.2022 
-						Open call for <br> 
-						participants of <br>
-						2022 programme 
-			 		</p>
-		 		</div>
-		 	</div> -->
-
 		 	<div class="circle" id="circle_1">
 		 		<div class="inner_circle">
 			 		<p>
@@ -620,7 +609,7 @@
 
 				Please read the <a class="link"  href="www.google.com">application guidelines</a>
 				<br><br> before filling out the
-				<a class="link" href="www.google.com">application form</a>.
+				<a class="link" href="https://forms.zohopublic.eu/jessie1/form/OASIS2027/formperma/uU1n37LcKuF0hGH-LYXYVQme3gr9XVbqvLnQ0ICqwuo">application form</a>.
 
 			</p>
 
@@ -686,12 +675,6 @@
 
 		</div>	
 
-		<div id="programme6" class="btn" style="padding: 5%;
-			margin: 5%; margin-bottom: -.5%; margin-top: 5% font-size: 2em; 
-			background-color: #ECE0ED; white-space: normal; display: none;"> 
-
-			<p>6</p>
-		</div>	
 	</div>
 
 	<div id="map" style="background-image: linear-gradient(-180deg, #47AFFF 0%, #D0A896 30%);
@@ -1133,7 +1116,6 @@ const programme2 = document.getElementById("programme2");
 const programme3 = document.getElementById("programme3");
 const programme4 = document.getElementById("programme4");
 const programme5 = document.getElementById("programme5");
-const programme6 = document.getElementById("programme6");
 
 
 
@@ -1142,7 +1124,6 @@ const prorgam_circle_2 = document.getElementById("circle_2");
 const prorgam_circle_3 = document.getElementById("circle_3");
 const prorgam_circle_4 = document.getElementById("circle_4");
 const prorgam_circle_5 = document.getElementById("circle_5");
-const prorgam_circle_6 = document.getElementById("circle_6");
 
 
 
@@ -1214,21 +1195,6 @@ circle_5.onclick = function(){
 		programme5.style.display = "none";
 	} else {
 		programme5.style.display = "block";
-	}
-}
-
-
-circle_6.onclick = function(){
-	elems = [programme1, programme2, programme4, programme5, 
-		programme3]
-	for (const prog of elems){
-		prog.style.display = 'None'
-	}
-
-	if (programme6.style.display !== "none") {
-		programme6.style.display = "none";
-	} else {
-		programme6.style.display = "block";
 	}
 }
 
