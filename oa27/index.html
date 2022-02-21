@@ -428,6 +428,9 @@
 	width: 50%;
 }
 
+.mobile_only{
+	display: none;
+}
 @media (max-width: 480px) {
   .home {
     grid-template-columns: 1fr;
@@ -476,6 +479,12 @@
 	.button_text{
 		font-size:  em;
 	}
+	.flip-card{
+		display: none;
+	}
+	.mobile_only{
+		display: inline;
+	}
 }
 
 * {
@@ -511,6 +520,17 @@
 	      		<br>
 	      		Have you ever imagined <br>
 	      		how it is to live in the desert?
+	      		<span class="mobile_only"> 
+	      			<br> 
+	      			<br> 
+	      			Open Call for 
+	      				<br>residency programme 
+	      				<br>exploring desertification 
+					<br>
+					<br>
+					<a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeI9MFvKLP2Ftz-dGjihD8Z7-_OpPQYgdlQQHfxIywf4IfrRw/viewform">
+					APPLY!</a> 
+				</span>
 			</h1>
 
 	  		<div class="flip-card" style="position:relative;">
