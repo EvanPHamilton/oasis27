@@ -2,58 +2,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Fira+Mono&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<html>
+<link href="ham-menu.css" rel="stylesheet">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>OASIS27</title>
 
 <style>
-
-	
-
- /* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #04AA6D;
-  color: white;
-} 
 
 
 img {
@@ -613,40 +568,24 @@ font-weight:  100;
 	<div style="background-color: #ECE0ED;"> 
 
 
-		<!-- Top Navigation Menu -->
-		<div class="mobile_only"> 
-			<div class="topnav">
-				
-				<a href="#home" class="active">Logo</a>
-				<!-- Navigation links (hidden by default) -->
-				
-				<div id="myLinks">
-					<a class="menu_hover" href="#home"> home </a> | 
-					<a class="menu_hover" href="#oa27_about"> about OA27 </a> | 
-					<a class="menu_hover" href="#timeline"> timeline + locations </a> | 
-					<a class="menu_hover" href="#desertification"> about desertification </a> | 
-					<a class="menu_hover" href="#advisory"> advisory commitee </a> | 
-					<a class="menu_hover" href="#team"> team </a> | 
-					<a class="menu_hover" href="#contact"> contact </a> |
-					<a class="menu_hover" href="#partners"> partners </a> 
-				</div>
-				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<i class="fa fa-bars"></i>
-				</a>
-			</div>
-		</div>
+		<nav id="hamnav">
+			<!-- (B) THE HAMBURGER -->
+			<label for="hamburger">&#9776;</label>
+			<input type="checkbox" id="hamburger"/>
 
-		<nav class="none" class="menu"> 
-			 <a class="menu_hover" href="#home"> home </a> | 
-			 <a class="menu_hover" href="#oa27_about"> about OA27 </a> | 
-			 <a class="menu_hover" href="#timeline"> timeline + locations </a> | 
-			 <a class="menu_hover" href="#desertification"> about desertification </a> | 
-			 <a class="menu_hover" href="#advisory"> advisory commitee </a> | 
-			 <a class="menu_hover" href="#team"> team </a> | 
-			 <a class="menu_hover" href="#contact"> contact </a> |
-			 <a class="menu_hover" href="#partners"> partners </a> 
+			<!-- (C) MENU ITEMS -->
+			<div id="hamitems">
+			<a class="menu_hover" href="#home"> home </a> 
+			<a class="menu_hover" href="#oa27_about"> about OA27 </a> 
+			<a class="menu_hover" href="#timeline"> timeline + locations </a> 
+			<a class="menu_hover" href="#desertification"> about desertification </a> 
+			<a class="menu_hover" href="#advisory"> advisory commitee </a> 
+			<a class="menu_hover" href="#team"> team </a> 
+			<a class="menu_hover" href="#contact"> contact </a> 
+			<a class="menu_hover" href="#partners"> partners </a> 
+			</div>
 		</nav>
+
 	</div>
   	
   	<div id="home" class="home">
@@ -1047,12 +986,11 @@ font-weight:  100;
 				Previously, Chief Technology Officer at Grupa Allegro responsible for Marketplace, focused on Mobile and Big Data. Before Allegro, he had started and run Google R&D Center in Krakow as a Site Lead and Engineering Director between 2006-2014. Prior to Google, he worked in a number of roles at Motorola. Earlier in his career, he was an Assistant Professor of Computer Science at AGH in Kraków and a researcher at the Institute of Nuclear Physics.
 			</div>
 
-		
 	</div>
 
 
 
-	<div style="overflow: hidden; background-image: 
+	<div id="team" style="overflow: hidden; background-image: 
 		linear-gradient(180deg, #ECE0ED, 85%, #47AFFF); 
 		padding-bottom: 5%; padding-top: 7.5%;">
 
@@ -1617,19 +1555,6 @@ adv2_btn.onclick = function () {
 };
 
 </script>
-
-<script> 
-	/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} 
-</script>
-
 
 <!-- Script for image carousel --> 
 <!-- <script>
