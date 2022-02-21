@@ -423,7 +423,7 @@
 	padding-top: 150%;
 }
 
-.contact{
+.contact_class{
 	text-align: right;
 	margin-right: 6%; 
 	width: 50%;
@@ -504,11 +504,10 @@
 	.desert_img{
 		padding-top: 5%;
 	}
-	.contact{
-
-	margin-right: 5%; 
-	margin-left:  5%;
-	width: 100%
+	.contact_class{
+		margin-right: 5%; 
+		margin-left:  5%;
+		width: 100%
 	}
 	.button_text{
 		font-size:  em;
@@ -521,11 +520,11 @@
 	}
 
 	.social_media_styling{
-	padding-right: 30%;
+		padding-right: 30%;
 	}
 	.partner_elems{
-	grid-template-columns: 1fr 1fr;
-	font-size: .8em;
+		grid-template-columns: 1fr 1fr;
+		font-size: .8em;
 	}
 
 	.map{
@@ -542,6 +541,14 @@
 
 	.subscribe_btn{
 		margin-top:  0
+	}
+
+	..team_bio {
+		/*background-color: orange;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-left: 0%;
+		padding-right: 0%;*/
 	}
 }
 
@@ -561,7 +568,7 @@
 			
 
 			 <a class="menu_hover" href="#home"> home </a> | 
-			 <a class="menu_hover" href="#about"> about OA27 </a> | 
+			 <a class="menu_hover" href="#oa27_about"> about OA27 </a> | 
 			 <a class="menu_hover" href="#timeline"> timeline + locations </a> | 
 			 <a class="menu_hover" href="#desertification"> about desertification </a> | 
 			 <a class="menu_hover" href="#advisory"> advisory commitee </a> | 
@@ -648,7 +655,7 @@
 
   	</div> <!-- end of home -->
 
-	<div id="about" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px; padding-top: 35%;">
+	<div id="oa27_about" style="overflow: hidden; background-image: linear-gradient(180deg, #C6FF23, 85%, #47AFFF); padding: 0px; margin: 0px; padding-top: 35%;">
 
 		<p class="header_size" style="font-weight: 800; 
 		padding-right: 6%; padding-top: 5%; padding-bottom: 3%; text-align: right;"> <i>  about OA27 </i> </p>
@@ -883,7 +890,7 @@
 
 	  	<img class="map" id="map_img" src="imgs/map1.png">
 
-	  	<div class="popup" id="map_popup" 
+	  <!-- 	<div class="popup" id="map_popup" 
 	  			style="
 					position: absolute;
 					top: 19%; left: 20%;
@@ -910,11 +917,11 @@
 			  </div>
 
 			  <!-- Next and previous buttons -->
-			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 			</div>
 
-		</div> <!-- end Magdeburg pop up -->
+		</div>  -->
 
 		<div class="popup" id="bledowska_img_popup" 
 	  			style="
@@ -942,8 +949,8 @@
 			  </div>
 
 			  <!-- Next and previous buttons -->
-			  <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
-			  <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+			 <!--  <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides1(1)">&#10095;</a> -->
 			</div>
 
 		</div> <!-- end pop up -->
@@ -1245,7 +1252,7 @@
 	<div id="contact" style="overflow: hidden; background-image: linear-gradient(180deg, #47AFFF, 85%, #C6FF23); padding: 0px; padding-bottom: 7%;margin: 0px;
 	display: flex; justify-content: right;">
 
-		<div class="contact">
+		<div class="contact_class">
 
 			<div style="display: inline;"> 
 				<p class="header_size"> <i>  
