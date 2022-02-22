@@ -6,7 +6,7 @@
   /* Optional */
   position: sticky;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 /* (B) HORIZONTAL MENU ITEMS */
@@ -39,7 +39,7 @@
 
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
-    display: inline-block;
+    display: flex;
     color: black; /* neon  C6FF23*/
     background: #ECE0ED;
     font-style: normal;
@@ -52,6 +52,6 @@
 
   /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
+  #hamnav input:checked ~ #hamitems { display: block; width: 100%;}
 }
 
