@@ -40,11 +40,14 @@
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
     display: inline-block;
-    color: #C6FF23; /* neon */
+    color: black; /* neon  C6FF23*/
     background: #ECE0ED;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 2.5em;
     padding: 10px;
+  }
+  #hamnav label:hover{
+    color: #C6FF23;
   }
 
   /* (C) TOGGLE SHOW/HIDE MENU */
