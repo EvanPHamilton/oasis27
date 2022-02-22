@@ -471,11 +471,24 @@ font-weight:  100;
 	padding-top: 35%;
 }
 
+.extra_space{
+	height: 0%; 
+	padding-bottom: 0%; 
+	background-color: #ECE0ED;
+}
+
 
 @media (max-width: 480px) {
 
 	.top_padding{
 		padding-top: 5%;
+	}
+
+
+	.extra_space{
+		height: 32%; 
+		padding-bottom: 32%; 
+		background-color: #ECE0ED;
 	}
 
   .home {
@@ -574,10 +587,6 @@ font-weight:  100;
 	<div style="background-color: #ECE0ED;display: flex; justify-content: flex-end;"> 
 		<div style="width: 100%;">
 
-		<!-- 	<div style="display: flex; align-items: right; justify-content: flex-start;"> 
-				<img style="width: 50%; padding-left: 5%; z-index: 99;" src="imgs/elements/logo.png">
-			</div> -->
-
 			<nav id="hamnav" style="justify-content: flex-end;">
 				<!-- (B) THE HAMBURGER -->
 				<label for="hamburger" style="justify-content: flex-end;" >&#9776;</label>
@@ -594,12 +603,10 @@ font-weight:  100;
 				<a class="menu_hover" href="#contact"> contact </a> 
 				<a class="menu_hover" href="#partners"> partners </a> 
 				</div>
-
 				<div id="bottom_space">
-					<div style="height: 32%; padding-bottom:  32%; background-color: #ECE0ED;"> </div>
-				</div>  </div>
-
-				
+					<div class="extra_space" style=""> 
+					</div>
+				</div>
 			</nav>
 		</div>
 	</div>
