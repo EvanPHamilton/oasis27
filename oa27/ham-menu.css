@@ -10,7 +10,10 @@
 }
 
 /* (B) HORIZONTAL MENU ITEMS */
-#hamitems { display: flex; }
+#hamitems { 
+  display: flex;
+  flex-wrap : wrap;
+}
 #hamitems a {
   flex-grow: 1;
   flex-basis: 0;
@@ -28,7 +31,7 @@
 #hamnav label, #hamburger { display: none; }
 
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
   /* (A) BREAK INTO VERTICAL MENU */
   #hamitems a {
     box-sizing: border-box;
