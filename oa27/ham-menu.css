@@ -14,7 +14,7 @@
 #hamitems a {
   flex-grow: 1;
   flex-basis: 0;
-  padding: 10px;
+  padding: 2%; 
   color: black;
   text-decoration: none;
   text-align: center;
@@ -40,18 +40,22 @@
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
     display: flex;
-    color: black; /* neon  C6FF23*/
+    color: #C6FF23; /* neon  C6FF23*/
     background: #ECE0ED;
     font-style: normal;
-    font-size: 2.5em;
-    padding: 10px;
+    font-size: 4em;
+    padding: 5%;
   }
   #hamnav label:hover{
     color: #C6FF23;
   }
 
   /* (C) TOGGLE SHOW/HIDE MENU */
+  #bottom_space { display: none; }
   #hamitems { display: none; }
   #hamnav input:checked ~ #hamitems { display: block; width: 100%;}
+  #hamnav input:checked ~ #bottom_space { display: block; width: 100%; }
+
+
 }
 
