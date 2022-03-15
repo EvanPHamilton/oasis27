@@ -2,16 +2,23 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
 <style>
-* {
-  box-sizing: border-box;
+
+html, body, {
+    height:  100%;    
+    width: 100%;
 }
 
 body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    height: 100%;
 }
+
 
 #myVideo {
   object-fit: cover;
@@ -20,55 +27,127 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+
+.full_width_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction:column;
 }
 
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
+.left_box{
+    margin:  0;
+    opacity: .9;
+    color: black;
+    z-index: 99;
+    width: 48%;
+    margin-right: auto;
+    margin-left: 11%;
+    padding: 4%;
+}
+.left_box > h3{
+    background-color: black;
+    color:  white;
+    width:  25%;
+    margin:  0;
+    padding:  1.5%;
+    text-align: center;
+}
+.left_box > p {
+    margin:  0;
+    padding: 4%;
+    background-color: #ff82e2;
 }
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+.right_box{
+    margin:  0;
+    opacity: .9;
+    color: black;
+    z-index: 99;
+    width: 48%;
+    margin-right: 11%;
+    margin-left: auto;
+    padding: 4%;
 }
+.right_box > h3{
+    background-color: black;
+    color:  white;
+    width:  45%;
+    margin:  0;
+    margin-left:  auto;
+    letter-spacing: .5px;
+    word-spacing:  -6px;
+    padding: 1.5%;
+    text-align: center;
+}
+.right_box > p{
+    margin:  0;
+    padding: 4%;
+    background-color: #ff82e2;
+}
+
+
+
+
+*{
+    margin: 0;
+    font-family: "Source Code Pro", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
 </style>
 </head>
 <body>
 
-<video autoplay muted loop id="myVideo">
-  <source src="/Users/evanhamilton/Desktop/jeziorov1_.mp4" type="video/mp4">
-</video>
+    <video autoplay muted loop id="myVideo">
+        <source src="/Users/evanhamilton/Desktop/jeziorov1_.mp4" type="video/mp4">
+    </video>
+    <div class="full_width_box">
+        <div style="text-align: center; color: white; font-size: 4em;">
+            <p style=>ONEARTH <BR> FOUNDATION</p>
+        </div>
+        <a style="position: absolute; bottom: 17.5%; align-content: center; font-size: 3em;
+          text-decoration: none; color: white; opacity: .8" href="#about">V</a>
+
+    </div>
 
 
+    <div id="about" class="full_width_box">
+        <div class="left_box"> 
+            <h3> About us </h3>
+            <p>The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
+            </p>
+            <a href="https://onearth.io/wp-content/uploads/2020/11/o-nas-1024x710.png"> </a>
+        </div> 
+    </div>
 
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+    <div class="full_width_box">
+        <div class="right_box"> 
+            <h3> Purpose and Values </h3>
+            <p>The onEarth Foundation is committed to re-establishing symbiotic relationships between humans and Planet Earth. Through imagination, play and interdisciplinary collaboration it aims to embrace environmental, social and personal response-ability, trust and sustainable futures.
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
+            Our mission:
+            <ul style="background-color: #ff82e2; margin: 0;"> 
+                <li style="padding-top: 1%; padding-bottom: 1%;"> Provide alternative ecological education and to reframe environmental responsibility </li>
+                <li style="padding-top: 1%; padding-bottom: 1%;"> Promote sustainable development and include sustainable development goals into Foundation’s work </li>
+                <li style="padding-top: 1%; padding-bottom: 1%;"> Work towards deep adaptation and agility within the changing environment </li>
+                <li style="padding-top: 1%; padding-bottom: 1%;"> Promote mindfulness and wellbeing</li>
+                <li style="padding-top: 1%; padding-bottom: 1%;"> Embrace solidarity and diversity</li>
+                <li style="padding-top: 1%; padding-bottom: 1%;"> Share knowledge, skills and new possibilities of collaboration</li>
+                <li style="padding-top: 1%; padding-bottom: 1%;">Integrate artistic and ecological circles </li>
+            </ul>
+            </p>
+        </div> 
+    </div>
+
+    <div class="full_width_box">
+        <p>ONEARTH<br>FOUNDATION</p>
+    </div>
+    
+
 
 </body>
 </html>
