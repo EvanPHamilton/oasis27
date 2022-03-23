@@ -61,10 +61,27 @@ body {
     padding:  1.5%;
     text-align: center;
 }
-.left_box > p {
+.left_box> p {
     margin:  0;
     padding: 4%;
     background-color: #ff82e2;
+}
+
+
+.left_box_logo{
+    margin:  0;
+    opacity: .9;
+    color: black;
+    z-index: 99;
+    width: 48%;
+    margin-right: auto;
+    margin-left: 11%;
+    padding: 4%;
+    padding-top: 0px;
+}
+.left_box_logo>img:hover{
+    background-color: black;
+    opacity: .5;
 }
 
 .right_box{
@@ -112,11 +129,6 @@ body {
             <div>
             </div>
         </div>
-        <!-- 
-        /* top-left | top-right | bottom-right | bottom-left */
-        border-radius: 1px 0 3px 4px; --> 
-
-
         <div class="hamburger" style="right: 95px !important; color: white; width: 200px;
         border-radius: 30px !important; padding: 0px;">
         <p style="opacity: 1 !important; font-size: 1em;"><strong> 
@@ -145,10 +157,10 @@ body {
     </video>
     <div class="full_width_box">
 
-
-        <div style="text-align: center; color: white; font-size: 4em;">
-            <p style=>ONEARTH <BR> FOUNDATION</p>
+        <div>
+            <img src="imgs/logo-white-transparent.png">
         </div>
+
         <a style="position: absolute; bottom: 17.5%; align-content: center; font-size: 3em;
           text-decoration: none; color: white; opacity: .8" href="#about">V</a>
 
@@ -156,12 +168,16 @@ body {
 
 
     <div id="about" class="full_width_box">
-        <div class="left_box"> 
+        <div class="left_box" style="padding-bottom: 0px !important;"> 
             <h3> About us </h3>
             <p>The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
             </p>
             <a href="https://onearth.io/wp-content/uploads/2020/11/o-nas-1024x710.png"> </a>
         </div> 
+        <div class="left_box_logo">
+            <img style="max-width: 100%; max-height: 100%;" src="imgs/logo_about.png">
+        </div>
+
     </div>
 
     <div class="full_width_box">
