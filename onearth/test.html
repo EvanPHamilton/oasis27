@@ -43,6 +43,14 @@ body {
     flex-direction:column;
 }
 
+.full_width_box_half_height {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    flex-direction:column;
+}
+
 .left_box{
     margin:  0;
     opacity: .9;
@@ -67,6 +75,9 @@ body {
     background-color: #ff82e2;
 }
 
+.left_box > div {
+    background-color: #ff82e2;
+}
 
 .left_box_logo{
     margin:  0;
@@ -176,12 +187,10 @@ body {
             <h3> About us </h3>
             <p>The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
             </p>
-            <a href="https://onearth.io/wp-content/uploads/2020/11/o-nas-1024x710.png"> </a>
         </div> 
         <div class="left_box_logo">
             <img style="max-width: 100%; max-height: 100%;" src="imgs/logo_about.png">
         </div>
-
     </div>
 
     <div class="full_width_box">
@@ -203,8 +212,25 @@ body {
         </div> 
     </div>
 
-    <div class="full_width_box">
-        <p>ONEARTH<br>FOUNDATION</p>
+    <div class="full_width_box_half_height">
+        <p style="font-size: 3em; color: white; font-weight: 700;"><br>PROJECTS</p>
+    </div>
+
+    <div id="oasis_27" class="full_width_box">
+        <div class="left_box" style="padding-bottom: 0px !important;"> 
+            <h3> OASIS 2027 (OA27) </h3>
+            <p>OASIS 2027 (OA27) is a research residency programme leading to the creation of an OA27 Festival of Strategies for Climate Emergency launching in October 2022. 
+
+            The seed topic of the OA27 programm is desertification: the processes of fertile lands becoming increasingly arid, mostly due to human activities. According to scientific reports, the tangible effects of desertification will affect us as soon as 2027
+            </p>
+
+            <div style="text-align: center; padding-bottom: 25px;">
+                <a style="text-decoration:  none;
+                 border:1px solid white; background-color: white; padding: 2.5%;"
+                href="https://evanphamilton.github.io/oasis27/oa27/" class="promotion-btn">Learn More</a>
+            </div>    
+        </div> 
+       
     </div>
     
 
