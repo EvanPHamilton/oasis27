@@ -6,6 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="css/style.css">
+<link href="contact-form.css" rel="stylesheet">
 
 <style>
 
@@ -421,6 +422,55 @@ body {
                         </div>  
                     </div>
                 </div>
+
+                <div style="background-color: white; opacity: .9; padding: 5%;">
+
+                     <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+                        <div class="fcf-form-group">
+                            <label for="Name" class="fcf-label">Your name</label>
+                            <div class="fcf-input-group">
+                                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="fcf-form-group">
+                            <label for="Email" class="fcf-label">Your email address</label>
+                            <div class="fcf-input-group">
+                                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="fcf-form-group">
+                            <label for="Message" class="fcf-label">Your message</label>
+                            <div class="fcf-input-group">
+                                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                            </div>
+                        </div> 
+
+                        <p> 
+                        The controller of your personal data is the onEarth Foundation. Information about how we process your personal data and your rights in relation to it can be found in our 
+                        <a href="privacy_policy"> Privacy Policy </a>
+                        <br> <br>
+                        </p>
+
+                    <p>I have read the Privacy Policy:</p>
+                    <div>
+                        <input type="checkbox" id="scales" required>
+                        <label >Yes</label>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="fcf-form-group">
+                        <button style="background-color: black;" type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    </div>
+
+                     </form>
+
+                </div>
+
+
         </div>
     </div>
 </body>
