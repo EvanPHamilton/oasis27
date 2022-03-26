@@ -22,8 +22,6 @@ body {
 }
 
 
-
-
 #myVideo {
   object-fit: cover;
   width: 100vw;
@@ -34,15 +32,6 @@ body {
   z-index: -1;
 }
 
-
-.full_width_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    flex-direction:column;
-}
-
 .full_width_box_half_height {
     display: flex;
     align-items: center;
@@ -51,15 +40,63 @@ body {
     flex-direction:column;
 }
 
+.full_width_box {
+    display: flex;
+    display: -webkit-flex; /* Safari */     
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction:row;
+}
+
+.full_width_row {
+    display: flex;
+    display: -webkit-flex; /* Safari */     
+    min-height: 100vh;
+    flex-direction:row;
+    align-items: center;
+}
+
+.column_big{
+    margin-left: 11%;
+}
+
+.column_big > h3{
+    background-color: black;
+    color:  white;
+    width:  25%;
+    margin:  0;
+    padding:  1.5%;
+    text-align: center;
+}
+.column_big> p {
+    margin:  0;
+    padding: 4%;
+    background-color: #ff82e2;
+}
+
+.column_big > div {
+    background-color: #ff82e2;
+}
+
+.column_small>img:hover{
+    background-color: black;
+    opacity: .5;
+}
+
+
+
+
 .left_box{
     margin:  0;
     opacity: .9;
     color: black;
     z-index: 99;
-    width: 48%;
-    margin-right: auto;
-    margin-left: 11%;
+    min-width: 50%;    
+    /*margin-right: auto;
+    margin-left: 11%;*/
     padding: 4%;
+    padding-right: 0px;
 }
 .left_box > h3{
     background-color: black;
@@ -78,6 +115,10 @@ body {
 .left_box > div {
     background-color: #ff82e2;
 }
+.left_box > img {
+    padding-left:  0px;
+
+}
 
 .left_box_logo{
     margin:  0;
@@ -90,7 +131,7 @@ body {
     padding: 4%;
     padding-top: 0px;
 }
-.left_box_logo>img:hover{
+.img_hover:hover{
     background-color: black;
     opacity: .5;
 }
@@ -105,7 +146,7 @@ body {
     margin-left: auto;
     padding: 4%;
 }
-.right_box > h3{
+.right_box_h3{
     background-color: black;
     color:  white;
     width:  45%;
@@ -125,14 +166,47 @@ body {
     padding-left: 10%;
 }
 
+.right_box_img { 
 
+    margin:  0;
+    opacity: .9;
+    color: black;
+    z-index: 99;
+    width: 48%;
+    margin-right: 11%;
+    margin-left: auto;
+    padding: 4%;
+    padding-left: 0px;
+
+ }
+
+.right_box > img {
+    padding: 10%;
+}
+
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows:  auto;
+    border-style: solid;
+}
+
+.link_button{
+    text-decoration: none; 
+    border: 1px solid white; 
+    background-color: white; 
+    padding: 2.5%;
+    color:  black;
+}
 
 
 
 *{
     margin: 0;
     font-family: "Source Code Pro", "Helvetica", "Arial", "Verdana", "sans-serif";
-}
+    box-size: border-box; 
+
 
 </style>
 </head>
@@ -144,19 +218,14 @@ body {
             <div>
             </div>
         </div>
-        <div class="hamburger" style="right: 95px !important; color: white; width: 200px;
-        border-radius: 30px !important; padding: 0px;">
-        <p style="opacity: 1 !important; font-size: 1em;"><strong> 
-            DO WASTELESS LAND  </strong> </p> 
-        </div>
-
+       
         <div class="menu">
             <div>
                 <div>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Purpose And Value</a></li>
-                        <li><a href="#">Project</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#purpose">Purpose And Value</a></li>
+                        <li><a href="#projects">Project</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Polski</a></li>
@@ -171,70 +240,135 @@ body {
         <source src="/Users/evanhamilton/Desktop/jeziorov1_.mp4" type="video/mp4">
     </video>
     <div class="full_width_box">
-
         <div>
             <img src="imgs/logo-white-transparent.png">
         </div>
-
         <a style="position: absolute; bottom: 17.5%; align-content: center; font-size: 3em;
           text-decoration: none; color: white; opacity: .8" href="#about">V</a>
-
     </div>
 
-
-    <div id="about" class="full_width_box">
-        <div class="left_box" style="padding-bottom: 0px !important;"> 
-            <h3> About us </h3>
-            <p>The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
-            </p>
-        </div> 
-        <div class="left_box_logo">
-            <img style="max-width: 100%; max-height: 100%;" src="imgs/logo_about.png">
+    <div id="about" style="min-height: 75vh;">
+        <div style="margin-left: 11%;">
+            <h3 style="background-color: black; color:  white; width: 25%; margin: 0; 
+            padding:  1.5%; text-align: center;"> About us </h3>
+            <div style="display: flex; align-items: stretch; align-content: center;"> 
+                <p style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;   line-height:35px;">
+                    The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
+                </p>
+                <img class="img_hover" style="height: 35.5vw; min-width: 40%; max-width: 40%;" 
+                src="imgs/logo_about.png">
+            </div> 
         </div>
     </div>
 
-    <div class="full_width_box">
-        <div class="right_box"> 
-            <h3> Purpose and Values </h3>
-            <p>The onEarth Foundation is committed to re-establishing symbiotic relationships between humans and Planet Earth. Through imagination, play and interdisciplinary collaboration it aims to embrace environmental, social and personal response-ability, trust and sustainable futures.
 
-            Our mission:
-            <ul style="background-color: #ff82e2; margin: 0;"> 
-                <li style="padding-top: 1%; padding-bottom: 1%;"> Provide alternative ecological education and to reframe environmental responsibility </li>
-                <li style="padding-top: 1%; padding-bottom: 1%;"> Promote sustainable development and include sustainable development goals into Foundation’s work </li>
-                <li style="padding-top: 1%; padding-bottom: 1%;"> Work towards deep adaptation and agility within the changing environment </li>
-                <li style="padding-top: 1%; padding-bottom: 1%;"> Promote mindfulness and wellbeing</li>
-                <li style="padding-top: 1%; padding-bottom: 1%;"> Embrace solidarity and diversity</li>
-                <li style="padding-top: 1%; padding-bottom: 1%;"> Share knowledge, skills and new possibilities of collaboration</li>
-                <li style="padding-top: 1%; padding-bottom: 1%;">Integrate artistic and ecological circles </li>
-            </ul>
-            </p>
-        </div> 
+    <div id="purpose" style="min-height: 75vh; padding-top: 10%;">
+        <div style="margin-right: 11%; margin-left: auto; width: 50%;">
+            <h3 class="right_box_h3"> Purpose and Values </h3>
+            <div style="display: flex; align-items: stretch; align-content: center;"> 
+                <p style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;  line-height:35px;">
+                    The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
+                </p>
+            </div> 
+        </div>
     </div>
 
-    <div class="full_width_box_half_height">
-        <p style="font-size: 3em; color: white; font-weight: 700;"><br>PROJECTS</p>
-    </div>
-
-    <div id="oasis_27" class="full_width_box">
-        <div class="left_box" style="padding-bottom: 0px !important;"> 
-            <h3> OASIS 2027 (OA27) </h3>
-            <p>OASIS 2027 (OA27) is a research residency programme leading to the creation of an OA27 Festival of Strategies for Climate Emergency launching in October 2022. 
-
-            The seed topic of the OA27 programm is desertification: the processes of fertile lands becoming increasingly arid, mostly due to human activities. According to scientific reports, the tangible effects of desertification will affect us as soon as 2027
-            </p>
-
-            <div style="text-align: center; padding-bottom: 25px;">
-                <a style="text-decoration:  none;
-                 border:1px solid white; background-color: white; padding: 2.5%;"
-                href="https://evanphamilton.github.io/oasis27/oa27/" class="promotion-btn">Learn More</a>
-            </div>    
-        </div> 
-       
-    </div>
+    <div id="projects" style="display: flex; align-items: center; 
+        justify-content: center; min-height: 50vh; flex-direction:column;">
     
+        <p style="font-size: 3em; color: white; font-weight: 700; 
+        display: table-cell; vertical-align: middle;  line-height:35px;">PROJECTS</p>
+    
+    </div>
 
 
+    <div id="oasis_27" style="min-height: 100vh;">
+        <div style="margin-left: 11%; width: 60%;">
+            <h3 style="background-color: black; color:  white; width: 25%; margin: 0; 
+            padding:  1.5%; text-align: center;"> OASIS 2027 (OA27) </h3>
+                <div style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle; line-height:35px;">
+                    
+                    OASIS 2027 (OA27) is a research residency programme leading to the creation of an OA27 Festival of Strategies for Climate Emergency launching in October 2022. 
+
+                    The seed topic of the OA27 programm is desertification: the processes of fertile lands becoming increasingly arid, mostly due to human activities. According to scientific reports, the tangible effects of desertification will affect us as soon as 2027
+                
+                    <div style="text-align: center; padding: 25px;">
+                        <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">Learn More</a>
+                    </div> 
+                </div> 
+        </div>
+    </div>
+
+
+    <div id="lios" style="min-height: 100vh; padding-top: 10%;">
+        <div style="margin-right: 11%; margin-left: auto; width: 50%;">
+            <h3 class="right_box_h3"> LIOS LABS </h3>
+            <div style="display: flex; align-items: stretch; align-content: center;"> 
+                <div style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;  line-height:35px;">
+                    
+                    LIOS labs is an arts of ecology residency programme in Pustynia Bledowska, Poland, and a community of practice.
+                    <br>
+                    An interdisciplinary playground, dedicated to the sharing of regenerative social and environmental practices. In times of ecological and systemic crisis, LIOS labs’ agents aim to activate an experimental field for new ways of living, learning and acting together. 
+
+                    <div style="text-align: center; padding: 25px;">
+                        <a class="link_button" href="https://evanphamilton.github.io/oasis27/lios/">Learn More</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="wasteless_land" style="min-height: 100vh; padding-top: 10%;">
+        <div style="margin-left: 11%; width: 60%;"> 
+            <h3 style="background-color: black; color:  white; width: 25%; margin: 0; 
+            padding:  1.5%; text-align: center;"> WASTELESS LAND </h3>
+                <div style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle; line-height:35px;">
+                    
+                    Wasteless Land is a circular economy hackathon. In 2022, its third edition will take place - this time in three Polish cities.
+                    <br>
+                    <br>
+                    The purpose of the hackathon is to give participants the tools and knowledge to solve environmental problems of their own communities and form grassroot initiatives. 
+                
+                    <div style="text-align: center; padding: 25px;">
+                        <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">Learn More</a>
+                    </div> 
+                </div> 
+        </div>
+    </div>
+
+
+     <div id="team" style="display: flex; align-items: center; 
+        justify-content: center; min-height: 50vh; flex-direction:column;">
+    
+        <p style="font-size: 3em; color: white; font-weight: 700; 
+        display: table-cell; vertical-align: middle;  line-height:35px;">TEAM</p>
+    
+    </div>
+
+
+    <div style="min-height: 100vh;">
+        <div style="margin-left: 11%; width: 60%;">
+            <h3 style="background-color: black; color:  white; width: 45%; margin: 0; 
+            padding:  1.5%; text-align: center;"> Kamila Knap / co-founder </h3>
+                <div style="margin: 0; padding: 4%; padding-bottom: 0; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle; line-height:35px;">
+                    
+                    Kamila is an activist and a lawyer. Holds a master of laws degree from Jagiellonian University. Since 2018 runs LegalTech Advisory, a legal consulting firm specializing in e-commerce, intellectual property and personal data security. Co-founder of Smogathon, an international initiative aiming at combating air pollution with technology and science. She organized over 30 events on four continents and has spoken at many conferences.
+                    <br>
+                    <br>
+                    Passionate environmentalist and animal rights supporter wants to contribute to transforming the economy towards sustainable and inclusive and educate about climate change.
+                    <br>
+                    <br>
+                    <div style="display: flex; display: -webkit-flex; /* Safari */ align-items: center; justify-content: center;"> 
+                        <img style="max-width: 40%; max-height: auto;" src="../oa27/imgs/team/team2.png">
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+
+
+    
 </body>
 <script>
 
