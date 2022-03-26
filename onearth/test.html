@@ -33,121 +33,18 @@ body {
   z-index: -1;
 }
 
-.full_width_box_half_height {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-    flex-direction:column;
+.right_picture{
+    height: 35.5vw; 
+    min-width: 40%; 
+    max-width: 40%;
 }
 
-.full_width_box {
-    display: flex;
-    display: -webkit-flex; /* Safari */     
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    flex-direction:row;
-}
-
-.full_width_row {
-    display: flex;
-    display: -webkit-flex; /* Safari */     
-    min-height: 100vh;
-    flex-direction:row;
-    align-items: center;
-}
-
-.column_big{
-    margin-left: 11%;
-}
-
-.column_big > h3{
-    background-color: black;
-    color:  white;
-    width:  25%;
-    margin:  0;
-    padding:  1.5%;
-    text-align: center;
-}
-.column_big> p {
-    margin:  0;
-    padding: 4%;
-    background-color: #ff82e2;
-}
-
-.column_big > div {
-    background-color: #ff82e2;
-}
-
-.column_small>img:hover{
+.right_picture:hover{
     background-color: black;
     opacity: .5;
 }
 
-
-
-
-.left_box{
-    margin:  0;
-    opacity: .9;
-    color: black;
-    z-index: 99;
-    min-width: 50%;    
-    /*margin-right: auto;
-    margin-left: 11%;*/
-    padding: 4%;
-    padding-right: 0px;
-}
-.left_box > h3{
-    background-color: black;
-    color:  white;
-    width:  25%;
-    margin:  0;
-    padding:  1.5%;
-    text-align: center;
-}
-.left_box> p {
-    margin:  0;
-    padding: 4%;
-    background-color: #ff82e2;
-}
-
-.left_box > div {
-    background-color: #ff82e2;
-}
-.left_box > img {
-    padding-left:  0px;
-
-}
-
-.left_box_logo{
-    margin:  0;
-    opacity: .9;
-    color: black;
-    z-index: 99;
-    width: 48%;
-    margin-right: auto;
-    margin-left: 11%;
-    padding: 4%;
-    padding-top: 0px;
-}
-.img_hover:hover{
-    background-color: black;
-    opacity: .5;
-}
-
-.right_box{
-    margin:  0;
-    opacity: .9;
-    color: black;
-    z-index: 99;
-    width: 48%;
-    margin-right: 11%;
-    margin-left: auto;
-    padding: 4%;
-}
-.right_box_h3{
+.right_box_header{
     background-color: black;
     color:  white;
     width:  45%;
@@ -158,40 +55,7 @@ body {
     padding: 1.5%;
     text-align: center;
 }
-.right_box > p{
-    margin:  0;
-    padding: 4%;
-    background-color: #ff82e2;
-}
-.right_box > ul {
-    padding-left: 10%;
-}
 
-.right_box_img { 
-
-    margin:  0;
-    opacity: .9;
-    color: black;
-    z-index: 99;
-    width: 48%;
-    margin-right: 11%;
-    margin-left: auto;
-    padding: 4%;
-    padding-left: 0px;
-
- }
-
-.right_box > img {
-    padding: 10%;
-}
-
-
-.grid_container {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows:  auto;
-    border-style: solid;
-}
 
 .link_button{
     text-decoration: none; 
@@ -208,6 +72,41 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+.left_box{
+    margin-left: 11%;
+}
+
+.right_box{
+    margin-right: 11%; 
+    margin-left: auto; 
+    width: 60%;
+}
+
+.flex_box_for_picture{
+    display: flex; 
+    align-items: stretch; 
+    align-content: center;
+}
+
+.left_box_header{
+    background-color: black; 
+    color:  white; 
+    width: 25%; 
+    margin: 0; 
+    padding: 1.5%; 
+    text-align: center;
+}
+
+.pink_box{
+    margin: auto; 
+    padding: 3em; 
+    background-color: #ff82e2;
+    line-height: 35px;
+    text-align: left;
+    vertical-align: middle;
+}
+
 
 
 *{
@@ -247,7 +146,7 @@ body {
     <video autoplay muted loop id="myVideo">
         <source src="/Users/evanhamilton/Desktop/jeziorov1_.mp4" type="video/mp4">
     </video>
-    <div class="full_width_box">
+    <div class="center_flex_box" style="min-height: 100vh;">
         <div>
             <img src="imgs/logo-white-transparent.png">
         </div>
@@ -255,30 +154,25 @@ body {
           text-decoration: none; color: white; opacity: .8" href="#about">V</a>
     </div>
 
-    <div id="about" style="min-height: 75vh;">
-        <div style="margin-left: 11%;">
-            <h3 style="background-color: black; color:  white; width: 25%; margin: 0; 
-            padding:  1.5%; text-align: center;"> About us </h3>
-            <div style="display: flex; align-items: stretch; align-content: center;"> 
-                <p style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;   line-height:35px;">
-                    The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
-                </p>
-                <img class="img_hover" style="height: 35.5vw; min-width: 40%; max-width: 40%;" 
-                src="imgs/logo_about.png">
-            </div> 
-        </div>
+    <div id="about" class="left_box">
+        <h3 class="left_box_header"> About us </h3>
+        <div class="flex_box_for_picture"> 
+            <p class="pink_box">
+                The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
+            </p>
+            <img class="right_picture" 
+            src="imgs/logo_about.png">
+        </div> 
     </div>
 
 
-    <div id="purpose" style="min-height: 75vh; padding-top: 10%;">
-        <div style="margin-right: 11%; margin-left: auto; width: 50%;">
-            <h3 class="right_box_h3"> Purpose and Values </h3>
-            <div style="display: flex; align-items: stretch; align-content: center;"> 
-                <p style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;  line-height:35px;">
-                    The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
-                </p>
-            </div> 
-        </div>
+    <div class="right_box" id="purpose" style="padding-top: 10%;">
+        <h3 class="right_box_header"> Purpose and Values </h3>
+        <div class="flex_box_for_picture"> 
+            <p class="pink_box">
+                The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
+            </p>
+        </div> 
     </div>
 
     <div id="projects" style="display: flex; align-items: center; 
@@ -290,7 +184,7 @@ body {
     </div>
 
 
-    <div id="oasis_27" style="min-height: 100vh;">
+    <div id="oasis_27">
         <div style="margin-left: 11%; width: 60%;">
             <h3 style="background-color: black; color:  white; width: 25%; margin: 0; 
             padding:  1.5%; text-align: center;"> OASIS 2027 (OA27) </h3>
@@ -308,9 +202,9 @@ body {
     </div>
 
 
-    <div id="lios" style="min-height: 100vh; padding-top: 10%;">
+    <div id="lios" style="padding-top: 10%;">
         <div style="margin-right: 11%; margin-left: auto; width: 50%;">
-            <h3 class="right_box_h3"> LIOS LABS </h3>
+            <h3 class="right_box_header"> LIOS LABS </h3>
             <div style="display: flex; align-items: stretch; align-content: center;"> 
                 <div style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;  line-height:35px;">
                     
@@ -326,7 +220,7 @@ body {
         </div>
     </div>
 
-    <div id="wasteless_land" style="min-height: 100vh; padding-top: 10%;">
+    <div id="wasteless_land" style="padding-top: 10%;">
         <div style="margin-left: 11%; width: 60%;"> 
             <h3 style="background-color: black; color:  white; width: 25%; margin: 0; 
             padding:  1.5%; text-align: center;"> WASTELESS LAND </h3>
@@ -354,7 +248,7 @@ body {
     </div>
 
 
-    <div style="min-height: 100vh;">
+    <div>
         <div style="margin-left: 11%; width: 60%;">
             <h3 style="background-color: black; color:  white; width: 45%; margin: 0; 
             padding:  1.5%; text-align: center;"> Kamila Knap - co-founder </h3>
@@ -375,9 +269,9 @@ body {
     </div>
 
 
-    <div id="lios" style="min-height: 100vh; padding-top: 10%;">
+    <div id="lios" style="padding-top: 10%;">
         <div style="margin-right: 11%; margin-left: auto; width: 50%;">
-            <h3 class="right_box_h3"> Jo Vávra - co-founder </h3>
+            <h3 class="right_box_header"> Jo Vávra - co-founder </h3>
             <div style="display: flex; align-items: stretch; align-content: center;"> 
                 <div style="margin: 0; padding: 4%; padding-bottom: 0; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;  line-height:35px;">
                     
@@ -394,7 +288,7 @@ body {
         </div>
     </div>
 
-    <div style="min-height: 100vh;">
+    <div>
         <div style="margin-left: 11%; width: 60%;">
             <h3 style="background-color: black; color:  white; width: 45%; margin: 0; 
             padding:  1.5%; text-align: center;"> Contact </h3>
@@ -450,7 +344,7 @@ body {
 
                         <p> 
                         The controller of your personal data is the onEarth Foundation. Information about how we process your personal data and your rights in relation to it can be found in our 
-                        <a href="privacy_policy"> Privacy Policy </a>
+                        <a href="../oa27/privacy_policy.pdf"> Privacy Policy </a>
                         <br> <br>
                         </p>
 
@@ -465,17 +359,13 @@ body {
                     <div class="fcf-form-group">
                         <button style="background-color: black;" type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
                     </div>
-
                      </form>
-
                 </div>
-
-
         </div>
     </div>
 </body>
 
-<footer style="background-color: black;">
+<footer style="background-color: black; text-align: center;">
     <p style="color: white; font-size: .75em; padding-top: 1%; padding-left: 11%; padding-bottom: 1%;"> 
         Fundacja onEarth 
         <br> <br>
