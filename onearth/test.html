@@ -22,7 +22,6 @@ body {
     height: 100%;
 }
 
-
 #myVideo {
   object-fit: cover;
   width: 100vw;
@@ -56,7 +55,6 @@ body {
     text-align: center;
 }
 
-
 .link_button{
     text-decoration: none; 
     border: 1px solid white; 
@@ -80,7 +78,6 @@ body {
 .right_box{
     margin-right: 11%; 
     margin-left: auto; 
-    width: 60%;
 }
 
 .flex_box_for_picture{
@@ -92,7 +89,7 @@ body {
 .left_box_header{
     background-color: black; 
     color:  white; 
-    width: 25%; 
+    width: 35%; 
     margin: 0; 
     padding: 1.5%; 
     text-align: center;
@@ -107,13 +104,79 @@ body {
     vertical-align: middle;
 }
 
+.top_padding{ 
+    padding-top: 20%;
+    }
 
+.section_divide{
+    font-size: 3em; 
+    color: white; 
+    font-weight: 700;
+}
+
+.sixty{
+    width: 60%;
+}
+
+.center_button{
+    text-align: center; 
+    padding: 25px;
+}
+
+.section_divide_height {
+    min-height: 80vh;
+}
+
+.no_bottom_padding{
+    padding-bottom: 0px;
+}
+
+.bio_pic{
+    max-width: 40%; 
+    max-height: auto;
+}
+
+.v{
+    position: absolute; 
+    bottom: 17.5%; 
+    align-content: center; 
+    font-size: 3em;
+    text-decoration: none; 
+    color: white; 
+    opacity: .8
+}
+
+.home_img{
+    max-width: 65vw; 
+    height: auto;
+}
+
+@media(max-height: 500){
+
+    .v{
+        bottom: 2.5%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .v{
+        bottom: 2.5%;
+    }
+    .left_box{
+        margin-left:  0px;
+    }
+    .sixty{
+        width: 100%;
+    }
+
+}
 
 *{
     margin: 0;
     font-family: "Source Code Pro", "Helvetica", "Arial", "Verdana", "sans-serif";
     box-size: border-box; 
-
+}
 
 </style>
 </head>
@@ -148,10 +211,9 @@ body {
     </video>
     <div class="center_flex_box" style="min-height: 100vh;">
         <div>
-            <img src="imgs/logo-white-transparent.png">
+            <img class="home_img" src="imgs/logo-white-transparent.png">
         </div>
-        <a style="position: absolute; bottom: 17.5%; align-content: center; font-size: 3em;
-          text-decoration: none; color: white; opacity: .8" href="#about">V</a>
+        <a class="v" href="#about">V</a>
     </div>
 
     <div id="about" class="left_box">
@@ -166,7 +228,7 @@ body {
     </div>
 
 
-    <div class="right_box" id="purpose" style="padding-top: 10%;">
+    <div id="purpose" class="right_box top_padding sixty">
         <h3 class="right_box_header"> Purpose and Values </h3>
         <div class="flex_box_for_picture"> 
             <p class="pink_box">
@@ -175,192 +237,157 @@ body {
         </div> 
     </div>
 
-    <div id="projects" style="display: flex; align-items: center; 
-        justify-content: center; min-height: 50vh; flex-direction:column;">
-    
-        <p style="font-size: 3em; color: white; font-weight: 700; 
-        display: table-cell; vertical-align: middle;  line-height:35px;">PROJECTS</p>
-    
+    <div id="projects" class="center_flex_box section_divide_height">
+        <p class="section_divide">PROJECTS</p>
     </div>
 
-
-    <div id="oasis_27">
-        <div style="margin-left: 11%; width: 60%;">
-            <h3 style="background-color: black; color:  white; width: 25%; margin: 0; 
-            padding:  1.5%; text-align: center;"> OASIS 2027 (OA27) </h3>
-                <div style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle; line-height:35px;">
-                    
-                    OASIS 2027 (OA27) is a research residency programme leading to the creation of an OA27 Festival of Strategies for Climate Emergency launching in October 2022. 
-
-                    The seed topic of the OA27 programm is desertification: the processes of fertile lands becoming increasingly arid, mostly due to human activities. According to scientific reports, the tangible effects of desertification will affect us as soon as 2027
+    <div id="oasis_27" class="left_box sixty">
+        <h3 class="left_box_header"> OASIS 2027 (OA27) </h3>
+            <div class="pink_box">
                 
-                    <div style="text-align: center; padding: 25px;">
-                        <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">Learn More</a>
-                    </div> 
+                OASIS 2027 (OA27) is a research residency programme leading to the creation of an OA27 Festival of Strategies for Climate Emergency launching in October 2022. 
+
+                The seed topic of the OA27 programm is desertification: the processes of fertile lands becoming increasingly arid, mostly due to human activities. According to scientific reports, the tangible effects of desertification will affect us as soon as 2027
+                <div class="center_button">
+                    <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">Learn More</a>
                 </div> 
-        </div>
-    </div>
-
-
-    <div id="lios" style="padding-top: 10%;">
-        <div style="margin-right: 11%; margin-left: auto; width: 50%;">
-            <h3 class="right_box_header"> LIOS LABS </h3>
-            <div style="display: flex; align-items: stretch; align-content: center;"> 
-                <div style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;  line-height:35px;">
-                    
-                    LIOS labs is an arts of ecology residency programme in Pustynia Bledowska, Poland, and a community of practice.
-                    <br>
-                    An interdisciplinary playground, dedicated to the sharing of regenerative social and environmental practices. In times of ecological and systemic crisis, LIOS labs’ agents aim to activate an experimental field for new ways of living, learning and acting together. 
-
-                    <div style="text-align: center; padding: 25px;">
-                        <a class="link_button" href="https://evanphamilton.github.io/oasis27/lios/">Learn More</a>
-                    </div>
-                </div>
             </div> 
-        </div>
     </div>
 
-    <div id="wasteless_land" style="padding-top: 10%;">
-        <div style="margin-left: 11%; width: 60%;"> 
-            <h3 style="background-color: black; color:  white; width: 25%; margin: 0; 
-            padding:  1.5%; text-align: center;"> WASTELESS LAND </h3>
-                <div style="margin: 0; padding: 4%; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle; line-height:35px;">
-                    
-                    Wasteless Land is a circular economy hackathon. In 2022, its third edition will take place - this time in three Polish cities.
-                    <br>
-                    <br>
-                    The purpose of the hackathon is to give participants the tools and knowledge to solve environmental problems of their own communities and form grassroot initiatives. 
+    <div id="lios" class="right_box top_padding sixty">
+        <h3 class="right_box_header"> LIOS LABS </h3>
+        <div style="display: flex; align-items: stretch; align-content: center;"> 
+            <div class="pink_box">
                 
-                    <div style="text-align: center; padding: 25px;">
-                        <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">Learn More</a>
-                    </div> 
+                LIOS labs is an arts of ecology residency programme in Pustynia Bledowska, Poland, and a community of practice.
+                <br>
+                An interdisciplinary playground, dedicated to the sharing of regenerative social and environmental practices. In times of ecological and systemic crisis, LIOS labs’ agents aim to activate an experimental field for new ways of living, learning and acting together. 
+
+                <div class="center_button">
+                    <a class="link_button" href="https://evanphamilton.github.io/oasis27/lios/">Learn More</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div id="wasteless_land" class="left_box top_padding sixty"> 
+        <h3 class="left_box_header"> WASTELESS LAND </h3>
+            <div class="pink_box">
+                
+                Wasteless Land is a circular economy hackathon. In 2022, its third edition will take place - this time in three Polish cities.
+                <br>
+                <br>
+                The purpose of the hackathon is to give participants the tools and knowledge to solve environmental problems of their own communities and form grassroot initiatives. 
+            
+                <div class="center_button">
+                    <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">Learn More</a>
                 </div> 
-        </div>
-    </div>
-
-
-     <div id="team" style="display: flex; align-items: center; 
-        justify-content: center; min-height: 50vh; flex-direction:column;">
-    
-        <p style="font-size: 3em; color: white; font-weight: 700; 
-        display: table-cell; vertical-align: middle;  line-height:35px;">TEAM</p>
-    
-    </div>
-
-
-    <div>
-        <div style="margin-left: 11%; width: 60%;">
-            <h3 style="background-color: black; color:  white; width: 45%; margin: 0; 
-            padding:  1.5%; text-align: center;"> Kamila Knap - co-founder </h3>
-                <div style="margin: 0; padding: 4%; padding-bottom: 0; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle; line-height:35px;">
-                    
-                    Kamila is an activist and a lawyer. Holds a master of laws degree from Jagiellonian University. Since 2018 runs LegalTech Advisory, a legal consulting firm specializing in e-commerce, intellectual property and personal data security. Co-founder of Smogathon, an international initiative aiming at combating air pollution with technology and science. She organized over 30 events on four continents and has spoken at many conferences.
-                    <br>
-                    <br>
-                    Passionate environmentalist and animal rights supporter wants to contribute to transforming the economy towards sustainable and inclusive and educate about climate change.
-                    <br>
-                    <br>
-                    <div style="display: flex; display: -webkit-flex; /* Safari */ align-items: center; justify-content: center;"> 
-                        <img style="max-width: 40%; max-height: auto;" src="../oa27/imgs/team/team2.png">
-                    </div>
-
-                </div>
-        </div>
-    </div>
-
-
-    <div id="lios" style="padding-top: 10%;">
-        <div style="margin-right: 11%; margin-left: auto; width: 50%;">
-            <h3 class="right_box_header"> Jo Vávra - co-founder </h3>
-            <div style="display: flex; align-items: stretch; align-content: center;"> 
-                <div style="margin: 0; padding: 4%; padding-bottom: 0; background-color: #ff82e2; min-height: 100%; max-height: 100%;   display: table-cell; vertical-align: middle;  line-height:35px;">
-                    
-                    Jo Vávra is an artist, activist, and cultural producer. She studied retail design in Denmark and China. In 2012 she moved to Berlin to start an ongoing research on holistic, body-mind practices. During the last 10 years, Jo has been activating socio-cultural projects around the world. She spent the last couple of years in Portugal, before moving back to central Europe. Currently, she works between Berlin and Poland.
-                    <br>
-
-                    Her practice, rooted in the concept of collaborative survival, explores community structures and rituals. Using art and spirituality as pedagogical tools, Jo works with food, sculpture, storytelling and immersive design. She is a co-founder and designer of CECI Foundation, co-founder and board member of neue häute, chef in cosmic.cooking, co-creator and artist in residence in moos.garden, Berlin. 
-
-                    <div style="display: flex; display: -webkit-flex; /* Safari */ align-items: center; justify-content: center;"> 
-                        <img style="max-width: 40%; max-height: auto;" src="../oa27/imgs/team/team1.png">
-                    </div>
-                </div>
             </div> 
-        </div>
     </div>
 
-    <div>
-        <div style="margin-left: 11%; width: 60%;">
-            <h3 style="background-color: black; color:  white; width: 45%; margin: 0; 
-            padding:  1.5%; text-align: center;"> Contact </h3>
-                <div class="center_flex_box" style="margin: 0; padding: 4%; padding-bottom: 2%; background-color: #ff82e2; min-height: 100%; max-height: 100%; line-height:35px;">
-                    <div style="height: auto; width: 60%;"> 
-                        ADDRESS
-                        <br>
-                        Grodzka 42/1
-                        <br>
-                        31-044 Kraków
-                        <br>
-                        Poland
-                        <br>
-                        KRS 0000814590 NIP (VAT EU) PL 6762574197 REGON: 384902400
-                        <br>
-                        <div style="grid-template-columns: 1fr 1fr; display: inline-grid;">
-                            <a href="https://www.facebook.com/onearthfoundation" style="display: flex;
-                                justify-content: center; align-items: center;">
-                                <img style="max-width: 25%; max-height: auto;" src="../oa27/imgs/socials/facebook.png">   
-                            </a>                
-                            <a href="https://www.instagram.com/onearth_fundacja/" style="display: flex;
-                                justify-content: center; align-items: center;">
-                                <img style="max-width: 25%; max-height: auto;" src="../oa27/imgs/socials/insta.png">   
-                            </a>
-                        </div>  
+
+     <div id="team" class="center_flex_box section_divide_height">
+        <p class="section_divide">TEAM</p>
+    </div>
+
+
+    <div class="right_box sixty">
+        <h3 class="right_box_header"> Kamila Knap <br> co-founder </h3>
+            <div class="pink_box no_bottom_padding">
+                Kamila is an activist and a lawyer. Holds a master of laws degree from Jagiellonian University. Since 2018 runs LegalTech Advisory, a legal consulting firm specializing in e-commerce, intellectual property and personal data security. Co-founder of Smogathon, an international initiative aiming at combating air pollution with technology and science. She organized over 30 events on four continents and has spoken at many conferences.
+                <br>
+                <br>
+                Passionate environmentalist and animal rights supporter wants to contribute to transforming the economy towards sustainable and inclusive and educate about climate change.
+                <br>
+                <br>
+                <div class="center_flex_box"> 
+                    <img class="bio_pic" src="../oa27/imgs/team/team2.png">
+                </div>
+            </div>
+    </div>
+
+
+    <div class="left_box top_padding sixty">
+        <h3 class="left_box_header"> Jo Vávra - co-founder </h3>
+        <div class="pink_box no_bottom_padding">
+            
+            Jo Vávra is an artist, activist, and cultural producer. She studied retail design in Denmark and China. In 2012 she moved to Berlin to start an ongoing research on holistic, body-mind practices. During the last 10 years, Jo has been activating socio-cultural projects around the world. She spent the last couple of years in Portugal, before moving back to central Europe. Currently, she works between Berlin and Poland.
+            <br>
+
+            Her practice, rooted in the concept of collaborative survival, explores community structures and rituals. Using art and spirituality as pedagogical tools, Jo works with food, sculpture, storytelling and immersive design. She is a co-founder and designer of CECI Foundation, co-founder and board member of neue häute, chef in cosmic.cooking, co-creator and artist in residence in moos.garden, Berlin. 
+
+            <div class="center_flex_box"> 
+                <img class="bio_pic" src="../oa27/imgs/team/team1.png">
+            </div>
+        </div>
+    </div> 
+
+    <div class="right_box top_padding sixty">
+        <h3 class="right_box_header"> Contact </h3>
+        <div class="pink_box">
+            ADDRESS
+            <br>
+            Grodzka 42/1
+            <br>
+            31-044 Kraków
+            <br>
+            Poland
+            <br>
+            KRS 0000814590 NIP (VAT EU) PL 6762574197 REGON: 384902400
+            <br>
+            <div style="grid-template-columns: 1fr 1fr; display: inline-grid;">
+                <a href="https://www.facebook.com/onearthfoundation" style="display: flex;
+                    justify-content: center; align-items: center;">
+                    <img style="max-width: 25%; max-height: auto;" src="../oa27/imgs/socials/facebook.png">   
+                </a>                
+                <a href="https://www.instagram.com/onearth_fundacja/" style="display: flex;
+                    justify-content: center; align-items: center;">
+                    <img style="max-width: 25%; max-height: auto;" src="../oa27/imgs/socials/insta.png">   
+                </a>
+            </div>  
+        </div>
+
+        <div style="background-color: white; opacity: .9; padding: 5%;">
+             <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
                     </div>
                 </div>
 
-                <div style="background-color: white; opacity: .9; padding: 5%;">
-
-                     <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        
-                        <div class="fcf-form-group">
-                            <label for="Name" class="fcf-label">Your name</label>
-                            <div class="fcf-input-group">
-                                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                            </div>
-                        </div>
-
-                        <div class="fcf-form-group">
-                            <label for="Email" class="fcf-label">Your email address</label>
-                            <div class="fcf-input-group">
-                                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                            </div>
-                        </div>
-
-                        <div class="fcf-form-group">
-                            <label for="Message" class="fcf-label">Your message</label>
-                            <div class="fcf-input-group">
-                                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                            </div>
-                        </div> 
-
-                        <p> 
-                        The controller of your personal data is the onEarth Foundation. Information about how we process your personal data and your rights in relation to it can be found in our 
-                        <a href="../oa27/privacy_policy.pdf"> Privacy Policy </a>
-                        <br> <br>
-                        </p>
-
-                    <p>I have read the Privacy Policy:</p>
-                    <div>
-                        <input type="checkbox" id="scales" required>
-                        <label >Yes</label>
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
                     </div>
-                    <br>
-                    <br>
-
-                    <div class="fcf-form-group">
-                        <button style="background-color: black;" type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                    </div>
-                     </form>
                 </div>
+
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div> 
+
+                <p> 
+                The controller of your personal data is the onEarth Foundation. Information about how we process your personal data and your rights in relation to it can be found in our 
+                <a href="../oa27/privacy_policy.pdf"> Privacy Policy </a>
+                <br> <br>
+                </p>
+
+            <p>I have read the Privacy Policy:</p>
+            <div>
+                <input type="checkbox" id="scales" required>
+                <label >Yes</label>
+            </div>
+            <br>
+            <br>
+
+            <div class="fcf-form-group">
+                <button style="background-color: black;" type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+            </div>
+            </form>
         </div>
     </div>
 </body>
