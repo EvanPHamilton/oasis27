@@ -7,175 +7,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="css/style.css">
 <link href="contact-form.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
 
 <style>
 
-html, body, {
-    height:  100%;    
-    width: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
-    height: 100%;
-}
-
-#myVideo {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.right_picture{
-    height: 35.5vw; 
-    min-width: 40%; 
-    max-width: 40%;
-}
-
-.right_picture:hover{
-    background-color: black;
-    opacity: .5;
-}
-
-.right_box_header{
-    background-color: black;
-    color:  white;
-    width:  45%;
-    margin:  0;
-    margin-left:  auto;
-    letter-spacing: .5px;
-    word-spacing:  -6px;
-    padding: 1.5%;
-    text-align: center;
-}
-
-.link_button{
-    text-decoration: none; 
-    border: 1px solid white; 
-    background-color: white; 
-    padding: 2.5%;
-    color:  black;
-}
-
-.center_flex_box{
-    display: flex; 
-    display: -webkit-flex; /* Safari */ 
-    align-items: center; 
-    justify-content: center;
-    text-align: center;
-}
-
-.left_box{
-    margin-left: 11%;
-}
-
-.right_box{
-    margin-right: 11%; 
-    margin-left: auto; 
-}
-
-.flex_box_for_picture{
-    display: flex; 
-    align-items: stretch; 
-    align-content: center;
-}
-
-.left_box_header{
-    background-color: black; 
-    color:  white; 
-    width: 35%; 
-    margin: 0; 
-    padding: 1.5%; 
-    text-align: center;
-}
-
-.pink_box{
-    margin: 0; 
-    padding: 3em; 
-    background-color: #ff82e2;
-    line-height: 35px;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.top_padding{ 
-    padding-top: 20%;
-    }
-
-.section_divide{
-    font-size: 3em; 
-    color: white; 
-    font-weight: 700;
-}
-
-.sixty{
-    width: 60%;
-}
-
-.center_button{
-    text-align: center; 
-    padding: 25px;
-}
-
-.section_divide_height {
-    min-height: 80vh;
-}
-
-.no_bottom_padding{
-    padding-bottom: 0px;
-}
-
-.bio_pic{
-    max-width: 40%; 
-    max-height: auto;
-}
-
-.v{
-    position: absolute; 
-    bottom: 17.5%; 
-    align-content: center; 
-    font-size: 3em;
-    text-decoration: none; 
-    color: white; 
-    opacity: .8
-}
-
-.home_img{
-    max-width: 65vw; 
-    height: auto;
-}
-
-@media(max-height: 500){
-
-    .v{
-        bottom: 2.5%;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .v{
-        bottom: 2.5%;
-    }
-    .left_box{
-        margin-left:  0px;
-    }
-    .sixty{
-        width: 100%;
-    }
-
-}
-
-*{
-    margin: 0;
-    font-family: "Source Code Pro", "Helvetica", "Arial", "Verdana", "sans-serif";
-    box-size: border-box; 
+html { 
+  background: url(https://drive.google.com/uc?export=view&id=12y4HJMYkMP1kHnntzxOLqjgZyDa4N-4-) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 </style>
@@ -206,25 +47,23 @@ body {
         </div>
     </div>
 
-    <video autoplay muted loop id="myVideo">
-        <source src="/Users/evanhamilton/Desktop/jeziorov1_.mp4" type="video/mp4">
-    </video>
     <div class="center_flex_box" style="min-height: 100vh;">
-        <div>
-            <img class="home_img" src="imgs/logo-white-transparent.png">
-        </div>
         <a class="v" href="#about">V</a>
     </div>
 
-    <div id="about" class="left_box">
-        <h3 class="left_box_header"> About us </h3>
-        <div class="flex_box_for_picture"> 
-            <p class="pink_box">
-                The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of all living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing.
-            </p>
-            <img class="right_picture" 
-            src="imgs/logo_about.png">
+    <div id="about" class="left_box sixty">
+        <h3 class="left_box_header"> About</h3>
+            <div class="pink_box">
+            LIOS labs is an arts and ecology research platform and residency programme in Pustynia Bledowska, Poland.
+            <br>
+            <br>
+            An interdisciplinary playground, dedicated to the sharing of regenerative social and environmental practices. In times of ecological and systemic crisis, LIOS labs’ intended community aims to activate an experimental field for new ways of living, learning and acting together. It’s mission is to foster creativity and catalyse agency through collective development of tools and tactics for inner, social and technological transformation.
+            <br>
+            <br>
+            From the desert gatherings of LIOS labs community emerges a decentralized network of artists, activists, researchers and other agents of change, who work together towards cocreation of sustainable futures. LIOS labs offer spaces for interdisciplinary collaboration and experiences that bring people closer to the feeling of unity within themselves and with the animate world.
         </div> 
+        <img style="max-width: 100%; height:  auto;"
+        src="https://drive.google.com/uc?export=view&id=1secBxMbz7bH6rYUKrgW1u4D6k_3SjnkJ">
     </div>
 
 
