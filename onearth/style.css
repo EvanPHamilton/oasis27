@@ -94,7 +94,11 @@ body {
 
 .top_padding{ 
     padding-top: 20%;
-    }
+}
+
+.bottom_padding{
+    padding-bottom: 17.5%;
+}
 
 .section_divide{
     font-size: 3em; 
