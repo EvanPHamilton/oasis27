@@ -172,4 +172,5 @@ body {
     margin: 0;
     font-family: "Source Code Pro", "Helvetica", "Arial", "Verdana", "sans-serif";
     box-size: border-box; 
+    font-weight: 400;
 }
