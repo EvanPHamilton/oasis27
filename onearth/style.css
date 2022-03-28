@@ -21,9 +21,10 @@ body {
 }
 
 .right_picture{
-    height: 35.5vw; 
+    height: 28vw; 
     min-width: 40%; 
     max-width: 40%;
+    display:  inline-block;
 }
 
 .right_picture:hover{
@@ -153,8 +154,25 @@ body {
         bottom: 2.5%;
     }
 }
+.mobile_only{
+    display: none;
+}
 
 @media (max-width: 480px) {
+
+    .web_online{
+        display: none;
+    }
+
+    .mobile_only{
+        display: inline-block;
+        width:  100%;
+    }
+    .right_picture{
+        madx-width:  100%;
+        min-width:  100%;
+        height:  auto;
+    }
 
     .v{
         bottom: 2.5%;
