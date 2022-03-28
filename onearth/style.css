@@ -109,6 +109,10 @@ body {
 .center_button{
     text-align: center; 
     padding: 25px;
+    padding-bottom: 0;
+}
+.center_button > a{
+
 }
 
 .section_divide_height {
