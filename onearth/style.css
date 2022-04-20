@@ -41,7 +41,8 @@ body {
     letter-spacing: .5px;
     word-spacing:  -6px;
     padding: 1.5%;
-    text-align: center;
+    padding-right: 2.57em;
+    text-align: right;
 }
 
 .link_button{
@@ -57,6 +58,22 @@ body {
     display: -webkit-flex; /* Safari */ 
     align-items: center; 
     justify-content: center;
+    text-align: center;
+}
+
+.left_flex_box{
+    display: flex; 
+    display: -webkit-flex; /* Safari */ 
+    align-items: center; 
+    justify-content: start;
+    text-align: center;
+}
+
+.right_flex_box{
+    display: flex; 
+    display: -webkit-flex; /* Safari */ 
+    align-items: center; 
+    justify-content: end;
     text-align: center;
 }
 
@@ -80,8 +97,11 @@ body {
     color:  white; 
     width: 35%; 
     margin: 0; 
-    padding: 1.5%; 
-    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right:  1.5%;
+    padding-left:  2.57em; 
+    text-align: left;
 }
 
 .pink_box{
@@ -92,6 +112,11 @@ body {
     text-align: left;
     vertical-align: middle;
 }
+
+.pink_box_right{
+    text-align: right;
+}
+
 
 .top_padding{ 
     padding-top: 20%;
