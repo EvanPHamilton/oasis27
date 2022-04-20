@@ -148,13 +148,13 @@
                 <div class="center_button">
                     <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">DOWIEDZ SIĘ WIĘCEJ</a>
                 </div> 
-            </div> 
+            </div>
     </div>
 
     <div id="lios" class="right_box top_padding sixty">
         <h3 class="right_box_header" style="width: 5em;"> LIOS LABS </h3>
         <div style="display: flex; align-items: stretch; align-content: center;"> 
-            <div class="pink_box english">
+            <div class="pink_box english no_bottom_padding">
                 
                 LIOS labs is an arts of ecology residency programme in Pustynia Bledowska, Poland, and a community of practice.
                 <br>
@@ -165,7 +165,7 @@
                 </div>
             </div>
 
-            <div class="pink_box polish">
+            <div class="pink_box polish no_bottom_padding">
                 LIOS labs to program rezydencji twórczych i eksperymentalna społeczność na Pustyni Błędowskiej.
                 <br>
                 LIOS labs tworzy kolektyw agentów specjalnych: artystów, naukowców i aktywistów, którzy pracują nad współtworzeniem zrównoważonej przyszłości - przestrzeni dla interdyscyplinarnej współpracy i wsparcia, oraz doświadczeń, które przybliżają ludzi do poczucia jedności z ciałem, duchem i światem ożywionym.
@@ -175,6 +175,9 @@
                 </div>
             </div>
         </div> 
+        <div class="right_flex_box"> 
+            <img class="bio_pic" src="https://lios.s3.eu-central-1.amazonaws.com/lios.jpg">
+        </div>
     </div>
 
     <div id="wasteless_land" class="left_box top_padding sixty"> 
@@ -191,7 +194,6 @@
 
             <div class="pink_box polish">  
                 <strong> Wasteless Land <strong> to hackathon gospodarki cyrkularnej. W 2022 obędzie się jego trzecia edycja - tym razem już w trzech miastach Polski.
-
                 <br>
                 <br>
                 Celem hackathonu jest przekazanie uczestnikom narzędzi i wiedzy do oddolnego rozwiązywania problemów ekologicznych własnych społeczności. Wierzymy, że dobie kryzysu ekologicznego to właśnie oddolne działanie silnie zmotywowanych jednostek ma potencjał do zmiany świata.
@@ -200,7 +202,6 @@
                 </div> 
             </div> 
     </div>
-
 
      <div id="team" class="center_flex_box section_divide_height">
         <p class="section_divide">TEAM</p>
@@ -258,7 +259,6 @@
             <br>
         </div>
 
-          
         <div class="right_flex_box"> 
             <img class="bio_pic" src="../oa27/imgs/team/team2.png">
         </div>
@@ -383,9 +383,7 @@
 
 
  <script>
-      // Uncheck
       function check() {
-        console.log("HELLO")
         let inputs = document.getElementById('pesky_checkbox');
             inputs.checked = false
       }

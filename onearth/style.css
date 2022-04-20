@@ -140,12 +140,7 @@ body {
 .center_button{
     text-align: center; 
     padding: 25px;
-    padding-bottom: 0;
-}
-.center_button > a{
-    /*background-color: black;
-    color:  white;
-    border: 0px;*/
+    padding-bottom: 4px;
 }
 
 .section_divide_height {
