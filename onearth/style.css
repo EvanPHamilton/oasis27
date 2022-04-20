@@ -81,6 +81,11 @@ body {
     text-align: center;
 }
 
+.left_padding{
+    padding-left: 11%;
+    margin-right: 2%;
+}
+
 .left_box{
     margin-left: 11%;
 }
@@ -172,6 +177,15 @@ body {
     height: auto;
 }
 
+.bio_box_right{
+    width: 50%; 
+    margin-right: 11%;
+}
+
+.bio_box_right{
+    display: flex;
+}
+
 @media(max-height: 500){
 
     .v{
@@ -183,6 +197,22 @@ body {
 }
 
 @media (max-width: 650px) {
+
+    .bio_box_right{
+        display: block;
+    }
+
+    .bio_box_right{
+        min-width: 100%; 
+        margin-right: 0%;
+    }
+
+    .right_flex_box{
+        width: 100% !important;
+        min-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 
     .web_online{
         display: none;
