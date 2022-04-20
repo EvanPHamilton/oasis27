@@ -97,15 +97,13 @@ body {
 
 .pink_box{
     margin: 0; 
-    padding: 2em; 
-    background-color: #ff82e2;
+    padding: 1.75em;
+    padding-top: 1.7em; 
+    background-color: rgba(255,148,252,0.95);
     line-height: 35px;
     text-align: left;
     vertical-align: middle;
-}
-
-.pink_box_right{
-    text-align: right;
+    line-height: 27px;
 }
 
 
