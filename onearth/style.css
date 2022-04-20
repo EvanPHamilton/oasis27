@@ -174,7 +174,7 @@ body {
     display: none;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
 
     .web_online{
         display: none;

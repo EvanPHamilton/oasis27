@@ -20,7 +20,7 @@
 <body>
 
     <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
+        <input type="checkbox" class="toggler" id="pesky_checkbox">
         <div class="hamburger">
             <div>
             </div>
@@ -29,14 +29,15 @@
         <div class="menu">
             <div>
                 <div>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#purpose">Purpose And Value</a></li>
-                        <li><a href="#projects">Project</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#polish">Polski</a></li>
-                        <li><a href="https://www.facebook.com/onearthfoundation">Facebook</a></li>
+                    <input type="checkbox" class="toggler">
+                    <ul> 
+                        <li><a onclick="check()" href="#about">About</a></li>
+                        <li><a onclick="check()" href="#purpose">Purpose And Value</a></li>
+                        <li><a onclick="check()" href="#projects">Project</a></li>
+                        <li><a onclick="check()" href="#team">Team</a> </li>
+                        <li><a onclick="check()" href="#contact">Contact</a></li>
+                        <li><a onclick="check();polish();" href="#polish">Polski</a></li>
+                        <li><a onclick="check()" href="https://www.facebook.com/onearthfoundation">Facebook</a></li>
                     </ul>
                 </div>
             </div>
@@ -248,5 +249,19 @@
         NIP (VAT EU) PL 6762574197, KRS 0000814590, REGON 384902400
     </p>
 </footer> 
+
+
+ <script>
+      // Uncheck
+      function check() {
+        console.log("HELLO")
+        let inputs = document.getElementById('pesky_checkbox');
+            inputs.checked = false
+      }
+      function polish(){
+        console.log("Switch to Polish")
+      }
+    </script>
+
 
 </html>
