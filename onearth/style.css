@@ -35,14 +35,10 @@ body {
 .right_box_header{
     background-color: black;
     color:  white;
-    width:  45%;
     margin:  0;
     margin-left:  auto;
-    letter-spacing: .5px;
     word-spacing:  -6px;
-    padding: 1.5%;
-    padding-right: 2.57em;
-    text-align: right;
+    text-align: center;
 }
 
 .link_button{
@@ -70,10 +66,11 @@ body {
 }
 
 .right_flex_box{
+    width: 100%;
     display: flex; 
     display: -webkit-flex; /* Safari */ 
     align-items: center; 
-    justify-content: end;
+    justify-content: center;
     text-align: center;
 }
 
@@ -94,19 +91,13 @@ body {
 
 .left_box_header{
     background-color: black; 
-    color:  white; 
-    width: 35%; 
-    margin: 0; 
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    padding-right:  1.5%;
-    padding-left:  2.57em; 
-    text-align: left;
+    color:  white;  
+    text-align: center;
 }
 
 .pink_box{
     margin: 0; 
-    padding: 3em; 
+    padding: 2em; 
     background-color: #ff82e2;
     line-height: 35px;
     text-align: left;
@@ -154,7 +145,7 @@ body {
 }
 
 .bio_pic{
-    max-width: 40%; 
+    max-width: 100%; 
     max-height: auto;
 }
 
