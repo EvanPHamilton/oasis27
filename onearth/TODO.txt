@@ -1,0 +1,8 @@
+Background picture is upside down
+
+Align header text to left/right side of box
+
+Reduce extra space on bottom of text boxes
+
+Align bio pictures to side of boxes
+

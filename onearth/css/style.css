@@ -194,6 +194,9 @@ Activating this somehow disables our menu, with transform: scale(0);
 This is a direct div child of a .menu inside a .menu-wrap
 */
 
+.menu{
+    font-family: Unica One;
+}
 
 .menu-wrap .menu > div {
   background: var(--overlay-color);

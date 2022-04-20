@@ -34,7 +34,10 @@
                         <li><a onclick="check()" href="#projects">Projects</a></li>
                         <li><a onclick="check()" href="#team">Team</a> </li>
                         <li><a onclick="check()" href="#contact">Contact</a></li>
-                        <li><a onclick="check();polish();" href="#polish">Polski</a></li>
+                        <li>
+                            <a onclick="check();polish();" class="english" href="#about">Polski</a>
+                            <a onclick="check();polish();" class="polish" href="#about">English</a>
+                        </li>
                         <li><a onclick="check()" href="https://www.facebook.com/onearthfoundation">Facebook</a></li>
                     </ul>
                 </div>
@@ -53,11 +56,18 @@
     </div>
 
     <div id="about" class="left_box">
-        <h3 class="left_box_header" style="width: 5em;"> ABOUT US </h3>
+        <h3 class="left_box_header english" style="width: 5em;"> ABOUT US </h3>
+        <h3 class="left_box_header polish" style="width: 5em;"> O NAS </h3>
+
         <div class="flex_box_for_picture"> 
-            <p class="pink_box">
+            <p class="pink_box english">
             The onEarth Foundation, established in 2019, provides alternative ecological education by bridging art, technology, and science. Its mission is to share environmental awareness and embrace equity of living beings by creating spaces for entanglement, co-creation, deep adaptation and wellbeing. 
             </p>
+
+            <p class="pink_box polish">
+            Powstała w 2019 roku, Fundacja onEarth działa na rzecz stosowania zrównoważonych, interdyscyplinarnych praktyk na pograniczu sztuki, nauki, technologii, designu i nauk społecznych. Naszym celem jest zwiększanie świadomości dotyczącej środowiska naturalnego oraz wspieranie adaptacji do zmian klimatycznych. Fundacja onEarth poszukuje nowych sposobów współistnienia na Ziemi.            
+            </p>
+
             <img class="right_picture web_online" 
             src="imgs/logo_about.png">
         </div> 
@@ -69,38 +79,59 @@
 
 
     <div id="purpose" class="right_box top_padding sixty">
-        <h3 class="right_box_header" style="width: 10em;"> PURPOSES AND VALUES </h3>
-        <div class="flex_box_for_picture"> 
-            <div class="pink_box">
-            <p class="pink_box">
-            onEarth foundation aims to re-establish a deep connection with nature and life. The foundation is committed to creating new narrations, situations and spaces that work in symbiosis with the natural environment, inviting its inhabitants to playfully co-create, share knowledge, resources and love.
-            <br>
-            <br>
-            <strong>  <u> Our mission and statutory goals:  </u> </strong>
-                <ul style="padding-left: 10%;">
-                    <li>Provide alternative ecological education and to reframe environmental responsibility</li>
-                    <li>Promote sustainable development and include sustainable development goals into Foundation’s work</li>
-                    <li>Work towards deep adaptation and agility within the changing environment</li>
-                    <li>Promote mindfulness and healthy lifestyle</li>
-                    <li>Embrace solidarity and diversity/li>
-                    <li>Promote mindfulness and healthy lifestyle</li>
-                    <li>Share knowledge, skills and new possibilities of collaboration</li>
-                    <li>Integrate artistic and ecological circles</li>
-                </ul>
-            </p>
+        <h3 class="right_box_header english" style="width: 10em;"> PURPOSES AND VALUES </h3>
+        <h3 class="right_box_header polish" style="width: 10em;"> Cele i wartości </h3>
 
-         </div>
+        <div class="flex_box_for_picture"> 
+            <div class="pink_box english">
+                <p class="pink_box">
+                onEarth foundation aims to re-establish a deep connection with nature and life. The foundation is committed to creating new narrations, situations and spaces that work in symbiosis with the natural environment, inviting its inhabitants to playfully co-create, share knowledge, resources and love.
+                <br>
+                <br>
+                <strong>  <u> Our mission and statutory goals:  </u> </strong>
+                    <ul style="padding-left: 10%;">
+                        <li>Provide alternative ecological education and to reframe environmental responsibility</li>
+                        <li>Promote sustainable development and include sustainable development goals into Foundation’s work</li>
+                        <li>Work towards deep adaptation and agility within the changing environment</li>
+                        <li>Promote mindfulness and healthy lifestyle</li>
+                        <li>Embrace solidarity and diversity </li>
+                        <li>Share knowledge, skills and new possibilities of collaboration</li>
+                        <li>Integrate artistic and ecological circles</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="pink_box polish">
+                <p class="pink_box">
+                Fundacja onEarth dąży do powrotu do głębokiego związku z naturą i życiem. Fundacja angażuje się w tworzenie nowych narracji, społeczności i przestrzeni, które działają w symbiozie ze środowiskiem naturalnym, zapraszając do kreatywnego współtworzenia, dzielenia się wiedzą, zasobami i miłością.
+                <br>
+                <br>
+                <strong>  <u> Nasza misja i cele statutowe:  </u> </strong>
+                    <ul style="padding-left: 10%;">
+                        <li>Działalność na rzecz środowiska naturalnego, szeroko pojętej ekologii i wiedzy o niej;</li>
+                        <li>Promowanie i działanie na rzecz realizacji zasad zrównoważonego rozwoju;</li>
+                        <li>Promowanie zdrowego stylu życia, współdziałającego z prawami natury:</li>
+                        <li>Działalność wspomagająca rozwój inicjatyw oraz społeczności lokalnych;</li>
+                        <li>Działalność szkoleniowa i edukacyjna, polegająca na kształceniu ekologicznym, artystycznym i w zakresie rozwoju osobistego; </li>
+                        <li>Tworzenie przestrzeni i miejsc służących twórczemu i ekologicznemu działaniu;</li>
+                        <li>Integracja środowisk artystycznych, naukowych i ekologicznych;</li>
+                    </ul>
+                </p>
+            </div>
 
         </div> 
     </div>
 
     <div id="projects" class="center_flex_box section_divide_height">
-        <p class="section_divide">PROJECTS</p>
+        <p class="section_divide english">PROJECTS</p>
+
+        <p class="section_divide polish">PROJEKTOWANIE</p>
+
     </div>
 
     <div id="oasis_27" class="left_box sixty">
         <h3 class="left_box_header" style="width: 9em;"> OASIS 2027 (OA27) </h3>
-            <div class="pink_box">
+            <div class="pink_box english">
                 <strong> OASIS 2027 (OA27) <strong> is a research residency programme leading to the creation of an OA27 Festival of Strategies for Climate Emergency launching in October 2022 in Magdeburg, Germany.
                 <br>
                 <br>
@@ -109,12 +140,22 @@
                     <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">LEARN MORE</a>
                 </div> 
             </div> 
+
+            <div class="pink_box polish">
+                <strong> OASIS 2027 (OA27) <strong> to program rezydencji badawczych prowadzący do stworzenia Festiwalu strategii adaptacji do zmian klimatycznych o nazwie OA27, który rozpocznie się w październiku 2022 roku, w Magdeburgu.
+                <br>
+                <br>
+                <strong> Tematem przewodnim programu OA27 jest pustynnienie: proces, w którym żyzne ziemie stają się coraz bardziej jałowe, głównie z powodu działalności człowieka. Według doniesień naukowych, namacalne skutki pustynnienia dotkną nas już w 2027 roku.
+                <div class="center_button">
+                    <a href="https://evanphamilton.github.io/oasis27/oa27/" class="link_button">DOWIEDZ SIĘ WIĘCEJ</a>
+                </div> 
+            </div> 
     </div>
 
     <div id="lios" class="right_box top_padding sixty">
         <h3 class="right_box_header" style="width: 5em;"> LIOS LABS </h3>
         <div style="display: flex; align-items: stretch; align-content: center;"> 
-            <div class="pink_box">
+            <div class="pink_box english">
                 
                 LIOS labs is an arts of ecology residency programme in Pustynia Bledowska, Poland, and a community of practice.
                 <br>
@@ -124,20 +165,39 @@
                     <a class="link_button" href="https://evanphamilton.github.io/oasis27/onearth/lios">LEARN MORE</a>
                 </div>
             </div>
+
+            <div class="pink_box polish">
+                LIOS labs to program rezydencji twórczych i eksperymentalna społeczność na Pustyni Błędowskiej.
+                <br>
+                LIOS labs tworzy kolektyw agentów specjalnych: artystów, naukowców i aktywistów, którzy pracują nad współtworzeniem zrównoważonej przyszłości - przestrzeni dla interdyscyplinarnej współpracy i wsparcia, oraz doświadczeń, które przybliżają ludzi do poczucia jedności z ciałem, duchem i światem ożywionym.
+
+                <div class="center_button">
+                    <a class="link_button" href="https://evanphamilton.github.io/oasis27/onearth/lios">DOWIEDZ SIĘ WIĘCEJ</a>
+                </div>
+            </div>
         </div> 
     </div>
 
     <div id="wasteless_land" class="left_box top_padding sixty"> 
         <h3 class="left_box_header" style="width: 8em;"> WASTELESS LAND </h3>
-            <div class="pink_box">
-                
-                Wasteless Land is a circular economy hackathon. In 2022, its third edition will take place - this time in three Polish cities.
+            <div class="pink_box english">  
+                <strong> Wasteless Land <strong> is a circular economy hackathon. In 2022, its third edition will take place - this time in three Polish cities.
                 <br>
                 <br>
                 The purpose of the hackathon is to give participants the tools and knowledge to solve environmental problems of their own communities and form grassroot initiatives. 
-            
                 <div class="center_button">
                     <a href="https://evanphamilton.github.io/oasis27/onearth/wasteless_land" class="link_button">LEARN MORE</a>
+                </div> 
+            </div> 
+
+            <div class="pink_box polish">  
+                <strong> Wasteless Land <strong> to hackathon gospodarki cyrkularnej. W 2022 obędzie się jego trzecia edycja - tym razem już w trzech miastach Polski.
+
+                <br>
+                <br>
+                Celem hackathonu jest przekazanie uczestnikom narzędzi i wiedzy do oddolnego rozwiązywania problemów ekologicznych własnych społeczności. Wierzymy, że dobie kryzysu ekologicznego to właśnie oddolne działanie silnie zmotywowanych jednostek ma potencjał do zmiany świata.
+                <div class="center_button">
+                    <a href="https://evanphamilton.github.io/oasis27/onearth/wasteless_land" class="link_button">DOWIEDZ SIĘ WIĘCEJ</a>
                 </div> 
             </div> 
     </div>
@@ -158,11 +218,20 @@
             <img class="bio_pic" src="../oa27/imgs/team/team2.png">
         </div>
 
-        <div class="pink_box" style="width: 50%; margin-right: 11%;">
+        <div class="pink_box english" style="width: 50%; margin-right: 11%;">
             Kamila is an activist and a lawyer. Holds a master of laws degree from Jagiellonian University. Since 2018 runs LegalTech Advisory, a legal consulting firm specializing in e-commerce, intellectual property and personal data security. Co-founder of Smogathon, an international initiative aiming at combating air pollution with technology and science. She organized over 30 events on four continents and has spoken at many conferences.
             <br>
             <br>
             Passionate environmentalist and animal rights supporter wants to contribute to transforming the economy towards sustainable and inclusive and educate about climate change.
+            <br>
+            <br>
+        </div>
+
+        <div class="pink_box polish" style="width: 50%; margin-right: 11%;">
+            Kamila jest aktywistką i prawnikiem. Ukończyła prawo na Uniwersytecie Jagiellońskim. Od 2018 roku prowadzi LegalTech Advisory, firmę doradczą specjalizującą się doradztwie prawnym dla branży kreatywnej, IT oraz bezpieczeństwie danych osobowych. Współzałożycielka Smogathonu, międzynarodowej inicjatywy mającej na celu walkę z zanieczyszczeniem powietrza za pomocą technologii i nauki. Zorganizowała ponad 30 wydarzeń na czterech kontynentach, wielokrotnie występowała publicznie.
+            <br>
+            <br>
+            W swoich działaniach chce wspierać przekształcenie gospodarki w kierunku zrównoważonej i sprzyjającej równości społecznej oraz edukować o zmianach klimatu.
             <br>
             <br>
         </div>
@@ -187,10 +256,15 @@
 
     <div class="left_box top_padding sixty">
         <h3 class="left_box_header" style="width: 11em;"> JO VÁVRA / CO-FOUNDER </h3>
-        <div class="pink_box no_bottom_padding">
+        <div class="pink_box no_bottom_padding english">
             Jo Vávra is an artist, activist, and cultural producer. She studied retail design in Denmark and China. In 2012 she moved to Berlin to start an ongoing research on holistic, body-mind practices. During the last 10 years, Jo has been activating socio-cultural projects around the world. She spent the last couple of years in Portugal, before moving back to central Europe. Currently, she works between Berlin and Poland.
             <br>
             Her practice, rooted in the concept of collaborative survival, explores community structures and rituals. Using art and spirituality as pedagogical tools, Jo works with food, sculpture, storytelling and immersive design. She is a co-founder and designer of <a href="https://www.cecifoundation.com/">CECI Foundation</a>, co-founder and board member of <a href="https://neuehaeute.org/">neue häute</a>, chef in <a href="https://www.instagram.com/cosmic.cooking/">cosmic.cooking</a>, co-creator and artist in residence in <a href="https://moosgarden.notion.site/">moos.garden</a>, Berlin. 
+        </div>
+
+        <div class="pink_box no_bottom_padding polish">
+            Jo to artystka, kuratorka i kreatywna producentka. Po studiach na kierunku projektowania handlowego w Danii i Chinach, w 2012 Jo przeprowadziła się do Berlina. Od tamtej pory prowadzi międzynarodowe projekty artystyczne i społeczne oraz rozwija swój warsztat artystyczny. Obecnie jest współtwórczynią i rezydentka berlinskiej społeczności i centrum kultury <a href="https://moosgarden.notion.site/">moos.garden</a>. Jej praktyka, inspirowana dialogiem z naturą, zgłębia organiczne struktury, wzorce i rytuały. W 2019 artystka zatęskniła za Polską i wspólnie z Kamila postanowiła działać na rzecz ekologii w ojczystym kraju. Jo jest współzałożycielką i projektantką <a href="https://www.cecifoundation.com/">CECI Foundation</a>, współzałożycielką i członkinią zarządu berlińskiego kolektywu <a href="https://neuehaeute.org/">neue häute</a> i <a href="https://www.instagram.com/cosmic.cooking/">cosmic.cooking</a>.
+
         </div>
         <div class="left_flex_box"> 
             <img class="bio_pic" src="../oa27/imgs/team/team1.png">
@@ -198,7 +272,9 @@
     </div> 
 
     <div id="contact" class="right_box top_padding sixty bottom_padding">
-        <h3 class="right_box_header" style="width: 5em;"> CONTACT </h3>
+        <h3 class="right_box_header english" style="width: 5em;"> CONTACT </h3>
+        <h3 class="right_box_header polish" style="width: 5em;"> KONTAKT </h3>
+
         <div class="pink_box">
             ADDRESS
             <br>
@@ -225,36 +301,53 @@
         <div style="background-color: white; opacity: .9; padding: 5%;">
              <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
                 <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">Your name</label>
+                    <label for="Name" class="fcf-label english">Your name</label>
+                    <label for="Name" class="fcf-label polish">Twoje imię</label>
+
                     <div class="fcf-input-group">
                         <input type="text" id="Name" name="Name" class="fcf-form-control" required>
                     </div>
                 </div>
 
                 <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email address</label>
+                    <label for="Email" class="fcf-label english">Your email address</label>
+                    <label for="Email" class="fcf-label polish">Twój adres email</label>
+
                     <div class="fcf-input-group">
                         <input type="email" id="Email" name="Email" class="fcf-form-control" required>
                     </div>
                 </div>
 
                 <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
+                    <label for="Message" class="fcf-label" english>Your message</label>
+                    <label for="Message" class="fcf-label" polish>Twoja wiadomość</label>
+
                     <div class="fcf-input-group">
                         <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
                     </div>
                 </div> 
 
-                <p> 
+                <p class="english"> 
                 The controller of your personal data is the onEarth Foundation. Information about how we process your personal data and your rights in relation to it can be found in our 
                 <a href="../oa27/privacy_policy.pdf"> Privacy Policy </a>
                 <br> <br>
                 </p>
 
-            <p>I have read the Privacy Policy:</p>
+                <p class="polish"> 
+                Administratorem Twoich danych osobowych jest Fundacja onEarth. Informacje o sposobie przetwarzania danych osobowych oraz przysługujących Ci w związku z tym prawach znajdziesz w naszej Polityce Prywatności
+                <a href="../oa27/privacy_policy.pdf"> POLITYKA PRYWATNOSCI </a>
+                <br> <br>
+                </p>
+
+            <p class="english">I have read the Privacy Policy:</p>
+
+            <p class="polish">Zapoznałem się z polityką prywatności:</p>
+
             <div>
                 <input type="checkbox" id="scales" required>
-                <label >Yes</label>
+                <label class="english">YES</label>
+                <label class="polish">TAK</label>
+
             </div>
             <br>
             <br>
@@ -286,7 +379,26 @@
             inputs.checked = false
       }
       function polish(){
-        console.log("Switch to Polish")
+        var elements = document.querySelectorAll('.english');
+        
+        if (elements[0].style.display != "none"){
+            for(var i=0; i<elements.length; i++){
+                elements[i].style.display = "none"
+            }
+            var elements = document.querySelectorAll('.polish');
+            for(var i=0; i<elements.length; i++){
+                elements[i].style.display = "block"
+            }
+        }
+        else{
+            for(var i=0; i<elements.length; i++){
+                elements[i].style.display = "block"
+            }
+            var elements = document.querySelectorAll('.polish');
+            for(var i=0; i<elements.length; i++){
+                elements[i].style.display = "none"
+            }
+        }
       }
     </script>
 

@@ -20,6 +20,13 @@ body {
   z-index: -1;
 }
 
+.english {
+    display: block;
+}
+
+.polish{
+    display: none;
+}
 .right_picture{
     height: 28vw; 
     min-width: 40%; 
