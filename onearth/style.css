@@ -166,6 +166,15 @@ body {
     opacity: .8
 }
 
+.v_relative {
+    display: inline;
+    align-content: center; 
+    font-size: 1em;
+    text-decoration: none; 
+    color: white; 
+    opacity: .8
+}
+
 .home_img{
     max-width: 65vw; 
     height: auto;
