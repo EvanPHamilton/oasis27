@@ -156,6 +156,13 @@ body {
     max-height: auto;
 }
 
+.bio_pic_smaller{
+    max-width: 60%; 
+    max-height: auto;
+    border-radius: 50%;
+}
+
+
 .v{
     position: absolute; 
     bottom: 17.5%; 
