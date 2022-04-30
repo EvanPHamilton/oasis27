@@ -157,6 +157,7 @@ body {
 }
 
 .bio_pic_smaller{
+    padding-top: 5%;
     max-width: 60%; 
     max-height: auto;
     border-radius: 50%;
