@@ -178,7 +178,7 @@ body {
 .v_relative {
     display: inline;
     align-content: center; 
-    font-size: 1em;
+    font-size: .6em;
     text-decoration: none; 
     color: white; 
     opacity: .8
